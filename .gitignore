@@ -5,3 +5,6 @@ node_modules/
 .DS_Store
 .openai/
 *.log
+
+__pycache__/
+*.pyc

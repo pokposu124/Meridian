@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://api.twelvedata.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://api.twelvedata.com https://raw.githubusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#0b0e11">
   <meta name="description" content="세계 주요 지수, 비트코인, 금과 나만의 관심 종목을 한 화면에서 모니터링하세요.">
@@ -39,9 +39,9 @@
     </header>
 
     <section class="market-strip" aria-label="세계 주요 지수와 원자재 시세">
-      <div class="strip-heading"><span class="status-dot"></span> GLOBAL MARKETS <span class="provider-note" id="provider-note">Twelve Data · 데이터 연결 필요</span></div>
+      <div class="strip-heading"><span class="status-dot"></span> GLOBAL MARKETS <span class="provider-note" id="provider-note">공개 지연 시세 · API 키 없이 사용</span></div>
       <div id="ticker" class="ticker native-ticker"></div>
-      <div class="ticker-fallback" id="ticker-fallback">시세 데이터 연결 후 주요 지수·비트코인·금 가격이 표시됩니다. <button id="retry-ticker">데이터 연결하기 →</button></div>
+      <div class="ticker-fallback" id="ticker-fallback">API 키 없이 공개 지연 시세를 사용합니다. <button id="retry-ticker">데이터 연결하기 →</button></div>
     </section>
 
     <main id="main">
@@ -55,7 +55,7 @@
 
       <div class="grid-status"><span><i class="status-dot"></i> <span id="grid-caption">일봉 · 캔들 차트</span></span><span id="load-time">데이터 연결 대기</span></div>
       <section class="chart-grid" id="chart-grid" aria-label="관심 종목 차트"></section>
-      <footer class="footer"><span><span class="footer-brand">M<span>·</span></span> MERIDIAN <span class="footer-divider">/</span> A CLEARER VIEW OF THE MARKET</span><button id="footer-info">Twelve Data · 네이티브 차트 · 시장별 제공 범위 및 지연 안내 ↗</button></footer>
+      <footer class="footer"><span><span class="footer-brand">M<span>·</span></span> MERIDIAN <span class="footer-divider">/</span> A CLEARER VIEW OF THE MARKET</span><button id="footer-info">공개 지연 시세 · 네이티브 차트 · 시장별 제공 범위 및 지연 안내 ↗</button></footer>
     </main>
   </div>
 
@@ -65,7 +65,7 @@
     <div class="search-field"><span>⌕</span><input id="symbol-search" type="search" placeholder="종목명, 티커 또는 거래소:티커 검색" autocomplete="off" aria-label="종목 검색"></div>
     <div class="region-filters" id="region-filters"><button data-region="all" class="selected">전체</button><button data-region="US">미국</button><button data-region="KR">한국</button><button data-region="ASIA">아시아</button><button data-region="EU">유럽</button><button data-region="OTHER">기타</button></div>
     <div class="search-results" id="search-results"></div>
-    <form id="custom-symbol-form" class="custom-symbol"><label for="custom-symbol">찾는 종목이 없나요? 데이터 심볼로 추가하세요.</label><div><input id="custom-symbol" placeholder="예: NASDAQ:AAPL, KRX:005930" autocomplete="off" maxlength="80" required aria-label="거래소와 티커"><button class="btn primary" type="submit">추가</button></div><small>Twelve Data의 거래소:티커 형식입니다. 기존 그룹은 유지되며 일부 거래소 코드는 자동 변환합니다.</small></form>
+    <form id="custom-symbol-form" class="custom-symbol"><label for="custom-symbol">찾는 종목이 없나요? 데이터 심볼로 추가하세요.</label><div><input id="custom-symbol" placeholder="예: NASDAQ:AAPL, KRX:005930" autocomplete="off" maxlength="80" required aria-label="거래소와 티커"><button class="btn primary" type="submit">추가</button></div><small>기본 공개 수집 목록 밖의 종목은 별도 등록이 필요합니다. Twelve Data 연결도 선택할 수 있습니다.</small></form>
   </dialog>
 
   <dialog id="group-dialog" class="modal compact">
@@ -75,18 +75,22 @@
 
   <dialog id="info-dialog" class="modal compact">
     <div class="modal-heading"><div><span class="eyebrow">MARKET DATA</span><h2>데이터 안내</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
-    <div class="info-copy"><p>차트는 Meridian이 직접 그리는 SVG 캔들·선 차트입니다. 가격은 <a href="https://twelvedata.com/docs" target="_blank" rel="noopener noreferrer">Twelve Data API</a>에서 받으며, 외부 차트 프레임을 사용하지 않습니다.</p><p>상단은 지수·비트코인·금의 최신 quote 응답, 종목 차트는 180개 OHLC 봉을 사용합니다. 일봉·주봉·월봉 전환 시 제공업체의 해당 주기 데이터를 요청합니다. 차트의 가격은 마지막 봉 종가이며, 변동률은 이전 봉 종가 대비입니다.</p><p>상단 비트코인은 BTC/USD 집계 시세, 금은 XAU/USD 현물(미국 달러/트로이온스)입니다. 상단 지수 심볼은 GSPC, IXIC, DJI, KS11, N225, HSI, GDAXI, FTSE이며 Index 유형으로 조회합니다.</p><p>실시간·지연 여부와 접근 가능한 시장은 API 요금제 및 거래소 라이선스에 따라 달라집니다. 해외 주식·지수·원자재가 무료 요금제에서 모두 제공되지는 않습니다. 지원되지 않는 종목과 권한 부족, 호출 한도는 해당 카드에 표시합니다.</p><p>스크롤 또는 +/- 키로 차트를 확대·축소하고 드래그·좌우 키로 이동합니다. 더블클릭 또는 Home 키로 최근 구간을 확인하세요. 가격 이력과 표시 설정을 캐시하므로 캔들·선 전환에 추가 데이터 호출이 필요하지 않습니다.</p><p>API 키는 현재 탭의 메모리에만 보관하며, 새로고침하면 다시 입력해야 합니다. 가격 요청은 브라우저에서 Twelve Data로 직접 전송됩니다. 공개 소스와 브라우저 저장소에는 키를 저장하지 않습니다. 그룹·종목과 차트 설정만 현재 브라우저에 저장됩니다.</p></div>
+    <div class="info-copy"><p>Meridian이 SVG 캔들·선 차트와 상단 시세 카드를 직접 그립니다. 기본 모드는 API 키가 없는 공개 지연 시세입니다.</p><p>공개 시세는 Yahoo Finance의 비공식 공개 chart 응답을 GitHub에서 약 30분마다 수집합니다. 제공처 지연과 GitHub 실행 지연이 추가될 수 있습니다. 가격 기준 시각과 수집 시각을 확인해 주세요. 수집 실패 시 기존 유효 데이터를 유지하고 이전 수집값으로 표시합니다. 공개 연결의 지속성과 전 세계 모든 종목의 제공을 보장하지 않습니다.</p><p>상단 금은 GC=F(COMEX 금 선물), 비트코인은 BTC-USD 집계 가격입니다. 금 선물은 현물 XAU/USD와 다릅니다. 공개 모드에서 금 현물 전용 심볼은 다른 가격으로 대체하지 않습니다.</p><p>일봉은 실제 일별 OHLC이며, 주봉과 월봉은 거래소 현지 거래일을 기준으로 첫 시가·최고가·최저가·마지막 종가·거래량 합계를 계산합니다. 차트 가격은 마지막 봉 종가, 변동률은 이전 봉 종가 대비입니다. 상단 가격은 공급자가 보고한 최신 가격입니다.</p><p>기존 관심 그룹은 유지됩니다. 현재 공개 수집 목록은 <a href="https://github.com/pokposu124/Meridian/blob/main/data/universe.json" target="_blank" rel="noopener noreferrer">여기</a>에서 확인할 수 있습니다. 목록 밖 종목이나 공개 소스에서 지원하지 않는 종목은 안내를 표시합니다.</p><p>데이터 설정에서 Twelve Data로 전환할 수도 있습니다. API 키는 현재 탭 메모리에만 보관하고 새로고침하면 지웁니다. 그룹·차트 설정만 현재 브라우저에 저장됩니다.</p><p>휠 또는 +/- 키로 확대·축소, 드래그·좌우 키로 이동합니다. 더블클릭으로 기본 보기, Home 키로 최근 구간을 확인하세요.</p></div>
   </dialog>
   <dialog id="data-dialog" class="modal compact">
     <div class="modal-heading"><div><span class="eyebrow">CONNECT MARKET DATA</span><h2>시세 데이터 연결</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
     <p class="modal-copy" id="data-connection-state">Twelve Data API 키로 연결하세요.</p>
     <form id="data-form" autocomplete="off">
+      <label for="data-source">가격 데이터</label><select id="data-source"><option value="public">공개 지연 시세 · API 키 불필요</option><option value="twelve">Twelve Data · 개인 API 키</option></select>
+      <div id="public-fields"><p class="field-hint">Yahoo Finance 공개 시세를 GitHub에서 약 30분마다 수집합니다. 실제 지연 시간은 시장과 수집 상태에 따라 달라집니다. 시세 기준 시각과 수집 상태를 확인하세요.</p><p class="field-hint">현재 기본 종목과 주요 지수를 수집합니다. 목록에 없는 종목은 추가 등록이 필요합니다. <a href="https://github.com/pokposu124/Meridian/blob/main/data/universe.json" target="_blank" rel="noopener noreferrer">지원 종목 목록 ↗</a></p><p class="field-hint">공개 모드의 금은 GC=F(COMEX 금 선물)이며 금 현물 XAU/USD와 다릅니다. 공개 비공식 데이터 연결은 제공처 변경·호출 제한으로 중단될 수 있습니다.</p></div>
+      <div id="twelve-fields" hidden>
       <label for="api-key">Twelve Data API 키</label><input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="현재 탭에서만 사용 · 대화나 저장소에 올리지 마세요" maxlength="200">
       <p class="field-hint">키는 메모리에만 보관하며 Twelve Data로 직접 전송합니다. 새로고침 시 다시 입력합니다. <a href="https://twelvedata.com/account/api-keys" target="_blank" rel="noopener noreferrer">API 키 관리 ↗</a></p>
       <label for="api-rpm">분당 요청 수 — 가입한 요금제 한도 이하로 설정</label><select id="api-rpm"><option value="8">8회 / 분</option><option value="30">30회 / 분</option><option value="55">55회 / 분</option><option value="120">120회 / 분</option><option value="610">610회 / 분</option></select>
+      </div>
       <label for="api-refresh">자동 갱신</label><select id="api-refresh"><option value="0">끄기 · 수동 새로고침</option><option value="1">1분마다</option><option value="5" selected>5분마다</option><option value="15">15분마다</option></select>
-      <p class="field-hint">최초 요청은 최대 19개입니다. 8회/분 설정에서는 순서대로 수 분에 걸쳐 표시됩니다. 요금제에 따라 주식·지수·금 데이터 접근이 제한됩니다.</p>
-      <div class="modal-actions"><button class="btn subtle" type="button" id="disconnect-data">연결 해제</button><button class="btn primary" type="submit">연결하고 불러오기</button></div>
+      <p class="field-hint">화면 새로고침은 수집된 최신 캐시를 읽습니다. 공개 소스에 지원되지 않는 종목은 빈칸과 안내를 표시하며 임의 가격으로 대체하지 않습니다.</p>
+      <div class="modal-actions"><button class="btn subtle" type="button" id="disconnect-data">API 키 지우기</button><button class="btn primary" type="submit">연결하고 불러오기</button></div>
     </form>
   </dialog>
   <dialog id="expanded-dialog" class="modal expanded"><div class="modal-heading"><h2 id="expanded-title">종목 차트</h2><button class="icon-btn close-dialog" aria-label="닫기">×</button></div><div id="expanded-chart"></div></dialog>

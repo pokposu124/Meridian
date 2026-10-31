@@ -1,7 +1,8 @@
 (() => {
   'use strict';
   const S=window.MeridianState;
-  const M=window.MeridianMarket, client=new M.Client();
+  const M=window.MeridianMarket, publicClient=new M.PublicClient(), twelveClient=new M.Client();
+  let client=publicClient;
   let refreshMinutes=5;
   const $=id=>document.getElementById(id);
   let storageWarning=false;
@@ -10,7 +11,7 @@
   let region='all', editingGroup=false, toastTimer, tickerCleanup;
   const chartCleanups=[];
   const intervalNames={D:'일봉',W:'주봉',M:'월봉'};
-  const symbolUrl=()=> 'https://twelvedata.com/markets';
+  const symbolUrl=()=> client.kind==='public'?'https://finance.yahoo.com/':'https://twelvedata.com/markets';
   const escape=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   function currentGroup(){return state.groups.find(g=>g.id===state.activeGroup);}
   function toast(message){$('toast').textContent=message;$('toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),3200);}
@@ -37,7 +38,8 @@
     [['grid-layout',3],['wide-layout',2]].forEach(([id,columns])=>{$(id).classList.toggle('selected',state.columns===columns);$(id).setAttribute('aria-pressed',String(state.columns===columns));});
   }
 
-  function openDataSettings(){ $('api-key').value=''; $('api-rpm').value=String(client.rpm); $('api-refresh').value=String(refreshMinutes); $('data-connection-state').textContent=client.connected?'연결됨 · API 키는 현재 탭 메모리에만 보관됩니다.':'연결 전 · API 키를 입력해 주세요.'; showDialog('data-dialog'); }
+  function syncSourceFields(){const isPublic=$('data-source').value==='public';$('twelve-fields').hidden=isPublic;$('public-fields').hidden=!isPublic;}
+  function openDataSettings(){ $('api-key').value=''; $('api-rpm').value=String(twelveClient.rpm); $('api-refresh').value=String(refreshMinutes);$('data-source').value=client.kind==='public'?'public':'twelve';syncSourceFields();$('data-connection-state').textContent=client.kind==='public'?'공개 지연 시세 · API 키 없이 사용 중':client.connected?'Twelve Data 연결됨 · 현재 탭에서만 API 키 보관':'Twelve Data API 키를 입력해 주세요.'; showDialog('data-dialog'); }
   function mountChart(host,symbol,cleanups=chartCleanups){
     host.replaceChildren(); const controller=new AbortController();let dead=false,dispose;
     const placeholder=document.createElement('div');placeholder.className='chart-placeholder';
@@ -47,7 +49,7 @@
     if(!client.connected){placeholder.append(action);}else{
       const loader=document.createElement('span');loader.className='loader';placeholder.prepend(loader);
       client.series(symbol,state.interval,{signal:controller.signal,onStatus:message=>{if(!dead)status.textContent=message;}}).then(result=>{
-        if(dead)return;dispose=M.mountNativeChart(host,{...result,style:state.style,label:S.stockInfo(symbol).name});
+        if(dead)return;dispose=M.mountNativeChart(host,{...result,style:state.style,label:S.stockInfo(symbol).name});if(result.feedSymbol&&host.closest('.chart-card'))host.closest('.chart-card').querySelector('.stock-meta').textContent=result.feedSymbol+' · '+(result.exchange||'공개 시세');
       }).catch(error=>{if(dead||error.name==='AbortError')return;loader.remove();status.textContent=error.message;placeholder.append(action);});
     }
     cleanups.push(()=>{dead=true;controller.abort();dispose?.();});
@@ -57,7 +59,7 @@
     const grid=$('chart-grid');grid.replaceChildren();
     currentGroup().symbols.forEach(symbol=>{
       const stock=S.stockInfo(symbol),card=document.createElement('article');card.className='chart-card';card.setAttribute('aria-label',stock.name+' 차트');
-      card.innerHTML=`<div class="card-top">${logo(stock)}<div><div class="stock-name" title="${escape(stock.name)}">${escape(stock.name)}</div><div class="stock-meta"><span>${escape(stock.ticker)}</span><span>${escape(stock.exchange)}</span></div></div><div class="card-actions"><button class="icon-btn expand-chart" aria-label="${escape(stock.name)} 차트 확대" title="차트 확대">⛶</button><button class="icon-btn remove-stock" aria-label="${escape(stock.name)} 그룹에서 제거" title="그룹에서 제거">×</button></div></div><div class="chart-host"></div><div class="card-bottom"><span>${intervalNames[state.interval]} <span style="color:#3d525f">/</span> ${state.style==='1'?'CANDLE':'LINE'} <span style="color:#3d525f">·</span> UTC</span><a href="${symbolUrl(symbol)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(stock.name)} Twelve Data 원본 차트">Twelve Data ↗</a></div>`;
+      card.innerHTML=`<div class="card-top">${logo(stock)}<div><div class="stock-name" title="${escape(stock.name)}">${escape(stock.name)}</div><div class="stock-meta"><span>${escape(stock.ticker)}</span><span>${escape(stock.exchange)}</span></div></div><div class="card-actions"><button class="icon-btn expand-chart" aria-label="${escape(stock.name)} 차트 확대" title="차트 확대">⛶</button><button class="icon-btn remove-stock" aria-label="${escape(stock.name)} 그룹에서 제거" title="그룹에서 제거">×</button></div></div><div class="chart-host"></div><div class="card-bottom"><span>${intervalNames[state.interval]} <span style="color:#3d525f">/</span> ${state.style==='1'?'CANDLE':'LINE'} <span style="color:#3d525f">·</span> UTC</span><a href="${symbolUrl(symbol)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(stock.name)} 데이터 제공처">데이터 출처 ↗</a></div>`;
       card.querySelector('.remove-stock').onclick=()=>{currentGroup().symbols=currentGroup().symbols.filter(item=>item!==symbol);save();render();toast(`${stock.name} 종목을 제거했습니다.`);};
       card.querySelector('.expand-chart').onclick=()=>expandChart(symbol);
       grid.append(card);mountChart(card.querySelector('.chart-host'),symbol);
@@ -69,8 +71,8 @@
 
   function mountTicker(){
     tickerCleanup?.();const controller=new AbortController();let dead=false;const host=$('ticker');host.replaceChildren();
-    const note=$('provider-note');note.textContent=client.connected?`Twelve Data · ${client.rpm}회/분 · 시장별 지연 가능`:'Twelve Data · 데이터 연결 필요';
-    M.BENCHMARKS.forEach(item=>{
+    const note=$('provider-note');note.textContent=client.kind==='public'?'공개 지연 시세 · 약 30분마다 수집 · 기준 시각 확인':client.connected?`Twelve Data · ${client.rpm}회/분 · 시장별 지연 가능`:'Twelve Data · 데이터 연결 필요';
+    (client.benchmarks||M.BENCHMARKS).forEach(item=>{
       const card=document.createElement('article');card.className='index-card';card.setAttribute('aria-label',item.name+' 시세');
       const title=document.createElement('div');title.className='index-name';title.textContent=item.name;
       const price=document.createElement('strong');price.className='index-price';price.textContent='—';
@@ -79,7 +81,7 @@
       card.append(title,price,change,status);host.append(card);
       if(client.connected)client.quote(item,{signal:controller.signal,onStatus:message=>{if(!dead)status.textContent=message;}}).then(quote=>{
         if(dead)return;price.textContent=M.formatPrice(quote.price);change.textContent=quote.change===null||quote.percent===null?'변동 정보 없음':`${quote.change>=0?'+':''}${M.formatPrice(quote.change)} (${quote.percent>=0?'+':''}${quote.percent.toFixed(2)}%)`;change.classList.add(quote.change>=0?'up':'down');
-        status.textContent=`${quote.currency||item.currency} · ${quote.timestamp?new Date(quote.timestamp*1000).toISOString().slice(0,16).replace('T',' ')+' UTC':quote.date?quote.date+' UTC':'기준 시각 미제공'}${quote.open===null?'':quote.open?' · 장중':' · 장마감'}`;
+        status.textContent=`${quote.currency||item.currency} · ${quote.timestamp?new Date(quote.timestamp*1000).toISOString().slice(0,16).replace('T',' ')+' UTC':quote.date?quote.date+' UTC':'기준 시각 미제공'}${quote.open===null?'':quote.open?' · 장중':' · 장마감'}${quote.stale?' · 이전 수집값':''}`;status.classList.toggle('stale-data',Boolean(quote.stale));status.title=status.textContent+(quote.fetchedAt?' · 수집 '+quote.fetchedAt:'');
       }).catch(error=>{if(dead||error.name==='AbortError')return;status.textContent=error.message;status.classList.add('index-error');status.title=error.message;});
     });
     $('ticker-fallback').hidden=client.connected;tickerCleanup=()=>{dead=true;controller.abort();};
@@ -133,8 +135,9 @@
   window.addEventListener('storage',event=>{if(event.key!==S.STORAGE_KEY||!event.newValue)return;try{state=S.normalize(JSON.parse(event.newValue));document.querySelectorAll('dialog[open]').forEach(d=>d.close());render();toast('다른 탭에서 변경한 그룹을 반영했습니다.');}catch{}});
   function updateClock(){$('clock').textContent=new Date().toLocaleTimeString('en-GB',{timeZone:'UTC'});}
   $('connect-data').onclick=openDataSettings;
-  $('data-form').onsubmit=event=>{event.preventDefault();const key=$('api-key').value.trim();if(!key&&!client.connected){$('api-key').focus();toast('API 키를 입력해 주세요.');return;}refreshMinutes=Number($('api-refresh').value);client.configure(key||client.apiKey,Number($('api-rpm').value));$('api-key').value='';$('data-dialog').close();$('expanded-dialog').close();renderCharts();mountTicker();toast('시세 데이터를 순서대로 불러옵니다.');};
-  $('disconnect-data').onclick=()=>{client.configure('');$('api-key').value='';$('data-dialog').close();$('expanded-dialog').close();renderCharts();mountTicker();toast('데이터 연결을 해제하고 API 키를 메모리에서 지웠습니다.');};
+  $('data-source').onchange=syncSourceFields;
+  $('data-form').onsubmit=event=>{event.preventDefault();const usePublic=$('data-source').value==='public';const key=$('api-key').value.trim();if(!usePublic&&!key&&!twelveClient.connected){$('api-key').focus();toast('API 키를 입력해 주세요.');return;}refreshMinutes=Number($('api-refresh').value);if(usePublic){twelveClient.configure('');client=publicClient;client.clearCache();}else{twelveClient.configure(key||twelveClient.apiKey,Number($('api-rpm').value));client=twelveClient;}$('api-key').value='';$('data-dialog').close();$('expanded-dialog').close();renderCharts();mountTicker();toast(usePublic?'키 없는 공개 시세를 불러옵니다.':'Twelve Data 시세를 불러옵니다.');};
+  $('disconnect-data').onclick=()=>{twelveClient.configure('');client=publicClient;client.clearCache();$('api-key').value='';$('data-dialog').close();$('expanded-dialog').close();renderCharts();mountTicker();toast('API 키를 지우고 공개 지연 시세로 전환했습니다.');};
   $('data-dialog').addEventListener('close',()=>{$('api-key').value='';});
   setInterval(()=>{if(client.connected&&refreshMinutes>0&&!document.hidden&&Math.floor(Date.now()/60000)%refreshMinutes===0){renderCharts();mountTicker();}},60000);
   updateClock();setInterval(updateClock,1000);render();mountTicker();

@@ -69,10 +69,28 @@
     async series(symbol,interval,options){const data=await this.request('time_series',{...providerSymbol(symbol),interval:INTERVALS[interval]||'1day',outputsize:180,timezone:'UTC',order:'ASC'},options);const bars=normalizeBars(data.values);if(!bars.length)throw new Error('이 종목의 유효한 가격 이력이 없습니다.');return {bars,currency:String(data.meta?.currency||''),exchange:String(data.meta?.exchange||''),receivedAt:this.now()};}
     async quote(item,options){const params={symbol:item.symbol,timezone:'UTC'};if(item.type)params.type=item.type;if(item.country)params.country=item.country;const data=await this.request('quote',params,{...options,ttl:60000});if(item.type==='Index'&&data.type&&String(data.type).toLowerCase()!=='index')throw new Error('지수 유형이 일치하지 않아 시세를 표시하지 않습니다.');return normalizeQuote(data);}
   }
+  class PublicClient{
+    constructor({fetcher=root.fetch?.bind(root),now=()=>Date.now()}={}){this.kind='public';this.fetcher=fetcher;this.now=now;this.cache=new Map();this.manifest=null;this.manifestAt=0;this.manifestPromise=null;this.rpm=8;this.apiKey='';this.benchmarks=BENCHMARKS.map(item=>item.symbol==='XAU/USD'?{...item,symbol:'GOLD_FUTURES',name:'금 선물 / COMEX',type:'Futures'}:item);}
+    get connected(){return true;}
+    clearCache(){this.cache.clear();this.manifest=null;this.manifestPromise=null;}
+    async json(path){const url='https://raw.githubusercontent.com/pokposu124/Meridian/gh-pages/'+path;let response;try{response=await this.fetcher(url,{credentials:'omit',cache:'no-cache',referrerPolicy:'no-referrer'});}catch{throw new Error('공개 시세 캐시에 연결하지 못했습니다.');}if(!response.ok)throw new Error('공개 시세 데이터가 아직 준비되지 않았습니다. 잠시 후 다시 확인해 주세요.');return response.json();}
+    async getManifest(){if(this.manifest&&this.now()-this.manifestAt<60000)return this.manifest;if(!this.manifestPromise)this.manifestPromise=this.json('data/manifest.json').then(data=>{if(data.version!==1||!data.instruments)throw new Error('공개 시세 목록을 해석할 수 없습니다.');this.manifest=data;this.manifestAt=this.now();return data;}).finally(()=>{this.manifestPromise=null;});return this.manifestPromise;}
+    async instrument(symbol,{signal,onStatus}={}){
+      if(signal?.aborted)throw new DOMException('Cancelled','AbortError');onStatus?.('공개 지연 시세 확인 중…');const manifest=await this.getManifest();
+      const entry=manifest.instruments[symbol];if(!entry)throw new Error('이 종목은 공개 수집 목록에 없습니다. 데이터 설정에서 지원 범위를 확인해 주세요.');
+      if(!entry.file||!(/^[a-f0-9]{24}\.json$/).test(entry.file))throw new Error(entry.error||'공개 소스에서 이 종목의 시세를 제공하지 않습니다.');
+      const cached=this.cache.get(entry.file),data=cached?.at===entry.fetchedAt?cached.data:await this.json('data/'+entry.file);
+      if(signal?.aborted)throw new DOMException('Cancelled','AbortError');this.cache.set(entry.file,{at:entry.fetchedAt,data});
+      const stale=entry.status==='stale'||!Number.isFinite(Date.parse(data.fetchedAt))||this.now()-Date.parse(data.fetchedAt)>7200000;
+      return {...data,stale};
+    }
+    async series(symbol,interval,options){const data=await this.instrument(symbol,options);const bars=normalizeBars((data.series?.[interval]||[]).map(bar=>({...bar,datetime:bar.date})));if(!bars.length)throw new Error('이 종목의 가격 이력이 없습니다.');return {bars,currency:data.currency,exchange:data.exchange,feedSymbol:data.feedSymbol,source:'Yahoo Finance 공개 시세',fetchedAt:data.fetchedAt,stale:data.stale};}
+    async quote(item,options){const data=await this.instrument(item.symbol,options);if(!Number.isFinite(data.quote?.price)||data.quote.price<=0)throw new Error('공개 시세 값이 유효하지 않습니다.');return {...data.quote,stale:data.stale,fetchedAt:data.fetchedAt};}
+  }
   function visibleRange(total,count,end){const size=Math.min(total,Math.max(Math.min(12,total),Math.round(count)));const right=Math.min(total,Math.max(size,Math.round(end)));return {start:right-size,end:right,count:size};}
   function geometry(bars,width,height){const left=9,right=Math.max(75,width-64),top=12,bottom=Math.max(80,height-52),volumeBottom=height-23;const low=Math.min(...bars.map(b=>b.low)),high=Math.max(...bars.map(b=>b.high)),pad=Math.max((high-low)*.1,high*.002);const min=low-pad,max=high+pad;return {left,right,top,bottom,volumeBottom,min,max,x:i=>left+(i+.5)*(right-left)/bars.length,y:p=>bottom-(p-min)/(max-min)*(bottom-top),step:(right-left)/bars.length};}
   let chartId=0;
-  function mountNativeChart(host,{bars,currency='',style='1',label='가격 차트'}){
+  function mountNativeChart(host,{bars,currency='',style='1',label='가격 차트',source:provider='Twelve Data',fetchedAt,stale=false}){
     let count=Math.min(65,bars.length),end=bars.length,hover=-1,drag=null,disposed=false;
     const id='native-'+(++chartId);
     host.innerHTML='<div class="native-summary"><strong></strong><span></span><small></small></div><div class="native-legend"></div><svg class="native-svg" tabindex="0" role="img"></svg><div class="native-source"></div>';
@@ -80,7 +98,7 @@
     svg.setAttribute('aria-label',label+' · 마우스 휠 또는 +/-로 확대·축소, 좌우 키로 이동, Home으로 최근 구간');
     const last=bars.at(-1),prev=bars.at(-2),change=prev?(last.close-prev.close)/prev.close*100:null;
     summary.querySelector('strong').textContent=formatPrice(last.close);summary.querySelector('span').textContent=change===null?'':`${change>=0?'+':''}${change.toFixed(2)}%`;summary.querySelector('span').className=change===null?'':change>=0?'up':'down';summary.querySelector('small').textContent=currency;
-    source.textContent='마지막 봉 '+last.date+' · Twelve Data · 휠로 확대 / 드래그로 이동';
+    source.textContent='마지막 봉 '+last.date+' · '+provider+(fetchedAt?' · 수집 '+new Date(fetchedAt).toISOString().slice(11,16)+' UTC':'')+(stale?' · 이전 수집값':'');source.title=source.textContent+' · 휠로 확대 / 드래그로 이동';source.classList.toggle('stale-data',stale);
     function draw(){
       if(disposed)return;const width=Math.max(180,host.clientWidth||360),height=Math.max(110,(host.clientHeight||231)-76),range=visibleRange(bars.length,count,end),view=bars.slice(range.start,range.end);count=range.count;end=range.end;
       const g=geometry(view,width,height),maxVolume=Math.max(1,...view.map(b=>b.volume)),maxBar=Math.max(1,Math.min(9,g.step*.62));
@@ -107,5 +125,5 @@
     svg.addEventListener('keydown',event=>{if(!['+','=','-','ArrowLeft','ArrowRight','Home'].includes(event.key))return;event.preventDefault();if(['+','='].includes(event.key))zoom(.8);else if(event.key==='-')zoom(1.2);else{end=event.key==='Home'?bars.length:end+(event.key==='ArrowLeft'?-5:5);hover=-1;draw();}});
     const observer=typeof ResizeObserver!=='undefined'?new ResizeObserver(draw):null;observer?.observe(host);draw();return ()=>{disposed=true;observer?.disconnect();};
   }
-  const api={BENCHMARKS,INTERVALS,numeric,normalizeBars,normalizeQuote,providerSymbol,formatPrice,errorMessage,Client,visibleRange,geometry,mountNativeChart};root.MeridianMarket=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
+  const api={BENCHMARKS,INTERVALS,numeric,normalizeBars,normalizeQuote,providerSymbol,formatPrice,errorMessage,Client,PublicClient,visibleRange,geometry,mountNativeChart};root.MeridianMarket=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
