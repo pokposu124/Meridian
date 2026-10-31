@@ -1061,9 +1061,9 @@
       "overview": true
     },
     {
-      "id": "SIX:ROG",
-      "symbol": "ROG.SW",
-      "name": "로슈",
+      "id": "SIX:RO",
+      "symbol": "RO.SW",
+      "name": "로슈 보통주",
       "country": "스위스",
       "region": "EU",
       "exchange": "SIX",
@@ -1531,8 +1531,8 @@
       "overview": true
     },
     {
-      "id": "ISE:KYGA",
-      "symbol": "KYGA.IR",
+      "id": "ISE:KRZ",
+      "symbol": "KRZ.IR",
       "name": "케리그룹",
       "country": "아일랜드",
       "region": "EU",
@@ -2341,8 +2341,8 @@
       "overview": true
     },
     {
-      "id": "BMV:AMXL",
-      "symbol": "AMXL.MX",
+      "id": "BMV:AMXB",
+      "symbol": "AMXB.MX",
       "name": "아메리카모빌",
       "country": "멕시코",
       "region": "AMERICAS",
@@ -3043,7 +3043,7 @@
     {
       "id": "INDEX:SZCOMP",
       "symbol": "399001.SZ",
-      "name": "선전 종합",
+      "name": "선전 성분지수",
       "country": "중국",
       "region": "ASIA",
       "exchange": "INDEX",
@@ -3262,7 +3262,7 @@
     },
     {
       "id": "INDEX:DFMGI",
-      "symbol": "^DFMGI",
+      "symbol": "DFMGI.AE",
       "name": "DFM 종합",
       "country": "아랍에미리트",
       "region": "ME",
@@ -3281,8 +3281,8 @@
       "overview": true
     },
     {
-      "id": "INDEX:JTOPI",
-      "symbol": "^JN0U.JO",
+      "id": "INDEX:J203",
+      "symbol": "^J203.JO",
       "name": "FTSE/JSE 종합",
       "country": "남아프리카공화국",
       "region": "AFRICA",

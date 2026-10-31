@@ -134,7 +134,17 @@ def collect(universe, output, fetcher=fetch_chart, delay=.4, recent_fetcher=None
     fetched_at = datetime.now(timezone.utc).isoformat(timespec='seconds')
     manifest = {'version': 1, 'generatedAt': fetched_at, 'source': 'Yahoo Finance public chart endpoint', 'refreshMinutes': 30, 'instruments': {}}
     successful, limited, by_symbol = 0, False, {}
+    slots = {}
+    prioritized = []
     for item in universe['instruments']:
+        prior = old.get('instruments', {}).get(item['id'], {})
+        has_cache = bool(prior.get('file') and (output / prior['file']).is_file())
+        group = (item.get('kind'), item.get('country'))
+        slot = slots.get(group, 0)
+        slots[group] = slot + 1
+        prioritized.append(((has_cache, item.get('kind') != 'index', slot), item))
+    # Discover missing markets first, rotating countries fairly. Stop on 429.
+    for _, item in sorted(prioritized, key=lambda pair: pair[0]):
         identity, symbol = item['id'], item['symbol']
         filename = hashlib.sha256(identity.encode()).hexdigest()[:24] + '.json'
         target = output / filename
@@ -146,7 +156,7 @@ def collect(universe, output, fetcher=fetch_chart, delay=.4, recent_fetcher=None
             if symbol not in by_symbol:
                 saved = json.loads(target.read_text()) if target.is_file() else None
                 history_date = (saved or {}).get('historyRefreshedAt', '')[:10]
-                incremental = bool(recent_fetcher and saved and history_date == fetched_at[:10])
+                incremental = bool(recent_fetcher and saved and str(saved.get('feedSymbol', '')).upper() == symbol.upper() and history_date == fetched_at[:10])
                 raw = recent_fetcher(symbol) if incremental else fetcher(symbol)
                 acquired_at = datetime.now(timezone.utc).isoformat(timespec='seconds')
                 parsed = parse_chart(raw, acquired_at)
@@ -161,7 +171,7 @@ def collect(universe, output, fetcher=fetch_chart, delay=.4, recent_fetcher=None
         except (ValueError, RateLimited) as error:
             if isinstance(error, RateLimited):
                 limited = True
-            if previous and (output / previous.get('file', '')).is_file():
+            if previous and previous.get('symbol') == symbol and (output / previous.get('file', '')).is_file():
                 manifest['instruments'][identity] = {**previous, **metadata, 'status': 'stale', 'error': str(error), 'attemptedAt': fetched_at}
             else:
                 manifest['instruments'][identity] = {**metadata, 'name': item['name'], 'symbol': symbol, 'status': 'unavailable', 'error': str(error), 'attemptedAt': fetched_at}

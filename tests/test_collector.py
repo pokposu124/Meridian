@@ -15,6 +15,15 @@ def payload():
 
 
 class CollectorTests(unittest.TestCase):
+    def test_changed_feed_cannot_reuse_an_unrelated_previous_price(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            C.collect({'instruments': [{'id': 'A', 'symbol': 'OLD', 'name': 'A'}]}, root, fetcher=lambda symbol: payload(), delay=0)
+            def fail(symbol):
+                raise ValueError('Unavailable')
+            with self.assertRaises(ValueError):
+                C.collect({'instruments': [{'id': 'A', 'symbol': 'NEW', 'name': 'A'}]}, root, fetcher=fail, delay=0)
+
     def test_incremental_update_preserves_older_history_and_replaces_ohlc(self):
         previous = C.parse_chart(payload(), '2024-01-04T00:00:00Z')
         raw = payload()
