@@ -62,6 +62,16 @@
     ['OANDA:XAUUSD','금 현물 / 미국 달러','XAUUSD','OANDA','OTHER','Au','#45402b','#e2cd89']
   ].map(([symbol,name,ticker,exchange,region,logo,bg,fg])=>({symbol,name,ticker,exchange,region,logo,bg,fg}));
   const bySymbol = new Map(catalog.map(stock=>[stock.symbol,stock]));
+  function registerStocks(records){
+    for(const record of Array.isArray(records)?records.slice(0,5000):[]){
+      const symbol=record?.id||record?.symbol;
+      if(!validSymbol(symbol))continue;
+      const old=bySymbol.get(symbol),exchange=String(record.exchange||symbol.split(':')[0]);
+      if(old){old.country=String(record.country||old.country||'');old.region=String(record.region||old.region||'OTHER');old.kind=String(record.kind||old.kind||'stock');continue;}
+      const stock={symbol,name:String(record.name||symbol.split(':')[1]).slice(0,100),ticker:String(record.ticker||symbol.split(':')[1]),exchange,region:String(record.region||'OTHER'),country:String(record.country||''),kind:String(record.kind||'stock'),logo:exchange==='INDEX'?'↗':symbol.split(':')[1].slice(0,2),bg:'#2c3940',fg:'#bdcdd7'};
+      catalog.push(stock);bySymbol.set(symbol,stock);
+    }
+  }
   function defaultState() { return {version:1,activeGroup:'tech',interval:'D',style:'1',columns:3,groups:[{id:'tech',name:'글로벌 테크',symbols:catalog.slice(0,9).map(s=>s.symbol)},{id:'korea',name:'한국 주식',symbols:['KRX:005930','KRX:000660','KRX:005380','KRX:035420','KRX:373220','KRX:105560']},{id:'global',name:'글로벌 리더',symbols:['TSE:7203','HKEX:700','EURONEXT:ASML','EURONEXT:MC','XETR:SAP','TWSE:2330']}]}; }
   function validSymbol(value) { return typeof value==='string' && value.length<=80 && SYMBOL_PATTERN.test(value); }
   function normalize(raw) {
@@ -79,7 +89,7 @@
     if(group.symbols.length>=MAX_STOCKS)return 'full';
     group.symbols.push(symbol);return 'added';
   }
-  const api={MAX_STOCKS,STORAGE_KEY,catalog,defaultState,normalize,stockInfo,validSymbol,addSymbol};
+  const api={MAX_STOCKS,STORAGE_KEY,catalog,defaultState,normalize,stockInfo,validSymbol,addSymbol,registerStocks};
   root.MeridianState=api;
   if(typeof module!=='undefined' && module.exports)module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
