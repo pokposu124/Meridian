@@ -1,0 +1,49 @@
+name: Refresh public market data
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-market-data.yml'
+      - 'scripts/update_market_data.py'
+      - 'data/universe.json'
+permissions:
+  contents: write
+concurrency:
+  group: public-market-data
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Read collection source
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          path: source
+          persist-credentials: false
+      - name: Open published data branch
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: published
+      - name: Validate collector
+        run: python3 -m unittest discover -s source/tests -p 'test_collector.py'
+      - name: Collect delayed public market data
+        run: python3 source/scripts/update_market_data.py --universe source/data/universe.json --output published/data
+      - name: Publish updated data
+        working-directory: published
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if git diff --cached --quiet; then
+            echo 'No data changes'
+            exit 0
+          fi
+          git commit -m 'Refresh delayed market data'
+          git pull --rebase origin gh-pages
+          git push origin HEAD:gh-pages

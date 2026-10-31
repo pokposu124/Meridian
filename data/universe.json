@@ -1,0 +1,329 @@
+{
+  "instruments": [
+    {
+      "id": "NASDAQ:NVDA",
+      "symbol": "NVDA",
+      "name": "엔비디아"
+    },
+    {
+      "id": "NASDAQ:AAPL",
+      "symbol": "AAPL",
+      "name": "애플"
+    },
+    {
+      "id": "NASDAQ:MSFT",
+      "symbol": "MSFT",
+      "name": "마이크로소프트"
+    },
+    {
+      "id": "NASDAQ:GOOGL",
+      "symbol": "GOOGL",
+      "name": "알파벳"
+    },
+    {
+      "id": "NASDAQ:AMZN",
+      "symbol": "AMZN",
+      "name": "아마존"
+    },
+    {
+      "id": "NASDAQ:META",
+      "symbol": "META",
+      "name": "메타 플랫폼스"
+    },
+    {
+      "id": "NASDAQ:TSLA",
+      "symbol": "TSLA",
+      "name": "테슬라"
+    },
+    {
+      "id": "NASDAQ:AVGO",
+      "symbol": "AVGO",
+      "name": "브로드컴"
+    },
+    {
+      "id": "NYSE:TSM",
+      "symbol": "TSM",
+      "name": "TSMC ADR"
+    },
+    {
+      "id": "NYSE:BRK.B",
+      "symbol": "BRK-B",
+      "name": "버크셔 해서웨이 B"
+    },
+    {
+      "id": "NYSE:JPM",
+      "symbol": "JPM",
+      "name": "JP모건 체이스"
+    },
+    {
+      "id": "NYSE:V",
+      "symbol": "V",
+      "name": "비자"
+    },
+    {
+      "id": "NYSE:WMT",
+      "symbol": "WMT",
+      "name": "월마트"
+    },
+    {
+      "id": "NYSE:LLY",
+      "symbol": "LLY",
+      "name": "일라이 릴리"
+    },
+    {
+      "id": "NYSE:XOM",
+      "symbol": "XOM",
+      "name": "엑슨모빌"
+    },
+    {
+      "id": "NASDAQ:NFLX",
+      "symbol": "NFLX",
+      "name": "넷플릭스"
+    },
+    {
+      "id": "NASDAQ:AMD",
+      "symbol": "AMD",
+      "name": "AMD"
+    },
+    {
+      "id": "NASDAQ:COST",
+      "symbol": "COST",
+      "name": "코스트코"
+    },
+    {
+      "id": "NASDAQ:PLTR",
+      "symbol": "PLTR",
+      "name": "팔란티어"
+    },
+    {
+      "id": "NYSE:KO",
+      "symbol": "KO",
+      "name": "코카콜라"
+    },
+    {
+      "id": "NASDAQ:QQQ",
+      "symbol": "QQQ",
+      "name": "인베스코 QQQ ETF"
+    },
+    {
+      "id": "AMEX:SPY",
+      "symbol": "SPY",
+      "name": "SPDR S&P 500 ETF"
+    },
+    {
+      "id": "KRX:005930",
+      "symbol": "005930.KS",
+      "name": "삼성전자"
+    },
+    {
+      "id": "KRX:000660",
+      "symbol": "000660.KS",
+      "name": "SK하이닉스"
+    },
+    {
+      "id": "KRX:005380",
+      "symbol": "005380.KS",
+      "name": "현대자동차"
+    },
+    {
+      "id": "KRX:035420",
+      "symbol": "035420.KS",
+      "name": "NAVER"
+    },
+    {
+      "id": "KRX:035720",
+      "symbol": "035720.KS",
+      "name": "카카오"
+    },
+    {
+      "id": "KRX:373220",
+      "symbol": "373220.KS",
+      "name": "LG에너지솔루션"
+    },
+    {
+      "id": "KRX:105560",
+      "symbol": "105560.KS",
+      "name": "KB금융"
+    },
+    {
+      "id": "KRX:068270",
+      "symbol": "068270.KS",
+      "name": "셀트리온"
+    },
+    {
+      "id": "KRX:000270",
+      "symbol": "000270.KS",
+      "name": "기아"
+    },
+    {
+      "id": "KRX:207940",
+      "symbol": "207940.KS",
+      "name": "삼성바이오로직스"
+    },
+    {
+      "id": "TSE:7203",
+      "symbol": "7203.T",
+      "name": "도요타자동차"
+    },
+    {
+      "id": "TSE:6758",
+      "symbol": "6758.T",
+      "name": "소니그룹"
+    },
+    {
+      "id": "TSE:9984",
+      "symbol": "9984.T",
+      "name": "소프트뱅크그룹"
+    },
+    {
+      "id": "TSE:8035",
+      "symbol": "8035.T",
+      "name": "도쿄일렉트론"
+    },
+    {
+      "id": "HKEX:700",
+      "symbol": "0700.HK",
+      "name": "텐센트"
+    },
+    {
+      "id": "HKEX:9988",
+      "symbol": "9988.HK",
+      "name": "알리바바"
+    },
+    {
+      "id": "HKEX:1211",
+      "symbol": "1211.HK",
+      "name": "BYD"
+    },
+    {
+      "id": "TWSE:2330",
+      "symbol": "2330.TW",
+      "name": "TSMC 대만"
+    },
+    {
+      "id": "NSE:RELIANCE",
+      "symbol": "RELIANCE.NS",
+      "name": "릴라이언스 인더스트리"
+    },
+    {
+      "id": "NSE:TCS",
+      "symbol": "TCS.NS",
+      "name": "타타 컨설턴시"
+    },
+    {
+      "id": "XETR:SAP",
+      "symbol": "SAP.DE",
+      "name": "SAP"
+    },
+    {
+      "id": "XETR:SIE",
+      "symbol": "SIE.DE",
+      "name": "지멘스"
+    },
+    {
+      "id": "EURONEXT:ASML",
+      "symbol": "ASML.AS",
+      "name": "ASML"
+    },
+    {
+      "id": "EURONEXT:MC",
+      "symbol": "MC.PA",
+      "name": "LVMH"
+    },
+    {
+      "id": "EURONEXT:OR",
+      "symbol": "OR.PA",
+      "name": "로레알"
+    },
+    {
+      "id": "LSE:AZN",
+      "symbol": "AZN.L",
+      "name": "아스트라제네카"
+    },
+    {
+      "id": "LSE:HSBA",
+      "symbol": "HSBA.L",
+      "name": "HSBC"
+    },
+    {
+      "id": "SIX:NESN",
+      "symbol": "NESN.SW",
+      "name": "네슬레"
+    },
+    {
+      "id": "TSX:SHOP",
+      "symbol": "SHOP.TO",
+      "name": "쇼피파이"
+    },
+    {
+      "id": "ASX:BHP",
+      "symbol": "BHP.AX",
+      "name": "BHP 그룹"
+    },
+    {
+      "id": "BMFBOVESPA:PETR4",
+      "symbol": "PETR4.SA",
+      "name": "페트로브라스"
+    },
+    {
+      "id": "BITSTAMP:BTCUSD",
+      "symbol": "BTC-USD",
+      "name": "비트코인 / 미국 달러"
+    },
+    {
+      "id": "COINBASE:ETHUSD",
+      "symbol": "ETH-USD",
+      "name": "이더리움 / 미국 달러"
+    },
+    {
+      "id": "GSPC",
+      "symbol": "^GSPC",
+      "name": "S&P 500"
+    },
+    {
+      "id": "IXIC",
+      "symbol": "^IXIC",
+      "name": "나스닥 종합"
+    },
+    {
+      "id": "DJI",
+      "symbol": "^DJI",
+      "name": "다우존스"
+    },
+    {
+      "id": "KS11",
+      "symbol": "^KS11",
+      "name": "KOSPI"
+    },
+    {
+      "id": "N225",
+      "symbol": "^N225",
+      "name": "니케이 225"
+    },
+    {
+      "id": "HSI",
+      "symbol": "^HSI",
+      "name": "항셍"
+    },
+    {
+      "id": "GDAXI",
+      "symbol": "^GDAXI",
+      "name": "DAX"
+    },
+    {
+      "id": "FTSE",
+      "symbol": "^FTSE",
+      "name": "FTSE 100"
+    },
+    {
+      "id": "BTC/USD",
+      "symbol": "BTC-USD",
+      "name": "비트코인"
+    },
+    {
+      "id": "GOLD_FUTURES",
+      "symbol": "GC=F",
+      "name": "금 선물 / COMEX"
+    }
+  ]
+}
