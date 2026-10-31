@@ -1,0 +1,529 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-31T11:45:58+00:00",
+  "source": "Yahoo Finance public chart endpoint",
+  "refreshMinutes": 30,
+  "instruments": {
+    "NASDAQ:NVDA": {
+      "file": "ca1e8c3217373a7b434e6c40.json",
+      "name": "엔비디아",
+      "symbol": "NVDA",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:AAPL": {
+      "file": "cfe367d0ab2f8dbff5bfe362.json",
+      "name": "애플",
+      "symbol": "AAPL",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:MSFT": {
+      "file": "85934ec7081c4721aba88c66.json",
+      "name": "마이크로소프트",
+      "symbol": "MSFT",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:GOOGL": {
+      "file": "a7f76a2ac082be327e680540.json",
+      "name": "알파벳",
+      "symbol": "GOOGL",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:AMZN": {
+      "file": "5c550e5ea99c2385999d357c.json",
+      "name": "아마존",
+      "symbol": "AMZN",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:META": {
+      "file": "ec9a1c9db1dc5ea85a41e292.json",
+      "name": "메타 플랫폼스",
+      "symbol": "META",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:TSLA": {
+      "file": "e2230ab283cf46d3e3b6cfcc.json",
+      "name": "테슬라",
+      "symbol": "TSLA",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390400
+    },
+    "NASDAQ:AVGO": {
+      "file": "afad23184119202b70e6f8cc.json",
+      "name": "브로드컴",
+      "symbol": "AVGO",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NYSE:TSM": {
+      "file": "b0bbf64d9ba57f593999413f.json",
+      "name": "TSMC ADR",
+      "symbol": "TSM",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390402
+    },
+    "NYSE:BRK.B": {
+      "file": "a351f851411662d4ec846e92.json",
+      "name": "버크셔 해서웨이 B",
+      "symbol": "BRK-B",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390441
+    },
+    "NYSE:JPM": {
+      "file": "1da22145dd02ef1a19f7a181.json",
+      "name": "JP모건 체이스",
+      "symbol": "JPM",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390402
+    },
+    "NYSE:V": {
+      "file": "aa2b8c579dc8909af75b233b.json",
+      "name": "비자",
+      "symbol": "V",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390402
+    },
+    "NYSE:WMT": {
+      "file": "129835dd8e9f1e8ed98b1063.json",
+      "name": "월마트",
+      "symbol": "WMT",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NYSE:LLY": {
+      "file": "63526aa9ea336b02411eddc3.json",
+      "name": "일라이 릴리",
+      "symbol": "LLY",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390554
+    },
+    "NYSE:XOM": {
+      "file": "8587fa33b5078a759be9e5d4.json",
+      "name": "엑슨모빌",
+      "symbol": "XOM",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390510
+    },
+    "NASDAQ:NFLX": {
+      "file": "07c2849b809c57c6c3eb62d3.json",
+      "name": "넷플릭스",
+      "symbol": "NFLX",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390400
+    },
+    "NASDAQ:AMD": {
+      "file": "b96ccb225fe051d197c5bbe7.json",
+      "name": "AMD",
+      "symbol": "AMD",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:COST": {
+      "file": "ce6d4bbefe582ae9e20614bc.json",
+      "name": "코스트코",
+      "symbol": "COST",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "NASDAQ:PLTR": {
+      "file": "80d9722397a36ca5ed7ebdc6.json",
+      "name": "팔란티어",
+      "symbol": "PLTR",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390400
+    },
+    "NYSE:KO": {
+      "file": "3ce20b388b5720e01d13e691.json",
+      "name": "코카콜라",
+      "symbol": "KO",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390402
+    },
+    "NASDAQ:QQQ": {
+      "file": "36202080eb9b431db11b2fbe.json",
+      "name": "인베스코 QQQ ETF",
+      "symbol": "QQQ",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390401
+    },
+    "AMEX:SPY": {
+      "file": "f0ccd826b733677dd18207ba.json",
+      "name": "SPDR S&P 500 ETF",
+      "symbol": "SPY",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390400
+    },
+    "KRX:005930": {
+      "file": "2150fecd289e205d81c52e33.json",
+      "name": "삼성전자",
+      "symbol": "005930.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341809
+    },
+    "KRX:000660": {
+      "file": "e869138e72cbe8a636e34845.json",
+      "name": "SK하이닉스",
+      "symbol": "000660.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341805
+    },
+    "KRX:005380": {
+      "file": "04927cd443fe569d24038abf.json",
+      "name": "현대자동차",
+      "symbol": "005380.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341802
+    },
+    "KRX:035420": {
+      "file": "1e59a9e9af80a12b834d9806.json",
+      "name": "NAVER",
+      "symbol": "035420.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341807
+    },
+    "KRX:035720": {
+      "file": "23226142a557756e3dd67727.json",
+      "name": "카카오",
+      "symbol": "035720.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341812
+    },
+    "KRX:373220": {
+      "file": "308b92ad9af5403cffbc5b76.json",
+      "name": "LG에너지솔루션",
+      "symbol": "373220.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341820
+    },
+    "KRX:105560": {
+      "file": "eec33d727e010095154ebea4.json",
+      "name": "KB금융",
+      "symbol": "105560.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341826
+    },
+    "KRX:068270": {
+      "file": "c147b8c87bdf055e8a59070f.json",
+      "name": "셀트리온",
+      "symbol": "068270.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341827
+    },
+    "KRX:000270": {
+      "file": "1297a0160021cd73de690fe4.json",
+      "name": "기아",
+      "symbol": "000270.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341817
+    },
+    "KRX:207940": {
+      "file": "6017928c1735fffcafb121b1.json",
+      "name": "삼성바이오로직스",
+      "symbol": "207940.KS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341945
+    },
+    "TSE:7203": {
+      "file": "6a99ddcc9a013f2d87d4bc48.json",
+      "name": "도요타자동차",
+      "symbol": "7203.T",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341800
+    },
+    "TSE:6758": {
+      "file": "8d8b32be2ece485ea53fdd38.json",
+      "name": "소니그룹",
+      "symbol": "6758.T",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341800
+    },
+    "TSE:9984": {
+      "file": "08899cf9e48836236ec6da86.json",
+      "name": "소프트뱅크그룹",
+      "symbol": "9984.T",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341800
+    },
+    "TSE:8035": {
+      "file": "6921327bf5b68744a43e1a8d.json",
+      "name": "도쿄일렉트론",
+      "symbol": "8035.T",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793341800
+    },
+    "HKEX:700": {
+      "file": "d9c396847d8d019edb65dd56.json",
+      "name": "텐센트",
+      "symbol": "0700.HK",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793347686
+    },
+    "HKEX:9988": {
+      "file": "da57b890faaa540e80a2a0c5.json",
+      "name": "알리바바",
+      "symbol": "9988.HK",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793347687
+    },
+    "HKEX:1211": {
+      "file": "b828a7eb2084e28b87ffa6cc.json",
+      "name": "BYD",
+      "symbol": "1211.HK",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793347686
+    },
+    "TWSE:2330": {
+      "file": "72c3be0b9b6f6982d2d2a9bf.json",
+      "name": "TSMC 대만",
+      "symbol": "2330.TW",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793338209
+    },
+    "NSE:RELIANCE": {
+      "file": "82bd6e43bea722b66c258b17.json",
+      "name": "릴라이언스 인더스트리",
+      "symbol": "RELIANCE.NS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793354297
+    },
+    "NSE:TCS": {
+      "file": "63c9590e825844cf17de375f.json",
+      "name": "타타 컨설턴시",
+      "symbol": "TCS.NS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793354296
+    },
+    "XETR:SAP": {
+      "file": "318d008f8a369e53b9469de0.json",
+      "name": "SAP",
+      "symbol": "SAP.DE",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378189
+    },
+    "XETR:SIE": {
+      "file": "1d4cfa1350583deff10c0ea3.json",
+      "name": "지멘스",
+      "symbol": "SIE.DE",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378392
+    },
+    "EURONEXT:ASML": {
+      "file": "1c561519e9981979c4983c6f.json",
+      "name": "ASML",
+      "symbol": "ASML.AS",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378319
+    },
+    "EURONEXT:MC": {
+      "file": "90f8691e54f3fa53709b16a4.json",
+      "name": "LVMH",
+      "symbol": "MC.PA",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378189
+    },
+    "EURONEXT:OR": {
+      "file": "0153041210b1ce65e74854ff.json",
+      "name": "로레알",
+      "symbol": "OR.PA",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378338
+    },
+    "LSE:AZN": {
+      "file": "5b69f98e249eb527a17985be.json",
+      "name": "아스트라제네카",
+      "symbol": "AZN.L",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378159
+    },
+    "LSE:HSBA": {
+      "file": "dd3de7d3b0ce8b0a6d8fd1fc.json",
+      "name": "HSBC",
+      "symbol": "HSBA.L",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378823
+    },
+    "SIX:NESN": {
+      "file": "ad76d2924462e912f1f0a9f2.json",
+      "name": "네슬레",
+      "symbol": "NESN.SW",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793377830
+    },
+    "TSX:SHOP": {
+      "file": "7ab2c7ecab4745847fbfd52a.json",
+      "name": "쇼피파이",
+      "symbol": "SHOP.TO",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390400
+    },
+    "ASX:BHP": {
+      "file": "dffc410dbc9bd6d71a8b6ac8.json",
+      "name": "BHP 그룹",
+      "symbol": "BHP.AX",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793337658
+    },
+    "BMFBOVESPA:PETR4": {
+      "file": "23c3903dd8603aa81ae1cedc.json",
+      "name": "페트로브라스",
+      "symbol": "PETR4.SA",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793390742
+    },
+    "BITSTAMP:BTCUSD": {
+      "file": "220b72da0db2976ab75e6346.json",
+      "name": "비트코인 / 미국 달러",
+      "symbol": "BTC-USD",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793447194
+    },
+    "COINBASE:ETHUSD": {
+      "file": "a2a9af7c702bdf6c862741d2.json",
+      "name": "이더리움 / 미국 달러",
+      "symbol": "ETH-USD",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793447192
+    },
+    "GSPC": {
+      "file": "445c1ca83303f85ae372a50f.json",
+      "name": "S&P 500",
+      "symbol": "^GSPC",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793393263
+    },
+    "IXIC": {
+      "file": "76a42df6f10106332221774e.json",
+      "name": "나스닥 종합",
+      "symbol": "^IXIC",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793394959
+    },
+    "DJI": {
+      "file": "cc5702c7a123b20e4ee30fd3.json",
+      "name": "다우존스",
+      "symbol": "^DJI",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793393273
+    },
+    "KS11": {
+      "file": "76356f7e44a07a1508479e22.json",
+      "name": "KOSPI",
+      "symbol": "^KS11",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793358340
+    },
+    "N225": {
+      "file": "f20deb0e9fae3f7fb59f3f8a.json",
+      "name": "니케이 225",
+      "symbol": "^N225",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793342703
+    },
+    "HSI": {
+      "file": "67d9cc40f2e0cfae8b5ebc70.json",
+      "name": "항셍",
+      "symbol": "^HSI",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793347712
+    },
+    "GDAXI": {
+      "file": "7cec905a90ef3a95cde1d102.json",
+      "name": "DAX",
+      "symbol": "^GDAXI",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793379600
+    },
+    "FTSE": {
+      "file": "234513887bba8d0c7b929884.json",
+      "name": "FTSE 100",
+      "symbol": "^FTSE",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793378130
+    },
+    "BTC/USD": {
+      "file": "7b4c9651c426361ed0e6bd9a.json",
+      "name": "비트코인",
+      "symbol": "BTC-USD",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793447194
+    },
+    "GOLD_FUTURES": {
+      "file": "d1be4aea20f51216636e871c.json",
+      "name": "금 선물 / COMEX",
+      "symbol": "GC=F",
+      "status": "ok",
+      "fetchedAt": "2026-10-31T11:45:58+00:00",
+      "quoteTime": 1793393999
+    }
+  },
+  "successful": 65
+}
