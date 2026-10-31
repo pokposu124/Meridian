@@ -1,14 +1,16 @@
 (() => {
   'use strict';
   const S=window.MeridianState;
+  const M=window.MeridianMarket, client=new M.Client();
+  let refreshMinutes=5;
   const $=id=>document.getElementById(id);
   let storageWarning=false;
   let state;
   try { state=S.normalize(JSON.parse(localStorage.getItem(S.STORAGE_KEY))); } catch { state=S.defaultState(); storageWarning=true; }
   let region='all', editingGroup=false, toastTimer, tickerCleanup;
-  const widgetCleanups=[];
+  const chartCleanups=[];
   const intervalNames={D:'일봉',W:'주봉',M:'월봉'};
-  const symbolUrl=symbol=>'https://www.tradingview.com/chart/?symbol='+encodeURIComponent(symbol);
+  const symbolUrl=()=> 'https://twelvedata.com/markets';
   const escape=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   function currentGroup(){return state.groups.find(g=>g.id===state.activeGroup);}
   function toast(message){$('toast').textContent=message;$('toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),3200);}
@@ -35,28 +37,27 @@
     [['grid-layout',3],['wide-layout',2]].forEach(([id,columns])=>{$(id).classList.toggle('selected',state.columns===columns);$(id).setAttribute('aria-pressed',String(state.columns===columns));});
   }
 
-  function mountChart(host,symbol,cleanups=widgetCleanups){
-    host.replaceChildren();
-    const placeholder=document.createElement('div');placeholder.className='chart-placeholder';placeholder.innerHTML='<span class="loader"></span><span>시장 데이터 연결 중</span>';
-    host.append(placeholder);
-    const container=document.createElement('div');container.className='tradingview-widget-container';
-    const target=document.createElement('div');target.className='tradingview-widget-container__widget';target.style.height='100%';target.style.width='100%';container.append(target);host.append(container);
-    let settled=false,dead=false,timer;
-    const fail=()=>{if(dead)return;settled=true;container.remove();placeholder.innerHTML=`<span class="external-error">시세 위젯을 불러오지 못했습니다.<br>네트워크 또는 외부 콘텐츠 차단 설정을 확인해 주세요.</span><a href="${symbolUrl(symbol)}" target="_blank" rel="noopener noreferrer">TradingView에서 차트 보기 ↗</a>`;clearTimeout(timer);};
-    const observer=new MutationObserver(()=>{
-      const iframe=container.querySelector('iframe');
-      if(iframe){iframe.title=`${S.stockInfo(symbol).name} ${intervalNames[state.interval]} 차트`;iframe.addEventListener('load',()=>{if(dead)return;settled=true;placeholder.hidden=true;clearTimeout(timer);},{once:true});iframe.addEventListener('error',fail,{once:true});observer.disconnect();}
-    });observer.observe(container,{childList:true,subtree:true});
-    const script=document.createElement('script');script.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';script.async=true;script.textContent=JSON.stringify(S.chartConfig(symbol,state.interval,state.style));script.onerror=fail;container.append(script);
-    timer=setTimeout(()=>{if(!settled&&!dead){placeholder.innerHTML=`<span>시세 연결이 지연되고 있습니다.</span><a href="${symbolUrl(symbol)}" target="_blank" rel="noopener noreferrer">원본 차트 확인 ↗</a>`;}},18000);
-    cleanups.push(()=>{dead=true;clearTimeout(timer);observer.disconnect();script.onerror=null;});
+  function openDataSettings(){ $('api-key').value=''; $('api-rpm').value=String(client.rpm); $('api-refresh').value=String(refreshMinutes); $('data-connection-state').textContent=client.connected?'연결됨 · API 키는 현재 탭 메모리에만 보관됩니다.':'연결 전 · API 키를 입력해 주세요.'; showDialog('data-dialog'); }
+  function mountChart(host,symbol,cleanups=chartCleanups){
+    host.replaceChildren(); const controller=new AbortController();let dead=false,dispose;
+    const placeholder=document.createElement('div');placeholder.className='chart-placeholder';
+    const status=document.createElement('span');status.textContent=client.connected?'가격 데이터 연결 중…':'가격 데이터를 연결해 주세요';
+    const action=document.createElement('button');action.className='btn subtle';action.textContent='시세 데이터 연결';action.onclick=openDataSettings;
+    placeholder.append(status);host.append(placeholder);
+    if(!client.connected){placeholder.append(action);}else{
+      const loader=document.createElement('span');loader.className='loader';placeholder.prepend(loader);
+      client.series(symbol,state.interval,{signal:controller.signal,onStatus:message=>{if(!dead)status.textContent=message;}}).then(result=>{
+        if(dead)return;dispose=M.mountNativeChart(host,{...result,style:state.style,label:S.stockInfo(symbol).name});
+      }).catch(error=>{if(dead||error.name==='AbortError')return;loader.remove();status.textContent=error.message;placeholder.append(action);});
+    }
+    cleanups.push(()=>{dead=true;controller.abort();dispose?.();});
   }
   function renderCharts(){
-    widgetCleanups.splice(0).forEach(cleanup=>cleanup());
+    chartCleanups.splice(0).forEach(cleanup=>cleanup());
     const grid=$('chart-grid');grid.replaceChildren();
     currentGroup().symbols.forEach(symbol=>{
       const stock=S.stockInfo(symbol),card=document.createElement('article');card.className='chart-card';card.setAttribute('aria-label',stock.name+' 차트');
-      card.innerHTML=`<div class="card-top">${logo(stock)}<div><div class="stock-name" title="${escape(stock.name)}">${escape(stock.name)}</div><div class="stock-meta"><span>${escape(stock.ticker)}</span><span>${escape(stock.exchange)}</span></div></div><div class="card-actions"><button class="icon-btn expand-chart" aria-label="${escape(stock.name)} 차트 확대" title="차트 확대">⛶</button><button class="icon-btn remove-stock" aria-label="${escape(stock.name)} 그룹에서 제거" title="그룹에서 제거">×</button></div></div><div class="chart-host"></div><div class="card-bottom"><span>${intervalNames[state.interval]} <span style="color:#3d525f">/</span> ${state.style==='1'?'CANDLE':'LINE'} <span style="color:#3d525f">·</span> UTC</span><a href="${symbolUrl(symbol)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(stock.name)} TradingView 원본 차트">TradingView ↗</a></div>`;
+      card.innerHTML=`<div class="card-top">${logo(stock)}<div><div class="stock-name" title="${escape(stock.name)}">${escape(stock.name)}</div><div class="stock-meta"><span>${escape(stock.ticker)}</span><span>${escape(stock.exchange)}</span></div></div><div class="card-actions"><button class="icon-btn expand-chart" aria-label="${escape(stock.name)} 차트 확대" title="차트 확대">⛶</button><button class="icon-btn remove-stock" aria-label="${escape(stock.name)} 그룹에서 제거" title="그룹에서 제거">×</button></div></div><div class="chart-host"></div><div class="card-bottom"><span>${intervalNames[state.interval]} <span style="color:#3d525f">/</span> ${state.style==='1'?'CANDLE':'LINE'} <span style="color:#3d525f">·</span> UTC</span><a href="${symbolUrl(symbol)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(stock.name)} Twelve Data 원본 차트">Twelve Data ↗</a></div>`;
       card.querySelector('.remove-stock').onclick=()=>{currentGroup().symbols=currentGroup().symbols.filter(item=>item!==symbol);save();render();toast(`${stock.name} 종목을 제거했습니다.`);};
       card.querySelector('.expand-chart').onclick=()=>expandChart(symbol);
       grid.append(card);mountChart(card.querySelector('.chart-host'),symbol);
@@ -67,18 +68,21 @@
   function render(){renderNavigation();renderControls();renderCharts();}
 
   function mountTicker(){
-    if(tickerCleanup)tickerCleanup();
-    $('ticker-fallback').hidden=true;
-    const host=$('ticker');host.replaceChildren();
-    const loading=document.createElement('div');loading.className='ticker-loading';loading.textContent='S&P 500 · 나스닥 100 · 다우존스 · KOSPI · 니케이 225 · 항셍 · DAX · 비트코인 · 금 — 시세 연결 중…';host.append(loading);
-    const container=document.createElement('div');container.className='tradingview-widget-container';const target=document.createElement('div');target.className='tradingview-widget-container__widget';container.append(target);host.append(container);
-    const script=document.createElement('script');script.src='https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';script.async=true;
-    script.textContent=JSON.stringify({symbols:[{proName:'SP:SPX',title:'S&P 500'},{proName:'NASDAQ:NDX',title:'나스닥 100'},{proName:'DJ:DJI',title:'다우존스'},{proName:'KRX:KOSPI',title:'KOSPI'},{proName:'TVC:NI225',title:'니케이 225'},{proName:'HSI:HSI',title:'항셍'},{proName:'XETR:DAX',title:'DAX'},{proName:'TVC:UKX',title:'FTSE 100'},{proName:'BITSTAMP:BTCUSD',title:'비트코인 / USD'},{proName:'OANDA:XAUUSD',title:'금 현물 / USD'}],showSymbolLogo:false,isTransparent:true,displayMode:'adaptive',colorTheme:'dark',locale:'kr'});
-    let settled=false;
-    const fail=()=>{loading.textContent='S&P 500 · 나스닥 100 · 다우존스 · KOSPI · 니케이 225 · 항셍 · DAX · 비트코인 · 금';$('ticker-fallback').hidden=false;};
-    const observer=new MutationObserver(()=>{const iframe=container.querySelector('iframe');if(iframe){iframe.title='세계 주요 지수, 비트코인 및 금 시세';iframe.addEventListener('load',()=>{settled=true;loading.hidden=true;clearTimeout(timer);},{once:true});iframe.addEventListener('error',fail,{once:true});observer.disconnect();}});observer.observe(container,{childList:true,subtree:true});
-    script.onerror=fail;container.append(script);const timer=setTimeout(()=>{if(!settled)fail();},18000);
-    tickerCleanup=()=>{clearTimeout(timer);observer.disconnect();script.onerror=null;};
+    tickerCleanup?.();const controller=new AbortController();let dead=false;const host=$('ticker');host.replaceChildren();
+    const note=$('provider-note');note.textContent=client.connected?`Twelve Data · ${client.rpm}회/분 · 시장별 지연 가능`:'Twelve Data · 데이터 연결 필요';
+    M.BENCHMARKS.forEach(item=>{
+      const card=document.createElement('article');card.className='index-card';card.setAttribute('aria-label',item.name+' 시세');
+      const title=document.createElement('div');title.className='index-name';title.textContent=item.name;
+      const price=document.createElement('strong');price.className='index-price';price.textContent='—';
+      const change=document.createElement('span');change.className='index-change';change.textContent='—';
+      const status=document.createElement('small');status.className='index-status';status.textContent=client.connected?'시세 요청 대기':'연결 필요';
+      card.append(title,price,change,status);host.append(card);
+      if(client.connected)client.quote(item,{signal:controller.signal,onStatus:message=>{if(!dead)status.textContent=message;}}).then(quote=>{
+        if(dead)return;price.textContent=M.formatPrice(quote.price);change.textContent=quote.change===null||quote.percent===null?'변동 정보 없음':`${quote.change>=0?'+':''}${M.formatPrice(quote.change)} (${quote.percent>=0?'+':''}${quote.percent.toFixed(2)}%)`;change.classList.add(quote.change>=0?'up':'down');
+        status.textContent=`${quote.currency||item.currency} · ${quote.timestamp?new Date(quote.timestamp*1000).toISOString().slice(0,16).replace('T',' ')+' UTC':quote.date?quote.date+' UTC':'기준 시각 미제공'}${quote.open===null?'':quote.open?' · 장중':' · 장마감'}`;
+      }).catch(error=>{if(dead||error.name==='AbortError')return;status.textContent=error.message;status.classList.add('index-error');status.title=error.message;});
+    });
+    $('ticker-fallback').hidden=client.connected;tickerCleanup=()=>{dead=true;controller.abort();};
   }
 
   function openStockDialog(){region='all';$('symbol-search').value='';$('custom-symbol').value='';document.querySelectorAll('[data-region]').forEach(b=>b.classList.toggle('selected',b.dataset.region==='all'));renderSearch();showDialog('stock-dialog');$('symbol-search').focus();}
@@ -87,7 +91,7 @@
     const matches=S.catalog.filter(stock=>(region==='all'||stock.region===region)&&[stock.name,stock.ticker,stock.symbol].some(value=>value.toLowerCase().includes(query)));
     const host=$('search-results');host.replaceChildren();
     matches.forEach(stock=>{const row=document.createElement('div');row.className='result-row';const exists=currentGroup().symbols.includes(stock.symbol),full=currentGroup().symbols.length>=S.MAX_STOCKS;row.innerHTML=`${logo(stock)}<div><div class="stock-name">${escape(stock.name)}</div><div class="stock-meta"><span>${escape(stock.ticker)}</span><span>${escape(stock.exchange)}</span></div></div><button class="result-add" ${exists||full?'disabled':''} aria-label="${escape(stock.name)} 추가">${exists?'추가됨':full?'9/9':'+'}</button>`;row.querySelector('button').onclick=()=>addStock(stock.symbol);host.append(row);});
-    if(!matches.length){const empty=document.createElement('p');empty.className='empty-message';empty.textContent='검색 목록에 없습니다. 아래에 거래소:티커를 입력하거나, 종목 차트의 TradingView 링크에서 심볼을 확인하세요.';host.append(empty);}
+    if(!matches.length){const empty=document.createElement('p');empty.className='empty-message';empty.textContent='검색 목록에 없습니다. 아래에 거래소:티커를 입력하거나, 종목 차트의 Twelve Data 링크에서 심볼을 확인하세요.';host.append(empty);}
     if(S.validSymbol($('symbol-search').value.trim().toUpperCase()))$('custom-symbol').value=$('symbol-search').value.trim().toUpperCase();
     $('custom-symbol-form').querySelector('button').disabled=currentGroup().symbols.length>=S.MAX_STOCKS;
     $('stock-dialog').querySelector('.modal-copy').textContent=`${currentGroup().name} · ${currentGroup().symbols.length} / 9개. ${currentGroup().symbols.length>=9?'기존 종목을 제거하면 새 종목을 추가할 수 있습니다.':'전 세계 거래소의 종목을 추가하세요.'}`;
@@ -120,14 +124,19 @@
   $('interval-controls').onclick=event=>{const button=event.target.closest('[data-interval]');if(!button||state.interval===button.dataset.interval)return;state.interval=button.dataset.interval;save();renderControls();renderCharts();};
   $('style-controls').onclick=event=>{const button=event.target.closest('[data-style]');if(!button||state.style===button.dataset.style)return;state.style=button.dataset.style;save();renderControls();renderCharts();};
   [['grid-layout',3],['wide-layout',2]].forEach(([id,columns])=>$(id).onclick=()=>{state.columns=columns;save();renderControls();});
-  $('refresh').onclick=()=>{renderCharts();mountTicker();toast('최신 시장 데이터 연결을 다시 요청했습니다.');};
-  $('retry-ticker').onclick=mountTicker;
+  $('refresh').onclick=()=>{if(!client.connected){openDataSettings();return;}client.clearCache();renderCharts();mountTicker();toast('시세를 다시 요청했습니다. 호출 한도에 따라 순차 갱신됩니다.');};
+  $('retry-ticker').onclick=openDataSettings;
   $('mobile-menu').onclick=()=>{const open=document.querySelector('.sidebar').classList.toggle('open');$('mobile-menu').setAttribute('aria-expanded',String(open));};
   $('nav-dashboard').onclick=()=>{hideSidebar();window.scrollTo({top:0,behavior:'smooth'});};
   document.addEventListener('click',event=>{if(!event.target.closest('.sidebar')&&!event.target.closest('#mobile-menu'))hideSidebar();});
   document.addEventListener('keydown',event=>{const editable=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)||document.activeElement.isContentEditable;if(editable||document.querySelector('dialog[open]'))return;if(event.key==='/'&&!event.ctrlKey&&!event.metaKey){event.preventDefault();openStockDialog();}if((event.metaKey||event.ctrlKey)&&event.key==='1'){event.preventDefault();$('main').scrollIntoView({behavior:'smooth'});}});
   window.addEventListener('storage',event=>{if(event.key!==S.STORAGE_KEY||!event.newValue)return;try{state=S.normalize(JSON.parse(event.newValue));document.querySelectorAll('dialog[open]').forEach(d=>d.close());render();toast('다른 탭에서 변경한 그룹을 반영했습니다.');}catch{}});
   function updateClock(){$('clock').textContent=new Date().toLocaleTimeString('en-GB',{timeZone:'UTC'});}
+  $('connect-data').onclick=openDataSettings;
+  $('data-form').onsubmit=event=>{event.preventDefault();const key=$('api-key').value.trim();if(!key&&!client.connected){$('api-key').focus();toast('API 키를 입력해 주세요.');return;}refreshMinutes=Number($('api-refresh').value);client.configure(key||client.apiKey,Number($('api-rpm').value));$('api-key').value='';$('data-dialog').close();$('expanded-dialog').close();renderCharts();mountTicker();toast('시세 데이터를 순서대로 불러옵니다.');};
+  $('disconnect-data').onclick=()=>{client.configure('');$('api-key').value='';$('data-dialog').close();$('expanded-dialog').close();renderCharts();mountTicker();toast('데이터 연결을 해제하고 API 키를 메모리에서 지웠습니다.');};
+  $('data-dialog').addEventListener('close',()=>{$('api-key').value='';});
+  setInterval(()=>{if(client.connected&&refreshMinutes>0&&!document.hidden&&Math.floor(Date.now()/60000)%refreshMinutes===0){renderCharts();mountTicker();}},60000);
   updateClock();setInterval(updateClock,1000);render();mountTicker();
   if(storageWarning)toast('브라우저 저장 데이터에 접근할 수 없어 기본 그룹을 표시합니다.');
 })();

@@ -79,8 +79,7 @@
     if(group.symbols.length>=MAX_STOCKS)return 'full';
     group.symbols.push(symbol);return 'added';
   }
-  function chartConfig(symbol,interval,style) { return {autosize:true,symbol,interval,timezone:'Etc/UTC',theme:'dark',style,locale:'kr',backgroundColor:'#101518',gridColor:'rgba(43, 57, 66, 0.32)',allow_symbol_change:false,hide_top_toolbar:true,hide_side_toolbar:true,hide_legend:false,hide_volume:false,save_image:false,calendar:false,details:false,hotlist:false,withdateranges:false,support_host:'https://www.tradingview.com'}; }
-  const api={MAX_STOCKS,STORAGE_KEY,catalog,defaultState,normalize,stockInfo,validSymbol,addSymbol,chartConfig};
+  const api={MAX_STOCKS,STORAGE_KEY,catalog,defaultState,normalize,stockInfo,validSymbol,addSymbol};
   root.MeridianState=api;
   if(typeof module!=='undefined' && module.exports)module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://api.twelvedata.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#0b0e11">
   <meta name="description" content="세계 주요 지수, 비트코인, 금과 나만의 관심 종목을 한 화면에서 모니터링하세요.">
   <title>MERIDIAN — 글로벌 마켓 터미널</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="state.js" defer></script>
+  <script src="market.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -36,13 +39,13 @@
     </header>
 
     <section class="market-strip" aria-label="세계 주요 지수와 원자재 시세">
-      <div class="strip-heading"><span class="status-dot"></span> GLOBAL MARKETS <span class="provider-note">TradingView 제공 · 거래소별 지연 가능</span></div>
-      <div id="ticker" class="ticker"><div class="ticker-loading">세계 지수 · S&P 500 · 나스닥 100 · 다우존스 · KOSPI · 니케이 225 · 항셍 · DAX · 비트코인 · 금 <span>시세 연결 중…</span></div></div>
-      <div class="ticker-fallback" id="ticker-fallback" hidden>시세가 보이지 않으면 외부 콘텐츠 차단 설정을 확인해 주세요. <button id="retry-ticker">다시 연결</button> <a href="https://www.tradingview.com/markets/indices/" target="_blank" rel="noopener noreferrer">세계 지수 열기 ↗</a></div>
+      <div class="strip-heading"><span class="status-dot"></span> GLOBAL MARKETS <span class="provider-note" id="provider-note">Twelve Data · 데이터 연결 필요</span></div>
+      <div id="ticker" class="ticker native-ticker"></div>
+      <div class="ticker-fallback" id="ticker-fallback">시세 데이터 연결 후 주요 지수·비트코인·금 가격이 표시됩니다. <button id="retry-ticker">데이터 연결하기 →</button></div>
     </section>
 
     <main id="main">
-      <div class="page-heading"><div><div class="eyebrow">YOUR MARKETS, IN FOCUS</div><h1>마켓 대시보드<span class="title-dot">.</span></h1><p>전 세계의 움직임을 한눈에. 나만의 관심 종목을 모니터링하세요.</p></div><div class="heading-actions"><button class="btn subtle" id="refresh"><span>⟳</span> 새로고침</button><button class="btn primary" id="add-stock"><span>+</span> 종목 추가</button></div></div>
+      <div class="page-heading"><div><div class="eyebrow">YOUR MARKETS, IN FOCUS</div><h1>마켓 대시보드<span class="title-dot">.</span></h1><p>전 세계의 움직임을 한눈에. 나만의 관심 종목을 모니터링하세요.</p></div><div class="heading-actions"><button class="btn subtle" id="connect-data"><span>⚙</span> 데이터 연결</button><button class="btn subtle" id="refresh"><span>⟳</span> 새로고침</button><button class="btn primary" id="add-stock"><span>+</span> 종목 추가</button></div></div>
 
       <div class="groupbar"><div class="group-tabs" id="group-tabs" role="tablist" aria-label="관심 종목 그룹"></div><button class="group-add" id="tab-add-group" aria-label="새 그룹 만들기">+</button></div>
       <section class="toolbar" aria-label="차트 설정">
@@ -50,9 +53,9 @@
         <div class="chart-controls"><span class="control-label">전체 차트</span><div class="segmented" id="interval-controls" aria-label="차트 주기"><button data-interval="D" aria-pressed="true" class="selected">일봉</button><button data-interval="W" aria-pressed="false">주봉</button><button data-interval="M" aria-pressed="false">월봉</button></div><span class="control-divider"></span><div class="segmented style-controls" id="style-controls" aria-label="차트 종류"><button data-style="1" aria-pressed="true" class="selected"><span>╂</span> 캔들</button><button data-style="2" aria-pressed="false"><span>⌁</span> 선</button></div><span class="control-divider"></span><button class="icon-btn layout-btn selected" id="grid-layout" aria-label="3열로 보기" aria-pressed="true">▦</button><button class="icon-btn layout-btn" id="wide-layout" aria-label="2열로 보기" aria-pressed="false">▥</button></div>
       </section>
 
-      <div class="grid-status"><span><i class="status-dot"></i> <span id="grid-caption">일봉 · 캔들 차트</span></span><span id="load-time">위젯 연결 대기</span></div>
+      <div class="grid-status"><span><i class="status-dot"></i> <span id="grid-caption">일봉 · 캔들 차트</span></span><span id="load-time">데이터 연결 대기</span></div>
       <section class="chart-grid" id="chart-grid" aria-label="관심 종목 차트"></section>
-      <footer class="footer"><span><span class="footer-brand">M<span>·</span></span> MERIDIAN <span class="footer-divider">/</span> A CLEARER VIEW OF THE MARKET</span><button id="footer-info">TradingView 데이터 · 시장별 제공 범위 및 지연 안내 ↗</button></footer>
+      <footer class="footer"><span><span class="footer-brand">M<span>·</span></span> MERIDIAN <span class="footer-divider">/</span> A CLEARER VIEW OF THE MARKET</span><button id="footer-info">Twelve Data · 네이티브 차트 · 시장별 제공 범위 및 지연 안내 ↗</button></footer>
     </main>
   </div>
 
@@ -62,7 +65,7 @@
     <div class="search-field"><span>⌕</span><input id="symbol-search" type="search" placeholder="종목명, 티커 또는 거래소:티커 검색" autocomplete="off" aria-label="종목 검색"></div>
     <div class="region-filters" id="region-filters"><button data-region="all" class="selected">전체</button><button data-region="US">미국</button><button data-region="KR">한국</button><button data-region="ASIA">아시아</button><button data-region="EU">유럽</button><button data-region="OTHER">기타</button></div>
     <div class="search-results" id="search-results"></div>
-    <form id="custom-symbol-form" class="custom-symbol"><label for="custom-symbol">찾는 종목이 없나요? TradingView 심볼로 추가하세요.</label><div><input id="custom-symbol" placeholder="예: NASDAQ:AAPL, KRX:005930" autocomplete="off" maxlength="80" required aria-label="거래소와 티커"><button class="btn primary" type="submit">추가</button></div><small>지원 여부는 차트에서 확인할 수 있습니다. 일부 거래소는 데이터 제공이 제한됩니다.</small></form>
+    <form id="custom-symbol-form" class="custom-symbol"><label for="custom-symbol">찾는 종목이 없나요? 데이터 심볼로 추가하세요.</label><div><input id="custom-symbol" placeholder="예: NASDAQ:AAPL, KRX:005930" autocomplete="off" maxlength="80" required aria-label="거래소와 티커"><button class="btn primary" type="submit">추가</button></div><small>Twelve Data의 거래소:티커 형식입니다. 기존 그룹은 유지되며 일부 거래소 코드는 자동 변환합니다.</small></form>
   </dialog>
 
   <dialog id="group-dialog" class="modal compact">
@@ -72,7 +75,19 @@
 
   <dialog id="info-dialog" class="modal compact">
     <div class="modal-heading"><div><span class="eyebrow">MARKET DATA</span><h2>데이터 안내</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
-    <div class="info-copy"><p>시세와 차트는 <a href="https://www.tradingview.com/" target="_blank" rel="noopener noreferrer">TradingView</a> 임베드 위젯에서 직접 불러옵니다. 별도의 API 키 없이 이용할 수 있습니다.</p><p>실시간 여부, 지연 시간, 장 운영 시간은 거래소·종목에 따라 다릅니다. 차트에 표시되는 데이터 상태와 기준 시각을 확인해 주세요. 일부 거래소·종목은 외부 위젯에서 지원되지 않을 수 있습니다.</p><p>상단 금 가격은 <strong>OANDA:XAUUSD</strong>(금 현물, 미국 달러/트로이온스), 비트코인은 <strong>BITSTAMP:BTCUSD</strong> 기준입니다. 주요 지수는 S&P 500, 나스닥 100, 다우존스, KOSPI, 니케이 225, 항셍, DAX, FTSE 100입니다.</p><p>일봉·주봉·월봉은 차트의 각 봉이 나타내는 기간입니다. 캔들·선 전환과 주기 선택은 현재 그룹의 모든 차트에 적용됩니다. 차트에서 스크롤로 확대·축소하고 드래그로 과거 구간을 탐색할 수 있습니다.</p><p>그룹과 설정은 현재 브라우저에 저장됩니다. 브라우저 데이터를 삭제하거나 다른 기기로 이동하면 자동으로 동기화되지 않습니다. 외부 콘텐츠 차단 시 차트가 표시되지 않을 수 있습니다.</p></div>
+    <div class="info-copy"><p>차트는 Meridian이 직접 그리는 SVG 캔들·선 차트입니다. 가격은 <a href="https://twelvedata.com/docs" target="_blank" rel="noopener noreferrer">Twelve Data API</a>에서 받으며, 외부 차트 프레임을 사용하지 않습니다.</p><p>상단은 지수·비트코인·금의 최신 quote 응답, 종목 차트는 180개 OHLC 봉을 사용합니다. 일봉·주봉·월봉 전환 시 제공업체의 해당 주기 데이터를 요청합니다. 차트의 가격은 마지막 봉 종가이며, 변동률은 이전 봉 종가 대비입니다.</p><p>상단 비트코인은 BTC/USD 집계 시세, 금은 XAU/USD 현물(미국 달러/트로이온스)입니다. 상단 지수 심볼은 GSPC, IXIC, DJI, KS11, N225, HSI, GDAXI, FTSE이며 Index 유형으로 조회합니다.</p><p>실시간·지연 여부와 접근 가능한 시장은 API 요금제 및 거래소 라이선스에 따라 달라집니다. 해외 주식·지수·원자재가 무료 요금제에서 모두 제공되지는 않습니다. 지원되지 않는 종목과 권한 부족, 호출 한도는 해당 카드에 표시합니다.</p><p>스크롤 또는 +/- 키로 차트를 확대·축소하고 드래그·좌우 키로 이동합니다. 더블클릭 또는 Home 키로 최근 구간을 확인하세요. 가격 이력과 표시 설정을 캐시하므로 캔들·선 전환에 추가 데이터 호출이 필요하지 않습니다.</p><p>API 키는 현재 탭의 메모리에만 보관하며, 새로고침하면 다시 입력해야 합니다. 가격 요청은 브라우저에서 Twelve Data로 직접 전송됩니다. 공개 소스와 브라우저 저장소에는 키를 저장하지 않습니다. 그룹·종목과 차트 설정만 현재 브라우저에 저장됩니다.</p></div>
+  </dialog>
+  <dialog id="data-dialog" class="modal compact">
+    <div class="modal-heading"><div><span class="eyebrow">CONNECT MARKET DATA</span><h2>시세 데이터 연결</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
+    <p class="modal-copy" id="data-connection-state">Twelve Data API 키로 연결하세요.</p>
+    <form id="data-form" autocomplete="off">
+      <label for="api-key">Twelve Data API 키</label><input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="현재 탭에서만 사용 · 대화나 저장소에 올리지 마세요" maxlength="200">
+      <p class="field-hint">키는 메모리에만 보관하며 Twelve Data로 직접 전송합니다. 새로고침 시 다시 입력합니다. <a href="https://twelvedata.com/account/api-keys" target="_blank" rel="noopener noreferrer">API 키 관리 ↗</a></p>
+      <label for="api-rpm">분당 요청 수 — 가입한 요금제 한도 이하로 설정</label><select id="api-rpm"><option value="8">8회 / 분</option><option value="30">30회 / 분</option><option value="55">55회 / 분</option><option value="120">120회 / 분</option><option value="610">610회 / 분</option></select>
+      <label for="api-refresh">자동 갱신</label><select id="api-refresh"><option value="0">끄기 · 수동 새로고침</option><option value="1">1분마다</option><option value="5" selected>5분마다</option><option value="15">15분마다</option></select>
+      <p class="field-hint">최초 요청은 최대 19개입니다. 8회/분 설정에서는 순서대로 수 분에 걸쳐 표시됩니다. 요금제에 따라 주식·지수·금 데이터 접근이 제한됩니다.</p>
+      <div class="modal-actions"><button class="btn subtle" type="button" id="disconnect-data">연결 해제</button><button class="btn primary" type="submit">연결하고 불러오기</button></div>
+    </form>
   </dialog>
   <dialog id="expanded-dialog" class="modal expanded"><div class="modal-heading"><h2 id="expanded-title">종목 차트</h2><button class="icon-btn close-dialog" aria-label="닫기">×</button></div><div id="expanded-chart"></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
