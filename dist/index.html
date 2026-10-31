@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0e11">
+  <meta name="description" content="세계 주요 지수, 비트코인, 금과 나만의 관심 종목을 한 화면에서 모니터링하세요.">
+  <title>MERIDIAN — 글로벌 마켓 터미널</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="state.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">대시보드로 이동</a>
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="Meridian 홈"><span class="brand-mark">M<span>·</span></span><span>MERIDIAN<small>GLOBAL MARKET TERMINAL</small></span></a>
+    <div class="workspace-label">WORKSPACE <span>01</span></div>
+    <button class="nav-item active" id="nav-dashboard"><span class="icon">▦</span> 마켓 대시보드 <span class="nav-shortcut">⌘ 1</span></button>
+    <div class="side-section"><span>MY WATCHLISTS</span><button class="icon-btn" id="side-add-group" aria-label="새 그룹 만들기">+</button></div>
+    <nav id="side-groups" aria-label="관심 종목 그룹"></nav>
+    <button class="create-group" id="create-group">+ <span>새 그룹 만들기</span></button>
+    <div class="side-bottom">
+      <div class="market-key"><span class="status-dot"></span> GLOBAL COVERAGE <span>↗</span></div>
+      <p>여러 시장을, 하나의 시야로.</p>
+      <button class="help-button" id="data-info"><span>ⓘ</span> 데이터 안내 <span>↗</span></button>
+      <div class="profile"><span class="avatar">M</span><div>My workspace<small>개인 마켓 터미널</small></div><span class="local-pill">LOCAL</span></div>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn mobile-menu" id="mobile-menu" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <div class="breadcrumb">워크스페이스 <span>/</span> <strong>마켓 대시보드</strong></div>
+      <div class="topbar-right"><span class="utc-label">UTC</span><time id="clock">--:--:--</time><span class="top-divider"></span><button class="search-shortcut" id="top-search"><span>⌕</span> 종목 검색 <kbd>/</kbd></button></div>
+    </header>
+
+    <section class="market-strip" aria-label="세계 주요 지수와 원자재 시세">
+      <div class="strip-heading"><span class="status-dot"></span> GLOBAL MARKETS <span class="provider-note">TradingView 제공 · 거래소별 지연 가능</span></div>
+      <div id="ticker" class="ticker"><div class="ticker-loading">세계 지수 · S&P 500 · 나스닥 100 · 다우존스 · KOSPI · 니케이 225 · 항셍 · DAX · 비트코인 · 금 <span>시세 연결 중…</span></div></div>
+      <div class="ticker-fallback" id="ticker-fallback" hidden>시세가 보이지 않으면 외부 콘텐츠 차단 설정을 확인해 주세요. <button id="retry-ticker">다시 연결</button> <a href="https://www.tradingview.com/markets/indices/" target="_blank" rel="noopener noreferrer">세계 지수 열기 ↗</a></div>
+    </section>
+
+    <main id="main">
+      <div class="page-heading"><div><div class="eyebrow">YOUR MARKETS, IN FOCUS</div><h1>마켓 대시보드<span class="title-dot">.</span></h1><p>전 세계의 움직임을 한눈에. 나만의 관심 종목을 모니터링하세요.</p></div><div class="heading-actions"><button class="btn subtle" id="refresh"><span>⟳</span> 새로고침</button><button class="btn primary" id="add-stock"><span>+</span> 종목 추가</button></div></div>
+
+      <div class="groupbar"><div class="group-tabs" id="group-tabs" role="tablist" aria-label="관심 종목 그룹"></div><button class="group-add" id="tab-add-group" aria-label="새 그룹 만들기">+</button></div>
+      <section class="toolbar" aria-label="차트 설정">
+        <div class="group-description"><span class="folder-icon">▱</span><h2 id="group-title">글로벌 테크</h2><span class="count-badge" id="stock-count">0 / 9</span><button class="icon-btn edit-group" id="edit-group" aria-label="그룹 수정">···</button></div>
+        <div class="chart-controls"><span class="control-label">전체 차트</span><div class="segmented" id="interval-controls" aria-label="차트 주기"><button data-interval="D" aria-pressed="true" class="selected">일봉</button><button data-interval="W" aria-pressed="false">주봉</button><button data-interval="M" aria-pressed="false">월봉</button></div><span class="control-divider"></span><div class="segmented style-controls" id="style-controls" aria-label="차트 종류"><button data-style="1" aria-pressed="true" class="selected"><span>╂</span> 캔들</button><button data-style="2" aria-pressed="false"><span>⌁</span> 선</button></div><span class="control-divider"></span><button class="icon-btn layout-btn selected" id="grid-layout" aria-label="3열로 보기" aria-pressed="true">▦</button><button class="icon-btn layout-btn" id="wide-layout" aria-label="2열로 보기" aria-pressed="false">▥</button></div>
+      </section>
+
+      <div class="grid-status"><span><i class="status-dot"></i> <span id="grid-caption">일봉 · 캔들 차트</span></span><span id="load-time">위젯 연결 대기</span></div>
+      <section class="chart-grid" id="chart-grid" aria-label="관심 종목 차트"></section>
+      <footer class="footer"><span><span class="footer-brand">M<span>·</span></span> MERIDIAN <span class="footer-divider">/</span> A CLEARER VIEW OF THE MARKET</span><button id="footer-info">TradingView 데이터 · 시장별 제공 범위 및 지연 안내 ↗</button></footer>
+    </main>
+  </div>
+
+  <dialog id="stock-dialog" class="modal">
+    <div class="modal-heading"><div><span class="eyebrow">BUILD YOUR WATCHLIST</span><h2>관심 종목 추가</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
+    <p class="modal-copy">현재 그룹에 최대 9개 종목을 담을 수 있습니다.</p>
+    <div class="search-field"><span>⌕</span><input id="symbol-search" type="search" placeholder="종목명, 티커 또는 거래소:티커 검색" autocomplete="off" aria-label="종목 검색"></div>
+    <div class="region-filters" id="region-filters"><button data-region="all" class="selected">전체</button><button data-region="US">미국</button><button data-region="KR">한국</button><button data-region="ASIA">아시아</button><button data-region="EU">유럽</button><button data-region="OTHER">기타</button></div>
+    <div class="search-results" id="search-results"></div>
+    <form id="custom-symbol-form" class="custom-symbol"><label for="custom-symbol">찾는 종목이 없나요? TradingView 심볼로 추가하세요.</label><div><input id="custom-symbol" placeholder="예: NASDAQ:AAPL, KRX:005930" autocomplete="off" maxlength="80" required aria-label="거래소와 티커"><button class="btn primary" type="submit">추가</button></div><small>지원 여부는 차트에서 확인할 수 있습니다. 일부 거래소는 데이터 제공이 제한됩니다.</small></form>
+  </dialog>
+
+  <dialog id="group-dialog" class="modal compact">
+    <div class="modal-heading"><div><span class="eyebrow">ORGANIZE YOUR MARKETS</span><h2 id="group-dialog-title">새 그룹 만들기</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
+    <form id="group-form"><label for="group-name">그룹 이름</label><input id="group-name" placeholder="예: 반도체, 한국 주식, 배당주" required maxlength="24" autocomplete="off"><p class="field-hint">그룹마다 최대 9개 종목을 저장할 수 있습니다.</p><div class="modal-actions"><button class="btn danger" type="button" id="delete-group" hidden>그룹 삭제</button><button class="btn primary" type="submit">저장</button></div><div id="delete-confirm" class="delete-confirm" hidden><p>이 그룹과 그룹 안의 관심 종목을 삭제할까요?</p><button class="btn danger" type="button" id="confirm-delete-group">삭제하기</button><button class="btn subtle" type="button" id="cancel-delete-group">취소</button></div></form>
+  </dialog>
+
+  <dialog id="info-dialog" class="modal compact">
+    <div class="modal-heading"><div><span class="eyebrow">MARKET DATA</span><h2>데이터 안내</h2></div><button class="icon-btn close-dialog" aria-label="닫기">×</button></div>
+    <div class="info-copy"><p>시세와 차트는 <a href="https://www.tradingview.com/" target="_blank" rel="noopener noreferrer">TradingView</a> 임베드 위젯에서 직접 불러옵니다. 별도의 API 키 없이 이용할 수 있습니다.</p><p>실시간 여부, 지연 시간, 장 운영 시간은 거래소·종목에 따라 다릅니다. 차트에 표시되는 데이터 상태와 기준 시각을 확인해 주세요. 일부 거래소·종목은 외부 위젯에서 지원되지 않을 수 있습니다.</p><p>상단 금 가격은 <strong>OANDA:XAUUSD</strong>(금 현물, 미국 달러/트로이온스), 비트코인은 <strong>BITSTAMP:BTCUSD</strong> 기준입니다. 주요 지수는 S&P 500, 나스닥 100, 다우존스, KOSPI, 니케이 225, 항셍, DAX, FTSE 100입니다.</p><p>일봉·주봉·월봉은 차트의 각 봉이 나타내는 기간입니다. 캔들·선 전환과 주기 선택은 현재 그룹의 모든 차트에 적용됩니다. 차트에서 스크롤로 확대·축소하고 드래그로 과거 구간을 탐색할 수 있습니다.</p><p>그룹과 설정은 현재 브라우저에 저장됩니다. 브라우저 데이터를 삭제하거나 다른 기기로 이동하면 자동으로 동기화되지 않습니다. 외부 콘텐츠 차단 시 차트가 표시되지 않을 수 있습니다.</p></div>
+  </dialog>
+  <dialog id="expanded-dialog" class="modal expanded"><div class="modal-heading"><h2 id="expanded-title">종목 차트</h2><button class="icon-btn close-dialog" aria-label="닫기">×</button></div><div id="expanded-chart"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
