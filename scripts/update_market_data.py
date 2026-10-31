@@ -17,6 +17,11 @@ class RateLimited(Exception):
     pass
 
 
+def period_key(date, interval):
+    day = datetime.strptime(date, '%Y-%m-%d').date()
+    return day.isocalendar()[:2] if interval == 'W' else (day.year, day.month)
+
+
 def number(value):
     if isinstance(value, bool) or not isinstance(value, (int, float)):
         return None
@@ -27,7 +32,7 @@ def aggregate(bars, interval):
     buckets = {}
     for bar in bars:
         date = datetime.strptime(bar['date'], '%Y-%m-%d').date()
-        key = date.isocalendar()[:2] if interval == 'W' else (date.year, date.month)
+        key = period_key(bar['date'], interval)
         if key not in buckets:
             buckets[key] = dict(bar)
         else:
@@ -37,6 +42,24 @@ def aggregate(bars, interval):
             target['close'] = bar['close']
             target['volume'] += bar['volume']
     return list(buckets.values())
+
+
+def merge_recent(previous, recent):
+    """Update recent sessions without losing older weekly/monthly history."""
+    daily = {bar['date']: bar for bar in previous['series']['D']}
+    daily.update({bar['date']: bar for bar in recent['series']['D']})
+    daily = [daily[key] for key in sorted(daily)][-180:]
+    series = {'D': daily}
+    for interval in ['W', 'M']:
+        old = {period_key(bar['date'], interval): bar for bar in previous['series'][interval]}
+        for bar in aggregate(daily, interval):
+            key = period_key(bar['date'], interval)
+            # The oldest retained daily week/month may be incomplete.
+            if key in old and old[key]['date'] < daily[0]['date']:
+                continue
+            old[key] = bar
+        series[interval] = sorted(old.values(), key=lambda bar: bar['date'])[-180:]
+    return {**recent, 'series': series, 'historyRefreshedAt': previous.get('historyRefreshedAt', previous['fetchedAt'])}
 
 
 def parse_chart(payload, fetched_at):
@@ -90,8 +113,8 @@ def parse_chart(payload, fetched_at):
     }
 
 
-def fetch_chart(symbol):
-    url = 'https://query1.finance.yahoo.com/v8/finance/chart/' + quote(symbol, safe='') + '?' + urlencode({'interval': '1d', 'range': '10y', 'events': 'history'})
+def fetch_chart(symbol, period='10y'):
+    url = 'https://query1.finance.yahoo.com/v8/finance/chart/' + quote(symbol, safe='') + '?' + urlencode({'interval': '1d', 'range': period, 'events': 'history'})
     request = Request(url, headers={'User-Agent': 'Meridian-Personal-Dashboard/1.0', 'Accept': 'application/json'})
     try:
         with urlopen(request, timeout=12) as response:
@@ -104,7 +127,7 @@ def fetch_chart(symbol):
         raise ValueError('공개 시세 서버에 연결하지 못했습니다.') from error
 
 
-def collect(universe, output, fetcher=fetch_chart, delay=.4):
+def collect(universe, output, fetcher=fetch_chart, delay=.4, recent_fetcher=None):
     output.mkdir(parents=True, exist_ok=True)
     manifest_path = output / 'manifest.json'
     old = json.loads(manifest_path.read_text()) if manifest_path.exists() else {'instruments': {}}
@@ -116,27 +139,35 @@ def collect(universe, output, fetcher=fetch_chart, delay=.4):
         filename = hashlib.sha256(identity.encode()).hexdigest()[:24] + '.json'
         target = output / filename
         previous = old.get('instruments', {}).get(identity)
+        metadata = {key: item.get(key) for key in ['country', 'region', 'exchange', 'kind', 'overview']}
         try:
             if limited:
                 raise ValueError('호출 한도로 이번 갱신에서 제외되었습니다.')
             if symbol not in by_symbol:
-                by_symbol[symbol] = parse_chart(fetcher(symbol), fetched_at)
+                saved = json.loads(target.read_text()) if target.is_file() else None
+                history_date = (saved or {}).get('historyRefreshedAt', '')[:10]
+                incremental = bool(recent_fetcher and saved and history_date == fetched_at[:10])
+                raw = recent_fetcher(symbol) if incremental else fetcher(symbol)
+                acquired_at = datetime.now(timezone.utc).isoformat(timespec='seconds')
+                parsed = parse_chart(raw, acquired_at)
+                by_symbol[symbol] = merge_recent(saved, parsed) if incremental else {**parsed, 'historyRefreshedAt': acquired_at}
                 if delay:
                     time.sleep(delay)
             data = by_symbol[symbol]
             target.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':'), allow_nan=False))
-            manifest['instruments'][identity] = {'file': filename, 'name': item['name'], 'symbol': symbol, 'status': 'ok', 'fetchedAt': fetched_at, 'quoteTime': data['quote']['timestamp']}
+            manifest['instruments'][identity] = {**metadata, 'file': filename, 'name': item['name'], 'symbol': symbol, 'status': 'ok', 'fetchedAt': data['fetchedAt'], 'quoteTime': data['quote']['timestamp'], 'currency': data['currency'], 'quote': data['quote']}
             successful += 1
             print(f'OK {identity} ({symbol})')
         except (ValueError, RateLimited) as error:
             if isinstance(error, RateLimited):
                 limited = True
             if previous and (output / previous.get('file', '')).is_file():
-                manifest['instruments'][identity] = {**previous, 'status': 'stale', 'error': str(error), 'attemptedAt': fetched_at}
+                manifest['instruments'][identity] = {**previous, **metadata, 'status': 'stale', 'error': str(error), 'attemptedAt': fetched_at}
             else:
-                manifest['instruments'][identity] = {'name': item['name'], 'symbol': symbol, 'status': 'unavailable', 'error': str(error), 'attemptedAt': fetched_at}
+                manifest['instruments'][identity] = {**metadata, 'name': item['name'], 'symbol': symbol, 'status': 'unavailable', 'error': str(error), 'attemptedAt': fetched_at}
             print(f'UNAVAILABLE {identity}: {error}')
     manifest['successful'] = successful
+    manifest['generatedAt'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
     if successful == 0 and not any(item.get('file') for item in manifest['instruments'].values()):
         raise ValueError('공개 소스에서 데이터를 수집하지 못했습니다. 빈 가격 데이터를 배포하지 않습니다.')
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2, allow_nan=False)+'\n')
@@ -149,4 +180,4 @@ if __name__ == '__main__':
     parser.add_argument('--universe', required=True)
     parser.add_argument('--output', required=True)
     args = parser.parse_args()
-    collect(json.loads(Path(args.universe).read_text()), Path(args.output))
+    collect(json.loads(Path(args.universe).read_text()), Path(args.output), recent_fetcher=lambda symbol: fetch_chart(symbol, '5d'))

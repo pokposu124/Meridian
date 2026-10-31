@@ -3,327 +3,3302 @@
     {
       "id": "NASDAQ:NVDA",
       "symbol": "NVDA",
-      "name": "엔비디아"
+      "name": "엔비디아",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:AAPL",
       "symbol": "AAPL",
-      "name": "애플"
+      "name": "애플",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:MSFT",
       "symbol": "MSFT",
-      "name": "마이크로소프트"
+      "name": "마이크로소프트",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:GOOGL",
       "symbol": "GOOGL",
-      "name": "알파벳"
+      "name": "알파벳",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:AMZN",
       "symbol": "AMZN",
-      "name": "아마존"
+      "name": "아마존",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:META",
       "symbol": "META",
-      "name": "메타 플랫폼스"
+      "name": "메타 플랫폼스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:TSLA",
       "symbol": "TSLA",
-      "name": "테슬라"
+      "name": "테슬라",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:AVGO",
       "symbol": "AVGO",
-      "name": "브로드컴"
+      "name": "브로드컴",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:TSM",
       "symbol": "TSM",
-      "name": "TSMC ADR"
+      "name": "TSMC ADR",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:BRK.B",
       "symbol": "BRK-B",
-      "name": "버크셔 해서웨이 B"
+      "name": "버크셔 해서웨이 B",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:JPM",
       "symbol": "JPM",
-      "name": "JP모건 체이스"
+      "name": "JP모건 체이스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:V",
       "symbol": "V",
-      "name": "비자"
+      "name": "비자",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:WMT",
       "symbol": "WMT",
-      "name": "월마트"
+      "name": "월마트",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:LLY",
       "symbol": "LLY",
-      "name": "일라이 릴리"
+      "name": "일라이 릴리",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:XOM",
       "symbol": "XOM",
-      "name": "엑슨모빌"
+      "name": "엑슨모빌",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:NFLX",
       "symbol": "NFLX",
-      "name": "넷플릭스"
+      "name": "넷플릭스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:AMD",
       "symbol": "AMD",
-      "name": "AMD"
+      "name": "AMD",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:COST",
       "symbol": "COST",
-      "name": "코스트코"
+      "name": "코스트코",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:PLTR",
       "symbol": "PLTR",
-      "name": "팔란티어"
+      "name": "팔란티어",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NYSE:KO",
       "symbol": "KO",
-      "name": "코카콜라"
+      "name": "코카콜라",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NASDAQ:QQQ",
       "symbol": "QQQ",
-      "name": "인베스코 QQQ ETF"
+      "name": "인베스코 QQQ ETF",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NASDAQ",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "AMEX:SPY",
       "symbol": "SPY",
-      "name": "SPDR S&P 500 ETF"
+      "name": "SPDR S&P 500 ETF",
+      "country": "미국",
+      "region": "US",
+      "exchange": "AMEX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:005930",
       "symbol": "005930.KS",
-      "name": "삼성전자"
+      "name": "삼성전자",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:000660",
       "symbol": "000660.KS",
-      "name": "SK하이닉스"
+      "name": "SK하이닉스",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:005380",
       "symbol": "005380.KS",
-      "name": "현대자동차"
+      "name": "현대자동차",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:035420",
       "symbol": "035420.KS",
-      "name": "NAVER"
+      "name": "NAVER",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:035720",
       "symbol": "035720.KS",
-      "name": "카카오"
+      "name": "카카오",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:373220",
       "symbol": "373220.KS",
-      "name": "LG에너지솔루션"
+      "name": "LG에너지솔루션",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:105560",
       "symbol": "105560.KS",
-      "name": "KB금융"
+      "name": "KB금융",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:068270",
       "symbol": "068270.KS",
-      "name": "셀트리온"
+      "name": "셀트리온",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:000270",
       "symbol": "000270.KS",
-      "name": "기아"
+      "name": "기아",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "KRX:207940",
       "symbol": "207940.KS",
-      "name": "삼성바이오로직스"
+      "name": "삼성바이오로직스",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "TSE:7203",
       "symbol": "7203.T",
-      "name": "도요타자동차"
+      "name": "도요타자동차",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "TSE:6758",
       "symbol": "6758.T",
-      "name": "소니그룹"
+      "name": "소니그룹",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "TSE:9984",
       "symbol": "9984.T",
-      "name": "소프트뱅크그룹"
+      "name": "소프트뱅크그룹",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "TSE:8035",
       "symbol": "8035.T",
-      "name": "도쿄일렉트론"
+      "name": "도쿄일렉트론",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "HKEX:700",
       "symbol": "0700.HK",
-      "name": "텐센트"
+      "name": "텐센트",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "HKEX:9988",
       "symbol": "9988.HK",
-      "name": "알리바바"
+      "name": "알리바바",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "HKEX:1211",
       "symbol": "1211.HK",
-      "name": "BYD"
+      "name": "BYD",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "TWSE:2330",
       "symbol": "2330.TW",
-      "name": "TSMC 대만"
+      "name": "TSMC 대만",
+      "country": "대만",
+      "region": "ASIA",
+      "exchange": "TWSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NSE:RELIANCE",
       "symbol": "RELIANCE.NS",
-      "name": "릴라이언스 인더스트리"
+      "name": "릴라이언스 인더스트리",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "NSE:TCS",
       "symbol": "TCS.NS",
-      "name": "타타 컨설턴시"
+      "name": "타타 컨설턴시",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "XETR:SAP",
       "symbol": "SAP.DE",
-      "name": "SAP"
+      "name": "SAP",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "XETR:SIE",
       "symbol": "SIE.DE",
-      "name": "지멘스"
+      "name": "지멘스",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "EURONEXT:ASML",
       "symbol": "ASML.AS",
-      "name": "ASML"
+      "name": "ASML",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "EURONEXT",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "EURONEXT:MC",
       "symbol": "MC.PA",
-      "name": "LVMH"
+      "name": "LVMH",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "EURONEXT",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "EURONEXT:OR",
       "symbol": "OR.PA",
-      "name": "로레알"
+      "name": "로레알",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "EURONEXT",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "LSE:AZN",
       "symbol": "AZN.L",
-      "name": "아스트라제네카"
+      "name": "아스트라제네카",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "LSE:HSBA",
       "symbol": "HSBA.L",
-      "name": "HSBC"
+      "name": "HSBC",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "SIX:NESN",
       "symbol": "NESN.SW",
-      "name": "네슬레"
+      "name": "네슬레",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "TSX:SHOP",
       "symbol": "SHOP.TO",
-      "name": "쇼피파이"
+      "name": "쇼피파이",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "ASX:BHP",
       "symbol": "BHP.AX",
-      "name": "BHP 그룹"
+      "name": "BHP 그룹",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "BMFBOVESPA:PETR4",
       "symbol": "PETR4.SA",
-      "name": "페트로브라스"
+      "name": "페트로브라스",
+      "country": "브라질",
+      "region": "AMERICAS",
+      "exchange": "BMFBOVESPA",
+      "kind": "stock",
+      "overview": true
     },
     {
       "id": "BITSTAMP:BTCUSD",
       "symbol": "BTC-USD",
-      "name": "비트코인 / 미국 달러"
+      "name": "비트코인 / 미국 달러",
+      "overview": false,
+      "kind": "crypto",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "COINBASE:ETHUSD",
       "symbol": "ETH-USD",
-      "name": "이더리움 / 미국 달러"
+      "name": "이더리움 / 미국 달러",
+      "overview": false,
+      "kind": "crypto",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "GSPC",
       "symbol": "^GSPC",
-      "name": "S&P 500"
+      "name": "S&P 500",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "IXIC",
       "symbol": "^IXIC",
-      "name": "나스닥 종합"
+      "name": "나스닥 종합",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "DJI",
       "symbol": "^DJI",
-      "name": "다우존스"
+      "name": "다우존스",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "KS11",
       "symbol": "^KS11",
-      "name": "KOSPI"
+      "name": "KOSPI",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "N225",
       "symbol": "^N225",
-      "name": "니케이 225"
+      "name": "니케이 225",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "HSI",
       "symbol": "^HSI",
-      "name": "항셍"
+      "name": "항셍",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "GDAXI",
       "symbol": "^GDAXI",
-      "name": "DAX"
+      "name": "DAX",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "FTSE",
       "symbol": "^FTSE",
-      "name": "FTSE 100"
+      "name": "FTSE 100",
+      "overview": false,
+      "kind": "index",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "BTC/USD",
       "symbol": "BTC-USD",
-      "name": "비트코인"
+      "name": "비트코인",
+      "overview": false,
+      "kind": "crypto",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
     },
     {
       "id": "GOLD_FUTURES",
       "symbol": "GC=F",
-      "name": "금 선물 / COMEX"
+      "name": "금 선물 / COMEX",
+      "overview": false,
+      "kind": "commodity",
+      "country": "글로벌",
+      "region": "OTHER",
+      "exchange": "GLOBAL"
+    },
+    {
+      "id": "NYSE:ORCL",
+      "symbol": "ORCL",
+      "name": "오라클",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:CRM",
+      "symbol": "CRM",
+      "name": "세일즈포스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:IBM",
+      "symbol": "IBM",
+      "name": "IBM",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:GE",
+      "symbol": "GE",
+      "name": "GE 에어로스페이스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:CAT",
+      "symbol": "CAT",
+      "name": "캐터필러",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:UNH",
+      "symbol": "UNH",
+      "name": "유나이티드헬스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:JNJ",
+      "symbol": "JNJ",
+      "name": "존슨앤드존슨",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:PG",
+      "symbol": "PG",
+      "name": "P&G",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:DIS",
+      "symbol": "DIS",
+      "name": "디즈니",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:BA",
+      "symbol": "BA",
+      "name": "보잉",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:CVX",
+      "symbol": "CVX",
+      "name": "셰브론",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NYSE:BAC",
+      "symbol": "BAC",
+      "name": "뱅크오브아메리카",
+      "country": "미국",
+      "region": "US",
+      "exchange": "NYSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:SHEL",
+      "symbol": "SHEL.L",
+      "name": "셸",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:ULVR",
+      "symbol": "ULVR.L",
+      "name": "유니레버",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:BP",
+      "symbol": "BP.L",
+      "name": "BP",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:GSK",
+      "symbol": "GSK.L",
+      "name": "GSK",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:REL",
+      "symbol": "REL.L",
+      "name": "렐엑스",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:LSEG",
+      "symbol": "LSEG.L",
+      "name": "런던증권거래소그룹",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:RIO",
+      "symbol": "RIO.L",
+      "name": "리오틴토",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LSE:NG",
+      "symbol": "NG.L",
+      "name": "내셔널그리드",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "LSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:ALV",
+      "symbol": "ALV.DE",
+      "name": "알리안츠",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:DTE",
+      "symbol": "DTE.DE",
+      "name": "도이체텔레콤",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:MBG",
+      "symbol": "MBG.DE",
+      "name": "메르세데스벤츠",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:BMW",
+      "symbol": "BMW.DE",
+      "name": "BMW",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:BAS",
+      "symbol": "BAS.DE",
+      "name": "BASF",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:RHM",
+      "symbol": "RHM.DE",
+      "name": "라인메탈",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:IFX",
+      "symbol": "IFX.DE",
+      "name": "인피니언",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "XETR:DB1",
+      "symbol": "DB1.DE",
+      "name": "도이체뵈르제",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "XETR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:AIR",
+      "symbol": "AIR.PA",
+      "name": "에어버스",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:SU",
+      "symbol": "SU.PA",
+      "name": "슈나이더일렉트릭",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:TTE",
+      "symbol": "TTE.PA",
+      "name": "토탈에너지",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:SAN",
+      "symbol": "SAN.PA",
+      "name": "사노피",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:BNP",
+      "symbol": "BNP.PA",
+      "name": "BNP파리바",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:SAF",
+      "symbol": "SAF.PA",
+      "name": "사프란",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:AI",
+      "symbol": "AI.PA",
+      "name": "에어리퀴드",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PAR:RMS",
+      "symbol": "RMS.PA",
+      "name": "에르메스",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "PAR",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "AMS:ADYEN",
+      "symbol": "ADYEN.AS",
+      "name": "아디옌",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "AMS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "AMS:INGA",
+      "symbol": "INGA.AS",
+      "name": "ING그룹",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "AMS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "AMS:PRX",
+      "symbol": "PRX.AS",
+      "name": "프로서스",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "AMS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "AMS:HEIA",
+      "symbol": "HEIA.AS",
+      "name": "하이네켄",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "AMS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "AMS:ASM",
+      "symbol": "ASM.AS",
+      "name": "ASM인터내셔널",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "AMS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SIX:ROG",
+      "symbol": "ROG.SW",
+      "name": "로슈",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SIX:NOVN",
+      "symbol": "NOVN.SW",
+      "name": "노바티스",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SIX:UBSG",
+      "symbol": "UBSG.SW",
+      "name": "UBS",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SIX:ABBN",
+      "symbol": "ABBN.SW",
+      "name": "ABB",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SIX:ZURN",
+      "symbol": "ZURN.SW",
+      "name": "취리히보험",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SIX:CFR",
+      "symbol": "CFR.SW",
+      "name": "리치몬트",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "SIX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:ENEL",
+      "symbol": "ENEL.MI",
+      "name": "에넬",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:ENI",
+      "symbol": "ENI.MI",
+      "name": "에니",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:ISP",
+      "symbol": "ISP.MI",
+      "name": "인테사산파올로",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:UCG",
+      "symbol": "UCG.MI",
+      "name": "유니크레디트",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:RACE",
+      "symbol": "RACE.MI",
+      "name": "페라리",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:LDO",
+      "symbol": "LDO.MI",
+      "name": "레오나르도",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MIL:G",
+      "symbol": "G.MI",
+      "name": "제네랄리",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "MIL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BME:SAN",
+      "symbol": "SAN.MC",
+      "name": "산탄데르",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "BME",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BME:BBVA",
+      "symbol": "BBVA.MC",
+      "name": "BBVA",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "BME",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BME:IBE",
+      "symbol": "IBE.MC",
+      "name": "이베르드롤라",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "BME",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BME:ITX",
+      "symbol": "ITX.MC",
+      "name": "인디텍스",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "BME",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BME:REP",
+      "symbol": "REP.MC",
+      "name": "렙솔",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "BME",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BME:AMS",
+      "symbol": "AMS.MC",
+      "name": "아마데우스IT",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "BME",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "STO:VOLV-B",
+      "symbol": "VOLV-B.ST",
+      "name": "볼보",
+      "country": "스웨덴",
+      "region": "EU",
+      "exchange": "STO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "STO:ATCO-A",
+      "symbol": "ATCO-A.ST",
+      "name": "아틀라스콥코",
+      "country": "스웨덴",
+      "region": "EU",
+      "exchange": "STO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "STO:ERIC-B",
+      "symbol": "ERIC-B.ST",
+      "name": "에릭슨",
+      "country": "스웨덴",
+      "region": "EU",
+      "exchange": "STO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "STO:INVE-B",
+      "symbol": "INVE-B.ST",
+      "name": "인베스토르",
+      "country": "스웨덴",
+      "region": "EU",
+      "exchange": "STO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "STO:SEB-A",
+      "symbol": "SEB-A.ST",
+      "name": "SEB",
+      "country": "스웨덴",
+      "region": "EU",
+      "exchange": "STO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "CPH:NOVO-B",
+      "symbol": "NOVO-B.CO",
+      "name": "노보노디스크",
+      "country": "덴마크",
+      "region": "EU",
+      "exchange": "CPH",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "CPH:DSV",
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "country": "덴마크",
+      "region": "EU",
+      "exchange": "CPH",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "CPH:MAERSK-B",
+      "symbol": "MAERSK-B.CO",
+      "name": "머스크",
+      "country": "덴마크",
+      "region": "EU",
+      "exchange": "CPH",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "OSL:EQNR",
+      "symbol": "EQNR.OL",
+      "name": "에퀴노르",
+      "country": "노르웨이",
+      "region": "EU",
+      "exchange": "OSL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "OSL:DNB",
+      "symbol": "DNB.OL",
+      "name": "DNB은행",
+      "country": "노르웨이",
+      "region": "EU",
+      "exchange": "OSL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "OSL:NHY",
+      "symbol": "NHY.OL",
+      "name": "노르스크하이드로",
+      "country": "노르웨이",
+      "region": "EU",
+      "exchange": "OSL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "OSL:ORK",
+      "symbol": "ORK.OL",
+      "name": "오르클라",
+      "country": "노르웨이",
+      "region": "EU",
+      "exchange": "OSL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HEL:NOKIA",
+      "symbol": "NOKIA.HE",
+      "name": "노키아",
+      "country": "핀란드",
+      "region": "EU",
+      "exchange": "HEL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HEL:KNEBV",
+      "symbol": "KNEBV.HE",
+      "name": "코네",
+      "country": "핀란드",
+      "region": "EU",
+      "exchange": "HEL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HEL:SAMPO",
+      "symbol": "SAMPO.HE",
+      "name": "삼포",
+      "country": "핀란드",
+      "region": "EU",
+      "exchange": "HEL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BRU:ABI",
+      "symbol": "ABI.BR",
+      "name": "AB인베브",
+      "country": "벨기에",
+      "region": "EU",
+      "exchange": "BRU",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BRU:KBC",
+      "symbol": "KBC.BR",
+      "name": "KBC그룹",
+      "country": "벨기에",
+      "region": "EU",
+      "exchange": "BRU",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BRU:UCB",
+      "symbol": "UCB.BR",
+      "name": "UCB",
+      "country": "벨기에",
+      "region": "EU",
+      "exchange": "BRU",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LIS:EDP",
+      "symbol": "EDP.LS",
+      "name": "EDP",
+      "country": "포르투갈",
+      "region": "EU",
+      "exchange": "LIS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LIS:GALP",
+      "symbol": "GALP.LS",
+      "name": "갈프에너지",
+      "country": "포르투갈",
+      "region": "EU",
+      "exchange": "LIS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "LIS:JMT",
+      "symbol": "JMT.LS",
+      "name": "제로니모마르틴스",
+      "country": "포르투갈",
+      "region": "EU",
+      "exchange": "LIS",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "VIE:VOE",
+      "symbol": "VOE.VI",
+      "name": "뵈스트알피네",
+      "country": "오스트리아",
+      "region": "EU",
+      "exchange": "VIE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "VIE:OMV",
+      "symbol": "OMV.VI",
+      "name": "OMV",
+      "country": "오스트리아",
+      "region": "EU",
+      "exchange": "VIE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "VIE:EBS",
+      "symbol": "EBS.VI",
+      "name": "에르스테그룹",
+      "country": "오스트리아",
+      "region": "EU",
+      "exchange": "VIE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "WSE:PKN",
+      "symbol": "PKN.WA",
+      "name": "오를렌",
+      "country": "폴란드",
+      "region": "EU",
+      "exchange": "WSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "WSE:PKO",
+      "symbol": "PKO.WA",
+      "name": "PKO은행",
+      "country": "폴란드",
+      "region": "EU",
+      "exchange": "WSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "WSE:DNP",
+      "symbol": "DNP.WA",
+      "name": "디노폴스카",
+      "country": "폴란드",
+      "region": "EU",
+      "exchange": "WSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ISE:RYA",
+      "symbol": "RYA.IR",
+      "name": "라이언에어",
+      "country": "아일랜드",
+      "region": "EU",
+      "exchange": "ISE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ISE:KYGA",
+      "symbol": "KYGA.IR",
+      "name": "케리그룹",
+      "country": "아일랜드",
+      "region": "EU",
+      "exchange": "ISE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ATH:OPAP",
+      "symbol": "OPAP.AT",
+      "name": "OPAP",
+      "country": "그리스",
+      "region": "EU",
+      "exchange": "ATH",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ATH:HTO",
+      "symbol": "HTO.AT",
+      "name": "헬레닉텔레콤",
+      "country": "그리스",
+      "region": "EU",
+      "exchange": "ATH",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ATH:ETE",
+      "symbol": "ETE.AT",
+      "name": "그리스국립은행",
+      "country": "그리스",
+      "region": "EU",
+      "exchange": "ATH",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "KRX:005490",
+      "symbol": "005490.KS",
+      "name": "포스코홀딩스",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "KRX:028260",
+      "symbol": "028260.KS",
+      "name": "삼성물산",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "KRX:051910",
+      "symbol": "051910.KS",
+      "name": "LG화학",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "KRX:012330",
+      "symbol": "012330.KS",
+      "name": "현대모비스",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "KRX:055550",
+      "symbol": "055550.KS",
+      "name": "신한지주",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "KRX:009540",
+      "symbol": "009540.KS",
+      "name": "HD한국조선해양",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "KRX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:8306",
+      "symbol": "8306.T",
+      "name": "미쓰비시UFJ금융",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:9432",
+      "symbol": "9432.T",
+      "name": "NTT",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:6501",
+      "symbol": "6501.T",
+      "name": "히타치",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:7974",
+      "symbol": "7974.T",
+      "name": "닌텐도",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:6861",
+      "symbol": "6861.T",
+      "name": "키엔스",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:9983",
+      "symbol": "9983.T",
+      "name": "패스트리테일링",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:6098",
+      "symbol": "6098.T",
+      "name": "리크루트홀딩스",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:4519",
+      "symbol": "4519.T",
+      "name": "주가이제약",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:8766",
+      "symbol": "8766.T",
+      "name": "도쿄해상홀딩스",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSE:8058",
+      "symbol": "8058.T",
+      "name": "미쓰비시상사",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "TSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:1299",
+      "symbol": "1299.HK",
+      "name": "AIA그룹",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:0005",
+      "symbol": "0005.HK",
+      "name": "HSBC 홍콩",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:0388",
+      "symbol": "0388.HK",
+      "name": "홍콩거래소",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:0941",
+      "symbol": "0941.HK",
+      "name": "차이나모바일",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:3690",
+      "symbol": "3690.HK",
+      "name": "메이퇀",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:1810",
+      "symbol": "1810.HK",
+      "name": "샤오미",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "HKEX:2318",
+      "symbol": "2318.HK",
+      "name": "핑안보험",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "HKEX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SSE:600519",
+      "symbol": "600519.SS",
+      "name": "구이저우마오타이",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SSE:601398",
+      "symbol": "601398.SS",
+      "name": "중국공상은행",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SSE:601288",
+      "symbol": "601288.SS",
+      "name": "중국농업은행",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SSE:601857",
+      "symbol": "601857.SS",
+      "name": "페트로차이나",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SSE:600036",
+      "symbol": "600036.SS",
+      "name": "초상은행",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SSE:601318",
+      "symbol": "601318.SS",
+      "name": "중국핑안",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SZSE:000858",
+      "symbol": "000858.SZ",
+      "name": "우량예",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SZSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SZSE:300750",
+      "symbol": "300750.SZ",
+      "name": "CATL",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SZSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SZSE:002594",
+      "symbol": "002594.SZ",
+      "name": "BYD A주",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SZSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SZSE:000333",
+      "symbol": "000333.SZ",
+      "name": "메이디그룹",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "SZSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TWSE:2317",
+      "symbol": "2317.TW",
+      "name": "폭스콘",
+      "country": "대만",
+      "region": "ASIA",
+      "exchange": "TWSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TWSE:2454",
+      "symbol": "2454.TW",
+      "name": "미디어텍",
+      "country": "대만",
+      "region": "ASIA",
+      "exchange": "TWSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TWSE:2308",
+      "symbol": "2308.TW",
+      "name": "델타전자",
+      "country": "대만",
+      "region": "ASIA",
+      "exchange": "TWSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TWSE:2881",
+      "symbol": "2881.TW",
+      "name": "푸본금융",
+      "country": "대만",
+      "region": "ASIA",
+      "exchange": "TWSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NSE:HDFCBANK",
+      "symbol": "HDFCBANK.NS",
+      "name": "HDFC은행",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NSE:ICICIBANK",
+      "symbol": "ICICIBANK.NS",
+      "name": "ICICI은행",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NSE:INFY",
+      "symbol": "INFY.NS",
+      "name": "인포시스",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NSE:BHARTIARTL",
+      "symbol": "BHARTIARTL.NS",
+      "name": "바르티에어텔",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NSE:ITC",
+      "symbol": "ITC.NS",
+      "name": "ITC",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NSE:LT",
+      "symbol": "LT.NS",
+      "name": "라르센앤드투브로",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "NSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGX:D05",
+      "symbol": "D05.SI",
+      "name": "DBS그룹",
+      "country": "싱가포르",
+      "region": "ASIA",
+      "exchange": "SGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGX:O39",
+      "symbol": "O39.SI",
+      "name": "OCBC은행",
+      "country": "싱가포르",
+      "region": "ASIA",
+      "exchange": "SGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGX:U11",
+      "symbol": "U11.SI",
+      "name": "UOB은행",
+      "country": "싱가포르",
+      "region": "ASIA",
+      "exchange": "SGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGX:Z74",
+      "symbol": "Z74.SI",
+      "name": "싱텔",
+      "country": "싱가포르",
+      "region": "ASIA",
+      "exchange": "SGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MYX:1155",
+      "symbol": "1155.KL",
+      "name": "메이뱅크",
+      "country": "말레이시아",
+      "region": "ASIA",
+      "exchange": "MYX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MYX:1295",
+      "symbol": "1295.KL",
+      "name": "퍼블릭은행",
+      "country": "말레이시아",
+      "region": "ASIA",
+      "exchange": "MYX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "MYX:5347",
+      "symbol": "5347.KL",
+      "name": "테나가나시오날",
+      "country": "말레이시아",
+      "region": "ASIA",
+      "exchange": "MYX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "IDX:BBCA",
+      "symbol": "BBCA.JK",
+      "name": "뱅크센트럴아시아",
+      "country": "인도네시아",
+      "region": "ASIA",
+      "exchange": "IDX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "IDX:BBRI",
+      "symbol": "BBRI.JK",
+      "name": "뱅크라크얏인도네시아",
+      "country": "인도네시아",
+      "region": "ASIA",
+      "exchange": "IDX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "IDX:TLKM",
+      "symbol": "TLKM.JK",
+      "name": "텔콤인도네시아",
+      "country": "인도네시아",
+      "region": "ASIA",
+      "exchange": "IDX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "IDX:ASII",
+      "symbol": "ASII.JK",
+      "name": "아스트라인터내셔널",
+      "country": "인도네시아",
+      "region": "ASIA",
+      "exchange": "IDX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SET:PTT",
+      "symbol": "PTT.BK",
+      "name": "PTT",
+      "country": "태국",
+      "region": "ASIA",
+      "exchange": "SET",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SET:AOT",
+      "symbol": "AOT.BK",
+      "name": "태국공항공사",
+      "country": "태국",
+      "region": "ASIA",
+      "exchange": "SET",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SET:CPALL",
+      "symbol": "CPALL.BK",
+      "name": "CP올",
+      "country": "태국",
+      "region": "ASIA",
+      "exchange": "SET",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SET:ADVANC",
+      "symbol": "ADVANC.BK",
+      "name": "어드밴스드인포서비스",
+      "country": "태국",
+      "region": "ASIA",
+      "exchange": "SET",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PSE:SM",
+      "symbol": "SM.PS",
+      "name": "SM인베스트먼트",
+      "country": "필리핀",
+      "region": "ASIA",
+      "exchange": "PSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PSE:BDO",
+      "symbol": "BDO.PS",
+      "name": "BDO은행",
+      "country": "필리핀",
+      "region": "ASIA",
+      "exchange": "PSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PSE:AC",
+      "symbol": "AC.PS",
+      "name": "아얄라",
+      "country": "필리핀",
+      "region": "ASIA",
+      "exchange": "PSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "PSE:ICT",
+      "symbol": "ICT.PS",
+      "name": "인터내셔널컨테이너터미널",
+      "country": "필리핀",
+      "region": "ASIA",
+      "exchange": "PSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ASX:CBA",
+      "symbol": "CBA.AX",
+      "name": "커먼웰스은행",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ASX:CSL",
+      "symbol": "CSL.AX",
+      "name": "CSL",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ASX:NAB",
+      "symbol": "NAB.AX",
+      "name": "내셔널오스트레일리아은행",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ASX:WBC",
+      "symbol": "WBC.AX",
+      "name": "웨스트팩",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ASX:WES",
+      "symbol": "WES.AX",
+      "name": "웨스파머스",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "ASX:FMG",
+      "symbol": "FMG.AX",
+      "name": "포테스큐",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "ASX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NZX:FPH",
+      "symbol": "FPH.NZ",
+      "name": "피셔앤드파이켈헬스케어",
+      "country": "뉴질랜드",
+      "region": "OCEANIA",
+      "exchange": "NZX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NZX:AIA",
+      "symbol": "AIA.NZ",
+      "name": "오클랜드공항",
+      "country": "뉴질랜드",
+      "region": "OCEANIA",
+      "exchange": "NZX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "NZX:SPK",
+      "symbol": "SPK.NZ",
+      "name": "스파크뉴질랜드",
+      "country": "뉴질랜드",
+      "region": "OCEANIA",
+      "exchange": "NZX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSX:RY",
+      "symbol": "RY.TO",
+      "name": "캐나다왕립은행",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSX:TD",
+      "symbol": "TD.TO",
+      "name": "토론토도미니언은행",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSX:ENB",
+      "symbol": "ENB.TO",
+      "name": "엔브리지",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSX:CNR",
+      "symbol": "CNR.TO",
+      "name": "캐나다내셔널철도",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSX:BAM",
+      "symbol": "BAM.TO",
+      "name": "브룩필드자산운용",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TSX:CNQ",
+      "symbol": "CNQ.TO",
+      "name": "캐나다내추럴리소시스",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "TSX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMV:AMXL",
+      "symbol": "AMXL.MX",
+      "name": "아메리카모빌",
+      "country": "멕시코",
+      "region": "AMERICAS",
+      "exchange": "BMV",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMV:WALMEX",
+      "symbol": "WALMEX.MX",
+      "name": "월마트멕시코",
+      "country": "멕시코",
+      "region": "AMERICAS",
+      "exchange": "BMV",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMV:GFNORTEO",
+      "symbol": "GFNORTEO.MX",
+      "name": "바노르테",
+      "country": "멕시코",
+      "region": "AMERICAS",
+      "exchange": "BMV",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMFBOVESPA:VALE3",
+      "symbol": "VALE3.SA",
+      "name": "발레",
+      "country": "브라질",
+      "region": "AMERICAS",
+      "exchange": "BMFBOVESPA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMFBOVESPA:ITUB4",
+      "symbol": "ITUB4.SA",
+      "name": "이타우우니방쿠",
+      "country": "브라질",
+      "region": "AMERICAS",
+      "exchange": "BMFBOVESPA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMFBOVESPA:WEGE3",
+      "symbol": "WEGE3.SA",
+      "name": "WEG",
+      "country": "브라질",
+      "region": "AMERICAS",
+      "exchange": "BMFBOVESPA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BMFBOVESPA:ABEV3",
+      "symbol": "ABEV3.SA",
+      "name": "암베브",
+      "country": "브라질",
+      "region": "AMERICAS",
+      "exchange": "BMFBOVESPA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BYMA:GGAL",
+      "symbol": "GGAL.BA",
+      "name": "그루포갈리시아",
+      "country": "아르헨티나",
+      "region": "AMERICAS",
+      "exchange": "BYMA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BYMA:YPFD",
+      "symbol": "YPFD.BA",
+      "name": "YPF",
+      "country": "아르헨티나",
+      "region": "AMERICAS",
+      "exchange": "BYMA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BYMA:PAMP",
+      "symbol": "PAMP.BA",
+      "name": "팜파에네르히아",
+      "country": "아르헨티나",
+      "region": "AMERICAS",
+      "exchange": "BYMA",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGO:SQM-B",
+      "symbol": "SQM-B.SN",
+      "name": "SQM",
+      "country": "칠레",
+      "region": "AMERICAS",
+      "exchange": "SGO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGO:COPEC",
+      "symbol": "COPEC.SN",
+      "name": "코펙",
+      "country": "칠레",
+      "region": "AMERICAS",
+      "exchange": "SGO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "SGO:FALABELLA",
+      "symbol": "FALABELLA.SN",
+      "name": "팔라벨라",
+      "country": "칠레",
+      "region": "AMERICAS",
+      "exchange": "SGO",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BVC:ECOPETROL",
+      "symbol": "ECOPETROL.CL",
+      "name": "에코페트롤",
+      "country": "콜롬비아",
+      "region": "AMERICAS",
+      "exchange": "BVC",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BVC:CIB",
+      "symbol": "CIB.CL",
+      "name": "방콜롬비아",
+      "country": "콜롬비아",
+      "region": "AMERICAS",
+      "exchange": "BVC",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TADAWUL:2222",
+      "symbol": "2222.SR",
+      "name": "사우디아람코",
+      "country": "사우디아라비아",
+      "region": "ME",
+      "exchange": "TADAWUL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TADAWUL:1120",
+      "symbol": "1120.SR",
+      "name": "알라지은행",
+      "country": "사우디아라비아",
+      "region": "ME",
+      "exchange": "TADAWUL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TADAWUL:2010",
+      "symbol": "2010.SR",
+      "name": "SABIC",
+      "country": "사우디아라비아",
+      "region": "ME",
+      "exchange": "TADAWUL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TADAWUL:1180",
+      "symbol": "1180.SR",
+      "name": "사우디내셔널은행",
+      "country": "사우디아라비아",
+      "region": "ME",
+      "exchange": "TADAWUL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TADAWUL:7010",
+      "symbol": "7010.SR",
+      "name": "사우디텔레콤",
+      "country": "사우디아라비아",
+      "region": "ME",
+      "exchange": "TADAWUL",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "DFM:EMAAR",
+      "symbol": "EMAAR.AE",
+      "name": "에마르프로퍼티",
+      "country": "아랍에미리트",
+      "region": "ME",
+      "exchange": "DFM",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "DFM:EMIRATESNBD",
+      "symbol": "EMIRATESNBD.AE",
+      "name": "에미레이츠NBD",
+      "country": "아랍에미리트",
+      "region": "ME",
+      "exchange": "DFM",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "DFM:DIB",
+      "symbol": "DIB.AE",
+      "name": "두바이이슬람은행",
+      "country": "아랍에미리트",
+      "region": "ME",
+      "exchange": "DFM",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "QSE:QNBK",
+      "symbol": "QNBK.QA",
+      "name": "카타르국립은행",
+      "country": "카타르",
+      "region": "ME",
+      "exchange": "QSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "QSE:IQCD",
+      "symbol": "IQCD.QA",
+      "name": "인더스트리즈카타르",
+      "country": "카타르",
+      "region": "ME",
+      "exchange": "QSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "QSE:QIBK",
+      "symbol": "QIBK.QA",
+      "name": "카타르이슬람은행",
+      "country": "카타르",
+      "region": "ME",
+      "exchange": "QSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TASE:LUMI",
+      "symbol": "LUMI.TA",
+      "name": "레우미은행",
+      "country": "이스라엘",
+      "region": "ME",
+      "exchange": "TASE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TASE:POLI",
+      "symbol": "POLI.TA",
+      "name": "하포알림은행",
+      "country": "이스라엘",
+      "region": "ME",
+      "exchange": "TASE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "TASE:NICE",
+      "symbol": "NICE.TA",
+      "name": "나이스",
+      "country": "이스라엘",
+      "region": "ME",
+      "exchange": "TASE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BIST:THYAO",
+      "symbol": "THYAO.IS",
+      "name": "터키항공",
+      "country": "튀르키예",
+      "region": "ME",
+      "exchange": "BIST",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BIST:TUPRS",
+      "symbol": "TUPRS.IS",
+      "name": "튀프라시",
+      "country": "튀르키예",
+      "region": "ME",
+      "exchange": "BIST",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BIST:ASELS",
+      "symbol": "ASELS.IS",
+      "name": "아셀산",
+      "country": "튀르키예",
+      "region": "ME",
+      "exchange": "BIST",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "BIST:GARAN",
+      "symbol": "GARAN.IS",
+      "name": "가란티BBVA",
+      "country": "튀르키예",
+      "region": "ME",
+      "exchange": "BIST",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "JSE:NPN",
+      "symbol": "NPN.JO",
+      "name": "내스퍼스",
+      "country": "남아프리카공화국",
+      "region": "AFRICA",
+      "exchange": "JSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "JSE:FSR",
+      "symbol": "FSR.JO",
+      "name": "퍼스트랜드",
+      "country": "남아프리카공화국",
+      "region": "AFRICA",
+      "exchange": "JSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "JSE:SBK",
+      "symbol": "SBK.JO",
+      "name": "스탠다드은행",
+      "country": "남아프리카공화국",
+      "region": "AFRICA",
+      "exchange": "JSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "JSE:MTN",
+      "symbol": "MTN.JO",
+      "name": "MTN그룹",
+      "country": "남아프리카공화국",
+      "region": "AFRICA",
+      "exchange": "JSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "JSE:AGL",
+      "symbol": "AGL.JO",
+      "name": "앵글로아메리칸",
+      "country": "남아프리카공화국",
+      "region": "AFRICA",
+      "exchange": "JSE",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "EGX:COMI",
+      "symbol": "COMI.CA",
+      "name": "커머셜인터내셔널은행",
+      "country": "이집트",
+      "region": "AFRICA",
+      "exchange": "EGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "EGX:SWDY",
+      "symbol": "SWDY.CA",
+      "name": "엘스웨디일렉트릭",
+      "country": "이집트",
+      "region": "AFRICA",
+      "exchange": "EGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "EGX:ETEL",
+      "symbol": "ETEL.CA",
+      "name": "텔레콤이집트",
+      "country": "이집트",
+      "region": "AFRICA",
+      "exchange": "EGX",
+      "kind": "stock",
+      "overview": true
+    },
+    {
+      "id": "INDEX:GSPC",
+      "symbol": "^GSPC",
+      "name": "S&P 500",
+      "country": "미국",
+      "region": "US",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:NDX",
+      "symbol": "^NDX",
+      "name": "나스닥 100",
+      "country": "미국",
+      "region": "US",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:IXIC",
+      "symbol": "^IXIC",
+      "name": "나스닥 종합",
+      "country": "미국",
+      "region": "US",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:DJI",
+      "symbol": "^DJI",
+      "name": "다우존스",
+      "country": "미국",
+      "region": "US",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:RUT",
+      "symbol": "^RUT",
+      "name": "러셀 2000",
+      "country": "미국",
+      "region": "US",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:GSPTSE",
+      "symbol": "^GSPTSE",
+      "name": "S&P/TSX 종합",
+      "country": "캐나다",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:MXX",
+      "symbol": "^MXX",
+      "name": "IPC",
+      "country": "멕시코",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:STOXX50E",
+      "symbol": "^STOXX50E",
+      "name": "EURO STOXX 50",
+      "country": "유로존",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:STOXX",
+      "symbol": "^STOXX",
+      "name": "STOXX 유럽 600",
+      "country": "유럽",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:GDAXI",
+      "symbol": "^GDAXI",
+      "name": "DAX",
+      "country": "독일",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:FCHI",
+      "symbol": "^FCHI",
+      "name": "CAC 40",
+      "country": "프랑스",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:FTSE",
+      "symbol": "^FTSE",
+      "name": "FTSE 100",
+      "country": "영국",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:SSMI",
+      "symbol": "^SSMI",
+      "name": "SMI",
+      "country": "스위스",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:FTSEMIB",
+      "symbol": "FTSEMIB.MI",
+      "name": "FTSE MIB",
+      "country": "이탈리아",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:IBEX",
+      "symbol": "^IBEX",
+      "name": "IBEX 35",
+      "country": "스페인",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:AEX",
+      "symbol": "^AEX",
+      "name": "AEX",
+      "country": "네덜란드",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:BFX",
+      "symbol": "^BFX",
+      "name": "BEL 20",
+      "country": "벨기에",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:OMX",
+      "symbol": "^OMX",
+      "name": "OMX 스톡홀름 30",
+      "country": "스웨덴",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:OSEBX",
+      "symbol": "OSEBX.OL",
+      "name": "오슬로 벤치마크",
+      "country": "노르웨이",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:OMXC25",
+      "symbol": "^OMXC25",
+      "name": "OMX 코펜하겐 25",
+      "country": "덴마크",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:OMXH25",
+      "symbol": "^OMXH25",
+      "name": "OMX 헬싱키 25",
+      "country": "핀란드",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:ATX",
+      "symbol": "^ATX",
+      "name": "ATX",
+      "country": "오스트리아",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:WIG20",
+      "symbol": "WIG20.WA",
+      "name": "WIG 20",
+      "country": "폴란드",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:ISEQ",
+      "symbol": "^ISEQ",
+      "name": "ISEQ 종합",
+      "country": "아일랜드",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:PSI20",
+      "symbol": "PSI20.LS",
+      "name": "PSI",
+      "country": "포르투갈",
+      "region": "EU",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:KS11",
+      "symbol": "^KS11",
+      "name": "KOSPI",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:KQ11",
+      "symbol": "^KQ11",
+      "name": "KOSDAQ",
+      "country": "한국",
+      "region": "KR",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:N225",
+      "symbol": "^N225",
+      "name": "니케이 225",
+      "country": "일본",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:SSEC",
+      "symbol": "000001.SS",
+      "name": "상하이 종합",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:SZCOMP",
+      "symbol": "399001.SZ",
+      "name": "선전 종합",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:CSI300",
+      "symbol": "000300.SS",
+      "name": "CSI 300",
+      "country": "중국",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:HSI",
+      "symbol": "^HSI",
+      "name": "항셍",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:HSCE",
+      "symbol": "^HSCE",
+      "name": "항셍 중국기업",
+      "country": "홍콩",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:TWII",
+      "symbol": "^TWII",
+      "name": "대만 가권",
+      "country": "대만",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:NSEI",
+      "symbol": "^NSEI",
+      "name": "NIFTY 50",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:BSESN",
+      "symbol": "^BSESN",
+      "name": "SENSEX",
+      "country": "인도",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:STI",
+      "symbol": "^STI",
+      "name": "스트레이츠타임스",
+      "country": "싱가포르",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:SET",
+      "symbol": "^SET.BK",
+      "name": "SET 종합",
+      "country": "태국",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:KLSE",
+      "symbol": "^KLSE",
+      "name": "FTSE 부르사 KLCI",
+      "country": "말레이시아",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:JKSE",
+      "symbol": "^JKSE",
+      "name": "자카르타 종합",
+      "country": "인도네시아",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:PSEI",
+      "symbol": "PSEI.PS",
+      "name": "PSEi",
+      "country": "필리핀",
+      "region": "ASIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:AXJO",
+      "symbol": "^AXJO",
+      "name": "S&P/ASX 200",
+      "country": "호주",
+      "region": "OCEANIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:NZ50",
+      "symbol": "^NZ50",
+      "name": "S&P/NZX 50",
+      "country": "뉴질랜드",
+      "region": "OCEANIA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:BVSP",
+      "symbol": "^BVSP",
+      "name": "보베스파",
+      "country": "브라질",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:MERV",
+      "symbol": "^MERV",
+      "name": "S&P 메르발",
+      "country": "아르헨티나",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:IPSA",
+      "symbol": "^IPSA",
+      "name": "S&P IPSA",
+      "country": "칠레",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:COLCAP",
+      "symbol": "^COLCAP",
+      "name": "MSCI COLCAP",
+      "country": "콜롬비아",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:SPBLPGPT",
+      "symbol": "^SPBLPGPT",
+      "name": "S&P/BVL 페루 종합",
+      "country": "페루",
+      "region": "AMERICAS",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:TASI",
+      "symbol": "^TASI.SR",
+      "name": "TASI",
+      "country": "사우디아라비아",
+      "region": "ME",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:TA125",
+      "symbol": "^TA125.TA",
+      "name": "TA-125",
+      "country": "이스라엘",
+      "region": "ME",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:XU100",
+      "symbol": "XU100.IS",
+      "name": "BIST 100",
+      "country": "튀르키예",
+      "region": "ME",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:DFMGI",
+      "symbol": "^DFMGI",
+      "name": "DFM 종합",
+      "country": "아랍에미리트",
+      "region": "ME",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:QSI",
+      "symbol": "^QSI",
+      "name": "QE 종합",
+      "country": "카타르",
+      "region": "ME",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:JTOPI",
+      "symbol": "^JN0U.JO",
+      "name": "FTSE/JSE 종합",
+      "country": "남아프리카공화국",
+      "region": "AFRICA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
+    },
+    {
+      "id": "INDEX:CASE30",
+      "symbol": "^CASE30",
+      "name": "EGX 30",
+      "country": "이집트",
+      "region": "AFRICA",
+      "exchange": "INDEX",
+      "kind": "index",
+      "overview": true
     }
   ]
 }

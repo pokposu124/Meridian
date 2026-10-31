@@ -15,6 +15,22 @@ def payload():
 
 
 class CollectorTests(unittest.TestCase):
+    def test_incremental_update_preserves_older_history_and_replaces_ohlc(self):
+        previous = C.parse_chart(payload(), '2024-01-04T00:00:00Z')
+        raw = payload()
+        raw['chart']['result'][0]['indicators']['quote'][0]['close'][-1] = 13
+        recent = C.parse_chart(raw, '2024-01-04T12:00:00Z')
+        merged = C.merge_recent(previous, recent)
+        self.assertEqual(len(merged['series']['D']), 3)
+        self.assertEqual(merged['series']['W'][0]['open'], 9)
+        self.assertEqual(merged['series']['W'][0]['close'], 13)
+        self.assertEqual(merged['series']['W'][0]['volume'], 6)
+        self.assertEqual(merged['historyRefreshedAt'], previous['fetchedAt'])
+
+    def test_iso_week_does_not_merge_distinct_years(self):
+        bars = [dict(date='2024-01-02',open=1,high=3,low=1,close=2,volume=1), dict(date='2025-01-02',open=2,high=4,low=2,close=3,volume=2)]
+        self.assertEqual(len(C.aggregate(bars, 'W')), 2)
+
     def test_previous_close_is_previous_session_not_chart_window_start(self):
         data = C.parse_chart(payload(), '2024-01-04T00:00:00Z')
         self.assertEqual(data['quote']['change'], 0)
