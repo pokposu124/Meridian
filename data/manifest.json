@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-03T17:55:34+00:00",
+  "generatedAt": "2026-11-03T23:29:36+00:00",
   "source": "Yahoo Finance public chart endpoint",
   "refreshMinutes": 30,
   "instruments": {
@@ -14,7 +14,7 @@
       "symbol": "^IPSA",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "INDEX:COLCAP": {
       "country": "콜롬비아",
@@ -26,7 +26,7 @@
       "symbol": "^COLCAP",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "INDEX:SPBLPGPT": {
       "country": "페루",
@@ -38,7 +38,7 @@
       "symbol": "^SPBLPGPT",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "INDEX:QSI": {
       "country": "카타르",
@@ -50,7 +50,7 @@
       "symbol": "^QSI",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "ATH:OPAP": {
       "country": "그리스",
@@ -62,7 +62,7 @@
       "symbol": "OPAP.AT",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "PSE:SM": {
       "country": "필리핀",
@@ -74,7 +74,7 @@
       "symbol": "SM.PS",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "PSE:BDO": {
       "country": "필리핀",
@@ -86,7 +86,7 @@
       "symbol": "BDO.PS",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "BVC:CIB": {
       "country": "콜롬비아",
@@ -98,7 +98,7 @@
       "symbol": "CIB.CL",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "PSE:AC": {
       "country": "필리핀",
@@ -110,7 +110,7 @@
       "symbol": "AC.PS",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "PSE:ICT": {
       "country": "필리핀",
@@ -122,7 +122,7 @@
       "symbol": "ICT.PS",
       "status": "unavailable",
       "error": "공개 시세 응답 오류 (404)",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "GSPC": {
       "country": "글로벌",
@@ -134,16 +134,16 @@
       "name": "S&P 500",
       "symbol": "^GSPC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:37+00:00",
-      "quoteTime": 1793728356,
+      "fetchedAt": "2026-11-03T23:26:11+00:00",
+      "quoteTime": 1793741413,
       "currency": "USD",
       "quote": {
-        "price": 7580.11,
-        "change": 38.71009765624967,
-        "percent": 0.5133012193693531,
+        "price": 7568.92,
+        "change": 27.520097656250073,
+        "percent": 0.3649202802214116,
         "currency": "USD",
-        "timestamp": 1793728356,
-        "date": "2026-11-03 17:52 UTC",
+        "timestamp": 1793741413,
+        "date": "2026-11-03 21:30 UTC",
         "open": null
       }
     },
@@ -157,16 +157,16 @@
       "name": "S&P 500",
       "symbol": "^GSPC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:37+00:00",
-      "quoteTime": 1793728356,
+      "fetchedAt": "2026-11-03T23:26:11+00:00",
+      "quoteTime": 1793741413,
       "currency": "USD",
       "quote": {
-        "price": 7580.11,
-        "change": 38.71009765624967,
-        "percent": 0.5133012193693531,
+        "price": 7568.92,
+        "change": 27.520097656250073,
+        "percent": 0.3649202802214116,
         "currency": "USD",
-        "timestamp": 1793728356,
-        "date": "2026-11-03 17:52 UTC",
+        "timestamp": 1793741413,
+        "date": "2026-11-03 21:30 UTC",
         "open": null
       }
     },
@@ -180,16 +180,16 @@
       "name": "S&P/TSX 종합",
       "symbol": "^GSPTSE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:38+00:00",
-      "quoteTime": 1793728351,
+      "fetchedAt": "2026-11-03T23:26:12+00:00",
+      "quoteTime": 1793740801,
       "currency": "CAD",
       "quote": {
-        "price": 35590.3,
-        "change": -210.8015624999971,
-        "percent": -0.5888130624472236,
+        "price": 35532.28,
+        "change": -268.82156250000116,
+        "percent": -0.7508751149198698,
         "currency": "CAD",
-        "timestamp": 1793728351,
-        "date": "2026-11-03 17:52 UTC",
+        "timestamp": 1793740801,
+        "date": "2026-11-03 21:20 UTC",
         "open": null
       }
     },
@@ -203,16 +203,16 @@
       "name": "IPC",
       "symbol": "^MXX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:38+00:00",
-      "quoteTime": 1793727157,
+      "fetchedAt": "2026-11-03T23:26:12+00:00",
+      "quoteTime": 1793741161,
       "currency": "MXN",
       "quote": {
-        "price": 70522.64,
-        "change": 743.4368749999994,
-        "percent": 1.0654132487988333,
+        "price": 70184.33,
+        "change": 405.12687500000175,
+        "percent": 0.580583980407847,
         "currency": "MXN",
-        "timestamp": 1793727157,
-        "date": "2026-11-03 17:32 UTC",
+        "timestamp": 1793741161,
+        "date": "2026-11-03 21:26 UTC",
         "open": null
       }
     },
@@ -226,7 +226,7 @@
       "name": "EURO STOXX 50",
       "symbol": "^STOXX50E",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:39+00:00",
+      "fetchedAt": "2026-11-03T23:26:13+00:00",
       "quoteTime": 1793725200,
       "currency": "None",
       "quote": {
@@ -249,7 +249,7 @@
       "name": "STOXX 유럽 600",
       "symbol": "^STOXX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:39+00:00",
+      "fetchedAt": "2026-11-03T23:26:14+00:00",
       "quoteTime": 1793725200,
       "currency": "EUR",
       "quote": {
@@ -272,7 +272,7 @@
       "name": "DAX",
       "symbol": "^GDAXI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:40+00:00",
+      "fetchedAt": "2026-11-03T23:26:15+00:00",
       "quoteTime": 1793725200,
       "currency": "EUR",
       "quote": {
@@ -295,7 +295,7 @@
       "name": "CAC 40",
       "symbol": "^FCHI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:40+00:00",
+      "fetchedAt": "2026-11-03T23:26:15+00:00",
       "quoteTime": 1793725502,
       "currency": "EUR",
       "quote": {
@@ -318,7 +318,7 @@
       "name": "FTSE 100",
       "symbol": "^FTSE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:41+00:00",
+      "fetchedAt": "2026-11-03T23:26:16+00:00",
       "quoteTime": 1793723729,
       "currency": "GBP",
       "quote": {
@@ -341,7 +341,7 @@
       "name": "SMI",
       "symbol": "^SSMI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:42+00:00",
+      "fetchedAt": "2026-11-03T23:26:16+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -364,7 +364,7 @@
       "name": "FTSE MIB",
       "symbol": "FTSEMIB.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:42+00:00",
+      "fetchedAt": "2026-11-03T23:26:17+00:00",
       "quoteTime": 1793723729,
       "currency": "EUR",
       "quote": {
@@ -387,7 +387,7 @@
       "name": "IBEX 35",
       "symbol": "^IBEX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:43+00:00",
+      "fetchedAt": "2026-11-03T23:26:18+00:00",
       "quoteTime": 1793723730,
       "currency": "EUR",
       "quote": {
@@ -410,7 +410,7 @@
       "name": "AEX",
       "symbol": "^AEX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:43+00:00",
+      "fetchedAt": "2026-11-03T23:26:18+00:00",
       "quoteTime": 1793725502,
       "currency": "EUR",
       "quote": {
@@ -433,7 +433,7 @@
       "name": "BEL 20",
       "symbol": "^BFX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:44+00:00",
+      "fetchedAt": "2026-11-03T23:26:19+00:00",
       "quoteTime": 1793725502,
       "currency": "EUR",
       "quote": {
@@ -456,7 +456,7 @@
       "name": "OMX 스톡홀름 30",
       "symbol": "^OMX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:44+00:00",
+      "fetchedAt": "2026-11-03T23:26:20+00:00",
       "quoteTime": 1793723700,
       "currency": "SEK",
       "quote": {
@@ -479,7 +479,7 @@
       "name": "오슬로 벤치마크",
       "symbol": "OSEBX.OL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:45+00:00",
+      "fetchedAt": "2026-11-03T23:26:20+00:00",
       "quoteTime": 1793725502,
       "currency": "NOK",
       "quote": {
@@ -502,7 +502,7 @@
       "name": "OMX 코펜하겐 25",
       "symbol": "^OMXC25",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:46+00:00",
+      "fetchedAt": "2026-11-03T23:26:21+00:00",
       "quoteTime": 1793721899,
       "currency": "DKK",
       "quote": {
@@ -525,7 +525,7 @@
       "name": "OMX 헬싱키 25",
       "symbol": "^OMXH25",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:46+00:00",
+      "fetchedAt": "2026-11-03T23:26:22+00:00",
       "quoteTime": 1793723707,
       "currency": "EUR",
       "quote": {
@@ -548,7 +548,7 @@
       "name": "ATX",
       "symbol": "^ATX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:47+00:00",
+      "fetchedAt": "2026-11-03T23:26:22+00:00",
       "quoteTime": 1793724601,
       "currency": "EUR",
       "quote": {
@@ -570,7 +570,7 @@
       "file": "f0f8d659f831a462cfa4f99b.json",
       "name": "WIG 20",
       "symbol": "WIG20.WA",
-      "status": "ok",
+      "status": "stale",
       "fetchedAt": "2026-11-03T17:52:47+00:00",
       "quoteTime": 1793722500,
       "currency": "PLN",
@@ -582,7 +582,9 @@
         "timestamp": 1793722500,
         "date": "2026-11-03 16:15 UTC",
         "open": null
-      }
+      },
+      "error": "유효한 가격 이력이 없습니다.",
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "INDEX:ISEQ": {
       "country": "아일랜드",
@@ -594,7 +596,7 @@
       "name": "ISEQ 종합",
       "symbol": "^ISEQ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:48+00:00",
+      "fetchedAt": "2026-11-03T23:26:23+00:00",
       "quoteTime": 1793725502,
       "currency": "EUR",
       "quote": {
@@ -617,7 +619,7 @@
       "name": "PSI",
       "symbol": "PSI20.LS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:48+00:00",
+      "fetchedAt": "2026-11-03T23:26:24+00:00",
       "quoteTime": 1793725502,
       "currency": "EUR",
       "quote": {
@@ -640,7 +642,7 @@
       "name": "KOSPI",
       "symbol": "^KS11",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:49+00:00",
+      "fetchedAt": "2026-11-03T23:26:25+00:00",
       "quoteTime": 1793703940,
       "currency": "KRW",
       "quote": {
@@ -663,7 +665,7 @@
       "name": "니케이 225",
       "symbol": "^N225",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:50+00:00",
+      "fetchedAt": "2026-11-03T23:26:25+00:00",
       "quoteTime": 1793601903,
       "currency": "JPY",
       "quote": {
@@ -686,7 +688,7 @@
       "name": "상하이 종합",
       "symbol": "000001.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:50+00:00",
+      "fetchedAt": "2026-11-03T23:26:26+00:00",
       "quoteTime": 1793689225,
       "currency": "CNY",
       "quote": {
@@ -709,7 +711,7 @@
       "name": "항셍",
       "symbol": "^HSI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:51+00:00",
+      "fetchedAt": "2026-11-03T23:26:27+00:00",
       "quoteTime": 1793693310,
       "currency": "HKD",
       "quote": {
@@ -732,7 +734,7 @@
       "name": "대만 가권",
       "symbol": "^TWII",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:51+00:00",
+      "fetchedAt": "2026-11-03T23:26:27+00:00",
       "quoteTime": 1793683995,
       "currency": "TWD",
       "quote": {
@@ -755,7 +757,7 @@
       "name": "NIFTY 50",
       "symbol": "^NSEI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:52+00:00",
+      "fetchedAt": "2026-11-03T23:26:28+00:00",
       "quoteTime": 1793700099,
       "currency": "INR",
       "quote": {
@@ -778,7 +780,7 @@
       "name": "스트레이츠타임스",
       "symbol": "^STI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:52+00:00",
+      "fetchedAt": "2026-11-03T23:26:28+00:00",
       "quoteTime": 1793697600,
       "currency": "SGD",
       "quote": {
@@ -801,7 +803,7 @@
       "name": "SET 종합",
       "symbol": "^SET.BK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:53+00:00",
+      "fetchedAt": "2026-11-03T23:26:29+00:00",
       "quoteTime": 1793699397,
       "currency": "THB",
       "quote": {
@@ -824,7 +826,7 @@
       "name": "FTSE 부르사 KLCI",
       "symbol": "^KLSE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:54+00:00",
+      "fetchedAt": "2026-11-03T23:26:30+00:00",
       "quoteTime": 1793696385,
       "currency": "MYR",
       "quote": {
@@ -847,7 +849,7 @@
       "name": "자카르타 종합",
       "symbol": "^JKSE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:54+00:00",
+      "fetchedAt": "2026-11-03T23:26:30+00:00",
       "quoteTime": 1793696404,
       "currency": "IDR",
       "quote": {
@@ -869,7 +871,7 @@
       "file": "a2becc8bb86e42013c1e302b.json",
       "name": "PSEi",
       "symbol": "PSEI.PS",
-      "status": "ok",
+      "status": "stale",
       "fetchedAt": "2026-11-03T17:52:55+00:00",
       "quoteTime": 1793688600,
       "currency": "PHP",
@@ -881,7 +883,9 @@
         "timestamp": 1793688600,
         "date": "2026-11-03 06:50 UTC",
         "open": null
-      }
+      },
+      "error": "유효한 가격 이력이 없습니다.",
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "INDEX:AXJO": {
       "country": "호주",
@@ -893,16 +897,16 @@
       "name": "S&P/ASX 200",
       "symbol": "^AXJO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:55+00:00",
-      "quoteTime": 1793687054,
+      "fetchedAt": "2026-11-03T23:26:31+00:00",
+      "quoteTime": 1793747174,
       "currency": "AUD",
       "quote": {
-        "price": 8886.8,
-        "change": 30.299999999999272,
-        "percent": 0.3421216056003983,
+        "price": 8836.6,
+        "change": -19.899999999999636,
+        "percent": -0.2246937277705599,
         "currency": "AUD",
-        "timestamp": 1793687054,
-        "date": "2026-11-03 06:24 UTC",
+        "timestamp": 1793747174,
+        "date": "2026-11-03 23:06 UTC",
         "open": null
       }
     },
@@ -916,16 +920,16 @@
       "name": "S&P/NZX 50",
       "symbol": "^NZ50",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:56+00:00",
-      "quoteTime": 1793680890,
+      "fetchedAt": "2026-11-03T23:26:32+00:00",
+      "quoteTime": 1793747145,
       "currency": "NZD",
       "quote": {
-        "price": 13720.26,
-        "change": 63.37035156250022,
-        "percent": 0.4640174534159064,
+        "price": 13729.92,
+        "change": 73.03035156250007,
+        "percent": 0.5347509824160845,
         "currency": "NZD",
-        "timestamp": 1793680890,
-        "date": "2026-11-03 04:41 UTC",
+        "timestamp": 1793747145,
+        "date": "2026-11-03 23:05 UTC",
         "open": null
       }
     },
@@ -939,16 +943,16 @@
       "name": "보베스파",
       "symbol": "^BVSP",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:56+00:00",
-      "quoteTime": 1793727450,
+      "fetchedAt": "2026-11-03T23:26:33+00:00",
+      "quoteTime": 1793740740,
       "currency": "BRL",
       "quote": {
-        "price": 165073.62,
-        "change": -2848.3800000000047,
-        "percent": -1.6962518312073491,
+        "price": 165528.92,
+        "change": -2393.079999999987,
+        "percent": -1.4251140410428575,
         "currency": "BRL",
-        "timestamp": 1793727450,
-        "date": "2026-11-03 17:37 UTC",
+        "timestamp": 1793740740,
+        "date": "2026-11-03 21:19 UTC",
         "open": null
       }
     },
@@ -975,7 +979,7 @@
         "open": null
       },
       "error": "유효한 가격 이력이 없습니다.",
-      "attemptedAt": "2026-11-03T17:52:35+00:00"
+      "attemptedAt": "2026-11-03T23:26:08+00:00"
     },
     "INDEX:TASI": {
       "country": "사우디아라비아",
@@ -987,7 +991,7 @@
       "name": "TASI",
       "symbol": "^TASI.SR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:57+00:00",
+      "fetchedAt": "2026-11-03T23:26:34+00:00",
       "quoteTime": 1793708399,
       "currency": "SAR",
       "quote": {
@@ -1010,7 +1014,7 @@
       "name": "TA-125",
       "symbol": "^TA125.TA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:58+00:00",
+      "fetchedAt": "2026-11-03T23:26:34+00:00",
       "quoteTime": 1793719486,
       "currency": "ILS",
       "quote": {
@@ -1033,7 +1037,7 @@
       "name": "BIST 100",
       "symbol": "XU100.IS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:58+00:00",
+      "fetchedAt": "2026-11-03T23:26:35+00:00",
       "quoteTime": 1793718611,
       "currency": "TRY",
       "quote": {
@@ -1056,7 +1060,7 @@
       "name": "DFM 종합",
       "symbol": "DFMGI.AE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:59+00:00",
+      "fetchedAt": "2026-11-03T23:26:36+00:00",
       "quoteTime": 1793703620,
       "currency": "AED",
       "quote": {
@@ -1079,7 +1083,7 @@
       "name": "FTSE/JSE 종합",
       "symbol": "^J203.JO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:59+00:00",
+      "fetchedAt": "2026-11-03T23:26:36+00:00",
       "quoteTime": 1793718061,
       "currency": "ZAR",
       "quote": {
@@ -1102,7 +1106,7 @@
       "name": "EGX 30",
       "symbol": "^CASE30",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:00+00:00",
+      "fetchedAt": "2026-11-03T23:26:37+00:00",
       "quoteTime": 1793708701,
       "currency": "EGP",
       "quote": {
@@ -1125,16 +1129,16 @@
       "name": "나스닥 종합",
       "symbol": "^IXIC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:01+00:00",
-      "quoteTime": 1793728380,
+      "fetchedAt": "2026-11-03T23:26:37+00:00",
+      "quoteTime": 1793744159,
       "currency": "USD",
       "quote": {
-        "price": 25424.324,
-        "change": 260.0134531250005,
-        "percent": 1.0332627736438817,
+        "price": 25372.01,
+        "change": 207.6994531249984,
+        "percent": 0.8253731122023181,
         "currency": "USD",
-        "timestamp": 1793728380,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793744159,
+        "date": "2026-11-03 22:15 UTC",
         "open": null
       }
     },
@@ -1148,16 +1152,16 @@
       "name": "나스닥 100",
       "symbol": "^NDX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:01+00:00",
-      "quoteTime": 1793728379,
+      "fetchedAt": "2026-11-03T23:26:38+00:00",
+      "quoteTime": 1793744159,
       "currency": "USD",
       "quote": {
-        "price": 28246.836,
-        "change": 257.01568749999933,
-        "percent": 0.918247007770959,
+        "price": 28180.264,
+        "change": 190.4436874999992,
+        "percent": 0.6804033944260399,
         "currency": "USD",
-        "timestamp": 1793728379,
-        "date": "2026-11-03 17:52 UTC",
+        "timestamp": 1793744159,
+        "date": "2026-11-03 22:15 UTC",
         "open": null
       }
     },
@@ -1171,7 +1175,7 @@
       "name": "KOSDAQ",
       "symbol": "^KQ11",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:02+00:00",
+      "fetchedAt": "2026-11-03T23:26:39+00:00",
       "quoteTime": 1793703940,
       "currency": "KRW",
       "quote": {
@@ -1194,7 +1198,7 @@
       "name": "선전 성분지수",
       "symbol": "399001.SZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:02+00:00",
+      "fetchedAt": "2026-11-03T23:26:39+00:00",
       "quoteTime": 1793694541,
       "currency": "CNY",
       "quote": {
@@ -1217,7 +1221,7 @@
       "name": "항셍 중국기업",
       "symbol": "^HSCE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:03+00:00",
+      "fetchedAt": "2026-11-03T23:26:40+00:00",
       "quoteTime": 1793693310,
       "currency": "HKD",
       "quote": {
@@ -1240,7 +1244,7 @@
       "name": "SENSEX",
       "symbol": "^BSESN",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:03+00:00",
+      "fetchedAt": "2026-11-03T23:26:41+00:00",
       "quoteTime": 1793700149,
       "currency": "INR",
       "quote": {
@@ -1263,16 +1267,16 @@
       "name": "다우존스",
       "symbol": "^DJI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:04+00:00",
-      "quoteTime": 1793728383,
+      "fetchedAt": "2026-11-03T23:26:41+00:00",
+      "quoteTime": 1793741696,
       "currency": "USD",
       "quote": {
-        "price": 51787.13,
-        "change": -196.85046875000262,
-        "percent": -0.378675251442776,
+        "price": 51786.72,
+        "change": -197.26046874999884,
+        "percent": -0.3794639559557801,
         "currency": "USD",
-        "timestamp": 1793728383,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793741696,
+        "date": "2026-11-03 21:34 UTC",
         "open": null
       }
     },
@@ -1286,16 +1290,16 @@
       "name": "나스닥 종합",
       "symbol": "^IXIC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:01+00:00",
-      "quoteTime": 1793728380,
+      "fetchedAt": "2026-11-03T23:26:37+00:00",
+      "quoteTime": 1793744159,
       "currency": "USD",
       "quote": {
-        "price": 25424.324,
-        "change": 260.0134531250005,
-        "percent": 1.0332627736438817,
+        "price": 25372.01,
+        "change": 207.6994531249984,
+        "percent": 0.8253731122023181,
         "currency": "USD",
-        "timestamp": 1793728380,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793744159,
+        "date": "2026-11-03 22:15 UTC",
         "open": null
       }
     },
@@ -1309,7 +1313,7 @@
       "name": "CSI 300",
       "symbol": "000300.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:04+00:00",
+      "fetchedAt": "2026-11-03T23:26:42+00:00",
       "quoteTime": 1793689225,
       "currency": "CNY",
       "quote": {
@@ -1332,7 +1336,7 @@
       "name": "KOSPI",
       "symbol": "^KS11",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:49+00:00",
+      "fetchedAt": "2026-11-03T23:26:25+00:00",
       "quoteTime": 1793703940,
       "currency": "KRW",
       "quote": {
@@ -1355,16 +1359,16 @@
       "name": "다우존스",
       "symbol": "^DJI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:04+00:00",
-      "quoteTime": 1793728383,
+      "fetchedAt": "2026-11-03T23:26:41+00:00",
+      "quoteTime": 1793741696,
       "currency": "USD",
       "quote": {
-        "price": 51787.13,
-        "change": -196.85046875000262,
-        "percent": -0.378675251442776,
+        "price": 51786.72,
+        "change": -197.26046874999884,
+        "percent": -0.3794639559557801,
         "currency": "USD",
-        "timestamp": 1793728383,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793741696,
+        "date": "2026-11-03 21:34 UTC",
         "open": null
       }
     },
@@ -1378,7 +1382,7 @@
       "name": "니케이 225",
       "symbol": "^N225",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:50+00:00",
+      "fetchedAt": "2026-11-03T23:26:25+00:00",
       "quoteTime": 1793601903,
       "currency": "JPY",
       "quote": {
@@ -1401,16 +1405,16 @@
       "name": "러셀 2000",
       "symbol": "^RUT",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:05+00:00",
-      "quoteTime": 1793727480,
+      "fetchedAt": "2026-11-03T23:26:43+00:00",
+      "quoteTime": 1793741404,
       "currency": "USD",
       "quote": {
-        "price": 2823.055,
-        "change": 17.175117187499836,
-        "percent": 0.6121116335986627,
+        "price": 2812.447,
+        "change": 6.567117187500116,
+        "percent": 0.2340484076929731,
         "currency": "USD",
-        "timestamp": 1793727480,
-        "date": "2026-11-03 17:38 UTC",
+        "timestamp": 1793741404,
+        "date": "2026-11-03 21:30 UTC",
         "open": null
       }
     },
@@ -1424,7 +1428,7 @@
       "name": "항셍",
       "symbol": "^HSI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:51+00:00",
+      "fetchedAt": "2026-11-03T23:26:27+00:00",
       "quoteTime": 1793693310,
       "currency": "HKD",
       "quote": {
@@ -1447,7 +1451,7 @@
       "name": "DAX",
       "symbol": "^GDAXI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:40+00:00",
+      "fetchedAt": "2026-11-03T23:26:15+00:00",
       "quoteTime": 1793725200,
       "currency": "EUR",
       "quote": {
@@ -1470,7 +1474,7 @@
       "name": "FTSE 100",
       "symbol": "^FTSE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:52:41+00:00",
+      "fetchedAt": "2026-11-03T23:26:16+00:00",
       "quoteTime": 1793723729,
       "currency": "GBP",
       "quote": {
@@ -1493,16 +1497,16 @@
       "name": "엔비디아",
       "symbol": "NVDA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:06+00:00",
-      "quoteTime": 1793728385,
+      "fetchedAt": "2026-11-03T23:26:43+00:00",
+      "quoteTime": 1793739600,
       "currency": "USD",
       "quote": {
-        "price": 208.45,
-        "change": 6.390002441406239,
-        "percent": 3.1624282483489847,
+        "price": 206.69,
+        "change": 4.630002441406248,
+        "percent": 2.291399830420977,
         "currency": "USD",
-        "timestamp": 1793728385,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -1516,7 +1520,7 @@
       "name": "삼성전자",
       "symbol": "005930.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:06+00:00",
+      "fetchedAt": "2026-11-03T23:26:44+00:00",
       "quoteTime": 1793687402,
       "currency": "KRW",
       "quote": {
@@ -1539,7 +1543,7 @@
       "name": "도요타자동차",
       "symbol": "7203.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:07+00:00",
+      "fetchedAt": "2026-11-03T23:26:45+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -1562,7 +1566,7 @@
       "name": "텐센트",
       "symbol": "0700.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:07+00:00",
+      "fetchedAt": "2026-11-03T23:26:45+00:00",
       "quoteTime": 1793693286,
       "currency": "HKD",
       "quote": {
@@ -1585,7 +1589,7 @@
       "name": "TSMC 대만",
       "symbol": "2330.TW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:08+00:00",
+      "fetchedAt": "2026-11-03T23:26:46+00:00",
       "quoteTime": 1793683805,
       "currency": "TWD",
       "quote": {
@@ -1608,7 +1612,7 @@
       "name": "릴라이언스 인더스트리",
       "symbol": "RELIANCE.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:09+00:00",
+      "fetchedAt": "2026-11-03T23:26:47+00:00",
       "quoteTime": 1793699979,
       "currency": "INR",
       "quote": {
@@ -1631,7 +1635,7 @@
       "name": "SAP",
       "symbol": "SAP.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:09+00:00",
+      "fetchedAt": "2026-11-03T23:26:47+00:00",
       "quoteTime": 1793724000,
       "currency": "EUR",
       "quote": {
@@ -1654,7 +1658,7 @@
       "name": "ASML",
       "symbol": "ASML.AS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:10+00:00",
+      "fetchedAt": "2026-11-03T23:26:48+00:00",
       "quoteTime": 1793723900,
       "currency": "EUR",
       "quote": {
@@ -1677,7 +1681,7 @@
       "name": "LVMH",
       "symbol": "MC.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:10+00:00",
+      "fetchedAt": "2026-11-03T23:26:49+00:00",
       "quoteTime": 1793723928,
       "currency": "EUR",
       "quote": {
@@ -1700,7 +1704,7 @@
       "name": "아스트라제네카",
       "symbol": "AZN.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:11+00:00",
+      "fetchedAt": "2026-11-03T23:26:49+00:00",
       "quoteTime": 1793724976,
       "currency": "GBp",
       "quote": {
@@ -1723,7 +1727,7 @@
       "name": "네슬레",
       "symbol": "NESN.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:12+00:00",
+      "fetchedAt": "2026-11-03T23:26:50+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -1746,16 +1750,16 @@
       "name": "쇼피파이",
       "symbol": "SHOP.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:12+00:00",
-      "quoteTime": 1793728385,
+      "fetchedAt": "2026-11-03T23:26:51+00:00",
+      "quoteTime": 1793739600,
       "currency": "CAD",
       "quote": {
-        "price": 207.14,
-        "change": -10.499999389648451,
-        "percent": -4.824480527060625,
+        "price": 200.19,
+        "change": -17.44999938964844,
+        "percent": -8.017827347264001,
         "currency": "CAD",
-        "timestamp": 1793728385,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -1769,16 +1773,16 @@
       "name": "BHP 그룹",
       "symbol": "BHP.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:13+00:00",
-      "quoteTime": 1793682614,
+      "fetchedAt": "2026-11-03T23:26:51+00:00",
+      "quoteTime": 1793747207,
       "currency": "AUD",
       "quote": {
-        "price": 56.42,
-        "change": -0.32000167846679517,
-        "percent": -0.5639789725072177,
+        "price": 55.785,
+        "change": -0.6349981689453159,
+        "percent": -1.1254842069364537,
         "currency": "AUD",
-        "timestamp": 1793682614,
-        "date": "2026-11-03 05:10 UTC",
+        "timestamp": 1793747207,
+        "date": "2026-11-03 23:06 UTC",
         "open": null
       }
     },
@@ -1792,16 +1796,16 @@
       "name": "페트로브라스",
       "symbol": "PETR4.SA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:13+00:00",
-      "quoteTime": 1793727489,
+      "fetchedAt": "2026-11-03T23:26:52+00:00",
+      "quoteTime": 1793739945,
       "currency": "BRL",
       "quote": {
-        "price": 50.77,
-        "change": -1.9399990844726531,
-        "percent": -3.6805143581270507,
+        "price": 50.71,
+        "change": -1.9999990844726554,
+        "percent": -3.7943447528190464,
         "currency": "BRL",
-        "timestamp": 1793727489,
-        "date": "2026-11-03 17:38 UTC",
+        "timestamp": 1793739945,
+        "date": "2026-11-03 21:05 UTC",
         "open": null
       }
     },
@@ -1815,16 +1819,16 @@
       "name": "비트코인 / 미국 달러",
       "symbol": "BTC-USD",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:14+00:00",
-      "quoteTime": 1793728390,
+      "fetchedAt": "2026-11-03T23:26:53+00:00",
+      "quoteTime": 1793748409,
       "currency": "USD",
       "quote": {
-        "price": 77603.75,
-        "change": 926.453125,
-        "percent": 1.2082495898496681,
+        "price": 77835.5,
+        "change": 1158.203125,
+        "percent": 1.5104902913937002,
         "currency": "USD",
-        "timestamp": 1793728390,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793748409,
+        "date": "2026-11-03 23:26 UTC",
         "open": null
       }
     },
@@ -1838,16 +1842,16 @@
       "name": "금 선물 / COMEX",
       "symbol": "GC=F",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:14+00:00",
-      "quoteTime": 1793727785,
+      "fetchedAt": "2026-11-03T23:26:53+00:00",
+      "quoteTime": 1793747795,
       "currency": "USD",
       "quote": {
-        "price": 3938.4,
-        "change": -31.20009765624991,
-        "percent": -0.7859758385906737,
+        "price": 3940.3,
+        "change": -29.300097656249818,
+        "percent": -0.7381120751571253,
         "currency": "USD",
-        "timestamp": 1793727785,
-        "date": "2026-11-03 17:43 UTC",
+        "timestamp": 1793747795,
+        "date": "2026-11-03 23:16 UTC",
         "open": null
       }
     },
@@ -1861,7 +1865,7 @@
       "name": "에넬",
       "symbol": "ENEL.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:15+00:00",
+      "fetchedAt": "2026-11-03T23:26:54+00:00",
       "quoteTime": 1793723796,
       "currency": "EUR",
       "quote": {
@@ -1884,7 +1888,7 @@
       "name": "산탄데르",
       "symbol": "SAN.MC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:16+00:00",
+      "fetchedAt": "2026-11-03T23:26:55+00:00",
       "quoteTime": 1793723910,
       "currency": "EUR",
       "quote": {
@@ -1907,7 +1911,7 @@
       "name": "볼보",
       "symbol": "VOLV-B.ST",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:16+00:00",
+      "fetchedAt": "2026-11-03T23:26:55+00:00",
       "quoteTime": 1793723383,
       "currency": "SEK",
       "quote": {
@@ -1930,7 +1934,7 @@
       "name": "노보노디스크",
       "symbol": "NOVO-B.CO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:17+00:00",
+      "fetchedAt": "2026-11-03T23:26:56+00:00",
       "quoteTime": 1793721587,
       "currency": "DKK",
       "quote": {
@@ -1953,7 +1957,7 @@
       "name": "에퀴노르",
       "symbol": "EQNR.OL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:18+00:00",
+      "fetchedAt": "2026-11-03T23:26:57+00:00",
       "quoteTime": 1793719602,
       "currency": "NOK",
       "quote": {
@@ -1976,7 +1980,7 @@
       "name": "노키아",
       "symbol": "NOKIA.HE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:18+00:00",
+      "fetchedAt": "2026-11-03T23:26:57+00:00",
       "quoteTime": 1793723377,
       "currency": "EUR",
       "quote": {
@@ -1999,7 +2003,7 @@
       "name": "AB인베브",
       "symbol": "ABI.BR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:19+00:00",
+      "fetchedAt": "2026-11-03T23:26:58+00:00",
       "quoteTime": 1793723928,
       "currency": "EUR",
       "quote": {
@@ -2022,7 +2026,7 @@
       "name": "EDP",
       "symbol": "EDP.LS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:19+00:00",
+      "fetchedAt": "2026-11-03T23:26:59+00:00",
       "quoteTime": 1793723711,
       "currency": "EUR",
       "quote": {
@@ -2045,7 +2049,7 @@
       "name": "뵈스트알피네",
       "symbol": "VOE.VI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:20+00:00",
+      "fetchedAt": "2026-11-03T23:26:59+00:00",
       "quoteTime": 1793723760,
       "currency": "EUR",
       "quote": {
@@ -2068,7 +2072,7 @@
       "name": "오를렌",
       "symbol": "PKN.WA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:21+00:00",
+      "fetchedAt": "2026-11-03T23:27:00+00:00",
       "quoteTime": 1793721839,
       "currency": "PLN",
       "quote": {
@@ -2091,7 +2095,7 @@
       "name": "라이언에어",
       "symbol": "RYA.IR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:21+00:00",
+      "fetchedAt": "2026-11-03T23:27:01+00:00",
       "quoteTime": 1793723797,
       "currency": "EUR",
       "quote": {
@@ -2114,7 +2118,7 @@
       "name": "구이저우마오타이",
       "symbol": "600519.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:22+00:00",
+      "fetchedAt": "2026-11-03T23:27:01+00:00",
       "quoteTime": 1793689202,
       "currency": "CNY",
       "quote": {
@@ -2137,7 +2141,7 @@
       "name": "DBS그룹",
       "symbol": "D05.SI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:22+00:00",
+      "fetchedAt": "2026-11-03T23:27:02+00:00",
       "quoteTime": 1793697356,
       "currency": "SGD",
       "quote": {
@@ -2160,7 +2164,7 @@
       "name": "메이뱅크",
       "symbol": "1155.KL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:23+00:00",
+      "fetchedAt": "2026-11-03T23:27:03+00:00",
       "quoteTime": 1793695920,
       "currency": "MYR",
       "quote": {
@@ -2183,7 +2187,7 @@
       "name": "뱅크센트럴아시아",
       "symbol": "BBCA.JK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:24+00:00",
+      "fetchedAt": "2026-11-03T23:27:03+00:00",
       "quoteTime": 1793697293,
       "currency": "IDR",
       "quote": {
@@ -2206,7 +2210,7 @@
       "name": "PTT",
       "symbol": "PTT.BK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:24+00:00",
+      "fetchedAt": "2026-11-03T23:27:04+00:00",
       "quoteTime": 1793698779,
       "currency": "THB",
       "quote": {
@@ -2229,16 +2233,16 @@
       "name": "피셔앤드파이켈헬스케어",
       "symbol": "FPH.NZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:25+00:00",
-      "quoteTime": 1793678423,
+      "fetchedAt": "2026-11-03T23:27:05+00:00",
+      "quoteTime": 1793747196,
       "currency": "NZD",
       "quote": {
-        "price": 46.2,
-        "change": 0.06999893188476847,
-        "percent": 0.15174274932577725,
+        "price": 46.72,
+        "change": 0.5199992370605457,
+        "percent": 1.1255394555700458,
         "currency": "NZD",
-        "timestamp": 1793678423,
-        "date": "2026-11-03 04:00 UTC",
+        "timestamp": 1793747196,
+        "date": "2026-11-03 23:06 UTC",
         "open": null
       }
     },
@@ -2252,16 +2256,16 @@
       "name": "아메리카모빌",
       "symbol": "AMXB.MX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:25+00:00",
-      "quoteTime": 1793727174,
+      "fetchedAt": "2026-11-03T23:27:05+00:00",
+      "quoteTime": 1793739599,
       "currency": "MXN",
       "quote": {
-        "price": 23.48,
-        "change": 0.4399990844726567,
-        "percent": 1.909718172693857,
+        "price": 23.36,
+        "change": 0.3199990844726557,
+        "percent": 1.3888848600565755,
         "currency": "MXN",
-        "timestamp": 1793727174,
-        "date": "2026-11-03 17:32 UTC",
+        "timestamp": 1793739599,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -2275,16 +2279,16 @@
       "name": "그루포갈리시아",
       "symbol": "GGAL.BA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:26+00:00",
-      "quoteTime": 1793727204,
+      "fetchedAt": "2026-11-03T23:27:06+00:00",
+      "quoteTime": 1793739598,
       "currency": "ARS",
       "quote": {
-        "price": 5230.0,
-        "change": 25.0,
-        "percent": 0.48030739673390976,
+        "price": 5255.0,
+        "change": 50.0,
+        "percent": 0.9606147934678195,
         "currency": "ARS",
-        "timestamp": 1793727204,
-        "date": "2026-11-03 17:33 UTC",
+        "timestamp": 1793739598,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -2298,16 +2302,16 @@
       "name": "SQM",
       "symbol": "SQM-B.SN",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:26+00:00",
-      "quoteTime": 1793725890,
+      "fetchedAt": "2026-11-03T23:27:07+00:00",
+      "quoteTime": 1793732561,
       "currency": "CLP",
       "quote": {
-        "price": 52899.0,
-        "change": -7100.0,
-        "percent": -11.833530558842648,
+        "price": 52890.0,
+        "change": -7109.0,
+        "percent": -11.848530808846816,
         "currency": "CLP",
-        "timestamp": 1793725890,
-        "date": "2026-11-03 17:11 UTC",
+        "timestamp": 1793732561,
+        "date": "2026-11-03 19:02 UTC",
         "open": null
       }
     },
@@ -2321,16 +2325,16 @@
       "name": "에코페트롤",
       "symbol": "ECOPETROL.CL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:27+00:00",
-      "quoteTime": 1793727502,
+      "fetchedAt": "2026-11-03T23:27:07+00:00",
+      "quoteTime": 1793739579,
       "currency": "COP",
       "quote": {
-        "price": 2680.0,
-        "change": -100.0,
-        "percent": -3.597122302158273,
+        "price": 2695.0,
+        "change": -85.0,
+        "percent": -3.0575539568345325,
         "currency": "COP",
-        "timestamp": 1793727502,
-        "date": "2026-11-03 17:38 UTC",
+        "timestamp": 1793739579,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -2344,7 +2348,7 @@
       "name": "사우디아람코",
       "symbol": "2222.SR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:28+00:00",
+      "fetchedAt": "2026-11-03T23:27:08+00:00",
       "quoteTime": 1793708364,
       "currency": "SAR",
       "quote": {
@@ -2367,7 +2371,7 @@
       "name": "에마르프로퍼티",
       "symbol": "EMAAR.AE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:28+00:00",
+      "fetchedAt": "2026-11-03T23:27:09+00:00",
       "quoteTime": 1793703583,
       "currency": "AED",
       "quote": {
@@ -2390,7 +2394,7 @@
       "name": "카타르국립은행",
       "symbol": "QNBK.QA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:29+00:00",
+      "fetchedAt": "2026-11-03T23:27:09+00:00",
       "quoteTime": 1793700704,
       "currency": "QAR",
       "quote": {
@@ -2413,7 +2417,7 @@
       "name": "레우미은행",
       "symbol": "LUMI.TA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:29+00:00",
+      "fetchedAt": "2026-11-03T23:27:10+00:00",
       "quoteTime": 1793719669,
       "currency": "ILA",
       "quote": {
@@ -2436,7 +2440,7 @@
       "name": "터키항공",
       "symbol": "THYAO.IS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:30+00:00",
+      "fetchedAt": "2026-11-03T23:27:11+00:00",
       "quoteTime": 1793718582,
       "currency": "TRY",
       "quote": {
@@ -2459,7 +2463,7 @@
       "name": "내스퍼스",
       "symbol": "NPN.JO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:30+00:00",
+      "fetchedAt": "2026-11-03T23:27:11+00:00",
       "quoteTime": 1793718584,
       "currency": "ZAc",
       "quote": {
@@ -2482,7 +2486,7 @@
       "name": "커머셜인터내셔널은행",
       "symbol": "COMI.CA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:31+00:00",
+      "fetchedAt": "2026-11-03T23:27:12+00:00",
       "quoteTime": 1721764800,
       "currency": "EGP",
       "quote": {
@@ -2505,16 +2509,16 @@
       "name": "애플",
       "symbol": "AAPL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:31+00:00",
-      "quoteTime": 1793728410,
+      "fetchedAt": "2026-11-03T23:27:13+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 332.31,
-        "change": -6.010007324218748,
-        "percent": -1.7764268131087022,
+        "price": 331.9,
+        "change": -6.420007324218773,
+        "percent": -1.8976138523390231,
         "currency": "USD",
-        "timestamp": 1793728410,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -2528,7 +2532,7 @@
       "name": "SK하이닉스",
       "symbol": "000660.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:32+00:00",
+      "fetchedAt": "2026-11-03T23:27:13+00:00",
       "quoteTime": 1793687424,
       "currency": "KRW",
       "quote": {
@@ -2551,7 +2555,7 @@
       "name": "소니그룹",
       "symbol": "6758.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:32+00:00",
+      "fetchedAt": "2026-11-03T23:27:14+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -2574,7 +2578,7 @@
       "name": "알리바바",
       "symbol": "9988.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:33+00:00",
+      "fetchedAt": "2026-11-03T23:27:15+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -2597,7 +2601,7 @@
       "name": "타타 컨설턴시",
       "symbol": "TCS.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:33+00:00",
+      "fetchedAt": "2026-11-03T23:27:15+00:00",
       "quoteTime": 1793699978,
       "currency": "INR",
       "quote": {
@@ -2620,7 +2624,7 @@
       "name": "지멘스",
       "symbol": "SIE.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:34+00:00",
+      "fetchedAt": "2026-11-03T23:27:16+00:00",
       "quoteTime": 1793723714,
       "currency": "EUR",
       "quote": {
@@ -2643,7 +2647,7 @@
       "name": "로레알",
       "symbol": "OR.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:35+00:00",
+      "fetchedAt": "2026-11-03T23:27:17+00:00",
       "quoteTime": 1793723934,
       "currency": "EUR",
       "quote": {
@@ -2666,7 +2670,7 @@
       "name": "HSBC",
       "symbol": "HSBA.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:35+00:00",
+      "fetchedAt": "2026-11-03T23:27:17+00:00",
       "quoteTime": 1793726100,
       "currency": "GBp",
       "quote": {
@@ -2689,16 +2693,16 @@
       "name": "이더리움 / 미국 달러",
       "symbol": "ETH-USD",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:36+00:00",
-      "quoteTime": 1793728409,
+      "fetchedAt": "2026-11-03T23:27:18+00:00",
+      "quoteTime": 1793748431,
       "currency": "USD",
       "quote": {
-        "price": 2295.52,
-        "change": 46.63376953124998,
-        "percent": 2.073638448198858,
+        "price": 2288.76,
+        "change": 39.87376953125022,
+        "percent": 1.7730452074909573,
         "currency": "USD",
-        "timestamp": 1793728409,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793748431,
+        "date": "2026-11-03 23:27 UTC",
         "open": null
       }
     },
@@ -2712,7 +2716,7 @@
       "name": "아디옌",
       "symbol": "ADYEN.AS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:36+00:00",
+      "fetchedAt": "2026-11-03T23:27:19+00:00",
       "quoteTime": 1793723928,
       "currency": "EUR",
       "quote": {
@@ -2735,7 +2739,7 @@
       "name": "로슈 보통주",
       "symbol": "RO.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:37+00:00",
+      "fetchedAt": "2026-11-03T23:27:19+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -2758,7 +2762,7 @@
       "name": "에니",
       "symbol": "ENI.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:37+00:00",
+      "fetchedAt": "2026-11-03T23:27:20+00:00",
       "quoteTime": 1793723703,
       "currency": "EUR",
       "quote": {
@@ -2781,7 +2785,7 @@
       "name": "BBVA",
       "symbol": "BBVA.MC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:38+00:00",
+      "fetchedAt": "2026-11-03T23:27:21+00:00",
       "quoteTime": 1793723715,
       "currency": "EUR",
       "quote": {
@@ -2804,7 +2808,7 @@
       "name": "아틀라스콥코",
       "symbol": "ATCO-A.ST",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:39+00:00",
+      "fetchedAt": "2026-11-03T23:27:21+00:00",
       "quoteTime": 1793723381,
       "currency": "SEK",
       "quote": {
@@ -2827,7 +2831,7 @@
       "name": "DSV",
       "symbol": "DSV.CO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:39+00:00",
+      "fetchedAt": "2026-11-03T23:27:22+00:00",
       "quoteTime": 1793721594,
       "currency": "DKK",
       "quote": {
@@ -2850,7 +2854,7 @@
       "name": "DNB은행",
       "symbol": "DNB.OL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:40+00:00",
+      "fetchedAt": "2026-11-03T23:27:23+00:00",
       "quoteTime": 1793719687,
       "currency": "NOK",
       "quote": {
@@ -2873,7 +2877,7 @@
       "name": "코네",
       "symbol": "KNEBV.HE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:40+00:00",
+      "fetchedAt": "2026-11-03T23:27:23+00:00",
       "quoteTime": 1793723388,
       "currency": "EUR",
       "quote": {
@@ -2896,7 +2900,7 @@
       "name": "KBC그룹",
       "symbol": "KBC.BR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:41+00:00",
+      "fetchedAt": "2026-11-03T23:27:24+00:00",
       "quoteTime": 1793723711,
       "currency": "EUR",
       "quote": {
@@ -2919,7 +2923,7 @@
       "name": "갈프에너지",
       "symbol": "GALP.LS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:42+00:00",
+      "fetchedAt": "2026-11-03T23:27:25+00:00",
       "quoteTime": 1793723770,
       "currency": "EUR",
       "quote": {
@@ -2942,7 +2946,7 @@
       "name": "OMV",
       "symbol": "OMV.VI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:42+00:00",
+      "fetchedAt": "2026-11-03T23:27:25+00:00",
       "quoteTime": 1793723705,
       "currency": "EUR",
       "quote": {
@@ -2965,7 +2969,7 @@
       "name": "PKO은행",
       "symbol": "PKO.WA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:43+00:00",
+      "fetchedAt": "2026-11-03T23:27:26+00:00",
       "quoteTime": 1793721654,
       "currency": "PLN",
       "quote": {
@@ -2988,7 +2992,7 @@
       "name": "케리그룹",
       "symbol": "KRZ.IR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:43+00:00",
+      "fetchedAt": "2026-11-03T23:27:27+00:00",
       "quoteTime": 1793723547,
       "currency": "EUR",
       "quote": {
@@ -3011,7 +3015,7 @@
       "name": "헬레닉텔레콤",
       "symbol": "HTO.AT",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:44+00:00",
+      "fetchedAt": "2026-11-03T23:27:27+00:00",
       "quoteTime": 1793718819,
       "currency": "EUR",
       "quote": {
@@ -3034,7 +3038,7 @@
       "name": "중국공상은행",
       "symbol": "601398.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:44+00:00",
+      "fetchedAt": "2026-11-03T23:27:28+00:00",
       "quoteTime": 1793689202,
       "currency": "CNY",
       "quote": {
@@ -3057,7 +3061,7 @@
       "name": "폭스콘",
       "symbol": "2317.TW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:45+00:00",
+      "fetchedAt": "2026-11-03T23:27:29+00:00",
       "quoteTime": 1793683806,
       "currency": "TWD",
       "quote": {
@@ -3080,7 +3084,7 @@
       "name": "OCBC은행",
       "symbol": "O39.SI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:46+00:00",
+      "fetchedAt": "2026-11-03T23:27:29+00:00",
       "quoteTime": 1793697279,
       "currency": "SGD",
       "quote": {
@@ -3103,7 +3107,7 @@
       "name": "퍼블릭은행",
       "symbol": "1295.KL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:46+00:00",
+      "fetchedAt": "2026-11-03T23:27:30+00:00",
       "quoteTime": 1793696392,
       "currency": "MYR",
       "quote": {
@@ -3126,7 +3130,7 @@
       "name": "뱅크라크얏인도네시아",
       "symbol": "BBRI.JK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:47+00:00",
+      "fetchedAt": "2026-11-03T23:27:31+00:00",
       "quoteTime": 1793697299,
       "currency": "IDR",
       "quote": {
@@ -3149,7 +3153,7 @@
       "name": "태국공항공사",
       "symbol": "AOT.BK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:48+00:00",
+      "fetchedAt": "2026-11-03T23:27:31+00:00",
       "quoteTime": 1793698779,
       "currency": "THB",
       "quote": {
@@ -3172,16 +3176,16 @@
       "name": "커먼웰스은행",
       "symbol": "CBA.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:48+00:00",
-      "quoteTime": 1793682614,
+      "fetchedAt": "2026-11-03T23:27:32+00:00",
+      "quoteTime": 1793747251,
       "currency": "AUD",
       "quote": {
-        "price": 167.23,
-        "change": 2.1799969482421773,
-        "percent": 1.3208100017777975,
+        "price": 165.54,
+        "change": -1.6899957275390705,
+        "percent": -1.0105816962959868,
         "currency": "AUD",
-        "timestamp": 1793682614,
-        "date": "2026-11-03 05:10 UTC",
+        "timestamp": 1793747251,
+        "date": "2026-11-03 23:07 UTC",
         "open": null
       }
     },
@@ -3195,16 +3199,16 @@
       "name": "오클랜드공항",
       "symbol": "AIA.NZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:49+00:00",
-      "quoteTime": 1793678422,
+      "fetchedAt": "2026-11-03T23:27:33+00:00",
+      "quoteTime": 1793747219,
       "currency": "NZD",
       "quote": {
-        "price": 8.55,
-        "change": -0.029999923706053977,
-        "percent": -0.34964946355262644,
+        "price": 8.59,
+        "change": 0.03999980926513658,
+        "percent": 0.46783401605630415,
         "currency": "NZD",
-        "timestamp": 1793678422,
-        "date": "2026-11-03 04:00 UTC",
+        "timestamp": 1793747219,
+        "date": "2026-11-03 23:06 UTC",
         "open": null
       }
     },
@@ -3218,16 +3222,16 @@
       "name": "캐나다왕립은행",
       "symbol": "RY.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:49+00:00",
-      "quoteTime": 1793728375,
+      "fetchedAt": "2026-11-03T23:27:34+00:00",
+      "quoteTime": 1793739600,
       "currency": "CAD",
       "quote": {
-        "price": 284.44,
-        "change": -1.7699914550781273,
-        "percent": -0.6184240620250796,
+        "price": 285.42,
+        "change": -0.7899914550781091,
+        "percent": -0.2760181260835199,
         "currency": "CAD",
-        "timestamp": 1793728375,
-        "date": "2026-11-03 17:52 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -3241,16 +3245,16 @@
       "name": "월마트멕시코",
       "symbol": "WALMEX.MX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:50+00:00",
-      "quoteTime": 1793727218,
+      "fetchedAt": "2026-11-03T23:27:35+00:00",
+      "quoteTime": 1793739595,
       "currency": "MXN",
       "quote": {
-        "price": 51.03,
-        "change": 0.5900013732910168,
-        "percent": 1.1697093365474425,
+        "price": 50.25,
+        "change": -0.18999862670898438,
+        "percent": -0.3766824581322973,
         "currency": "MXN",
-        "timestamp": 1793727218,
-        "date": "2026-11-03 17:33 UTC",
+        "timestamp": 1793739595,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -3264,16 +3268,16 @@
       "name": "발레",
       "symbol": "VALE3.SA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:51+00:00",
-      "quoteTime": 1793727529,
+      "fetchedAt": "2026-11-03T23:27:35+00:00",
+      "quoteTime": 1793739941,
       "currency": "BRL",
       "quote": {
-        "price": 60.63,
-        "change": -1.3900004577636693,
-        "percent": -2.2412132336410986,
+        "price": 60.25,
+        "change": -1.7700004577636719,
+        "percent": -2.853918807964315,
         "currency": "BRL",
-        "timestamp": 1793727529,
-        "date": "2026-11-03 17:38 UTC",
+        "timestamp": 1793739941,
+        "date": "2026-11-03 21:05 UTC",
         "open": null
       }
     },
@@ -3287,16 +3291,16 @@
       "name": "YPF",
       "symbol": "YPFD.BA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:51+00:00",
-      "quoteTime": 1793727224,
+      "fetchedAt": "2026-11-03T23:27:36+00:00",
+      "quoteTime": 1793739595,
       "currency": "ARS",
       "quote": {
-        "price": 7325.0,
-        "change": 80.0,
-        "percent": 1.1042097998619738,
+        "price": 7495.0,
+        "change": 250.0,
+        "percent": 3.450655624568668,
         "currency": "ARS",
-        "timestamp": 1793727224,
-        "date": "2026-11-03 17:33 UTC",
+        "timestamp": 1793739595,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -3310,16 +3314,16 @@
       "name": "코펙",
       "symbol": "COPEC.SN",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:52+00:00",
-      "quoteTime": 1793726019,
+      "fetchedAt": "2026-11-03T23:27:37+00:00",
+      "quoteTime": 1793732685,
       "currency": "CLP",
       "quote": {
-        "price": 6410.1,
-        "change": -149.89999999999964,
-        "percent": -2.2850609756097504,
+        "price": 6522.4,
+        "change": -37.600000000000364,
+        "percent": -0.5731707317073226,
         "currency": "CLP",
-        "timestamp": 1793726019,
-        "date": "2026-11-03 17:13 UTC",
+        "timestamp": 1793732685,
+        "date": "2026-11-03 19:04 UTC",
         "open": null
       }
     },
@@ -3333,7 +3337,7 @@
       "name": "알라지은행",
       "symbol": "1120.SR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:52+00:00",
+      "fetchedAt": "2026-11-03T23:27:37+00:00",
       "quoteTime": 1793708385,
       "currency": "SAR",
       "quote": {
@@ -3356,7 +3360,7 @@
       "name": "에미레이츠NBD",
       "symbol": "EMIRATESNBD.AE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:53+00:00",
+      "fetchedAt": "2026-11-03T23:27:38+00:00",
       "quoteTime": 1793703493,
       "currency": "AED",
       "quote": {
@@ -3379,7 +3383,7 @@
       "name": "인더스트리즈카타르",
       "symbol": "IQCD.QA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:53+00:00",
+      "fetchedAt": "2026-11-03T23:27:39+00:00",
       "quoteTime": 1793700708,
       "currency": "QAR",
       "quote": {
@@ -3402,7 +3406,7 @@
       "name": "하포알림은행",
       "symbol": "POLI.TA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:54+00:00",
+      "fetchedAt": "2026-11-03T23:27:39+00:00",
       "quoteTime": 1793719519,
       "currency": "ILA",
       "quote": {
@@ -3425,7 +3429,7 @@
       "name": "튀프라시",
       "symbol": "TUPRS.IS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:55+00:00",
+      "fetchedAt": "2026-11-03T23:27:40+00:00",
       "quoteTime": 1793718572,
       "currency": "TRY",
       "quote": {
@@ -3448,7 +3452,7 @@
       "name": "퍼스트랜드",
       "symbol": "FSR.JO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:55+00:00",
+      "fetchedAt": "2026-11-03T23:27:41+00:00",
       "quoteTime": 1793718538,
       "currency": "ZAc",
       "quote": {
@@ -3471,7 +3475,7 @@
       "name": "엘스웨디일렉트릭",
       "symbol": "SWDY.CA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:56+00:00",
+      "fetchedAt": "2026-11-03T23:27:41+00:00",
       "quoteTime": 1721764800,
       "currency": "EGP",
       "quote": {
@@ -3494,16 +3498,16 @@
       "name": "마이크로소프트",
       "symbol": "MSFT",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:56+00:00",
-      "quoteTime": 1793728436,
+      "fetchedAt": "2026-11-03T23:27:42+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 519.9,
-        "change": 12.780004882812477,
-        "percent": 2.5201145697004548,
+        "price": 520.99,
+        "change": 13.870004882812509,
+        "percent": 2.735053836638283,
         "currency": "USD",
-        "timestamp": 1793728436,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -3517,7 +3521,7 @@
       "name": "현대자동차",
       "symbol": "005380.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:57+00:00",
+      "fetchedAt": "2026-11-03T23:27:42+00:00",
       "quoteTime": 1793687415,
       "currency": "KRW",
       "quote": {
@@ -3540,7 +3544,7 @@
       "name": "소프트뱅크그룹",
       "symbol": "9984.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:57+00:00",
+      "fetchedAt": "2026-11-03T23:27:43+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -3563,7 +3567,7 @@
       "name": "BYD",
       "symbol": "1211.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:58+00:00",
+      "fetchedAt": "2026-11-03T23:27:44+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -3586,16 +3590,16 @@
       "name": "비트코인",
       "symbol": "BTC-USD",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:14+00:00",
-      "quoteTime": 1793728390,
+      "fetchedAt": "2026-11-03T23:26:53+00:00",
+      "quoteTime": 1793748409,
       "currency": "USD",
       "quote": {
-        "price": 77603.75,
-        "change": 926.453125,
-        "percent": 1.2082495898496681,
+        "price": 77835.5,
+        "change": 1158.203125,
+        "percent": 1.5104902913937002,
         "currency": "USD",
-        "timestamp": 1793728390,
-        "date": "2026-11-03 17:53 UTC",
+        "timestamp": 1793748409,
+        "date": "2026-11-03 23:26 UTC",
         "open": null
       }
     },
@@ -3609,7 +3613,7 @@
       "name": "셸",
       "symbol": "SHEL.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:59+00:00",
+      "fetchedAt": "2026-11-03T23:27:44+00:00",
       "quoteTime": 1793724976,
       "currency": "GBp",
       "quote": {
@@ -3632,7 +3636,7 @@
       "name": "알리안츠",
       "symbol": "ALV.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:53:59+00:00",
+      "fetchedAt": "2026-11-03T23:27:45+00:00",
       "quoteTime": 1793723713,
       "currency": "EUR",
       "quote": {
@@ -3655,7 +3659,7 @@
       "name": "에어버스",
       "symbol": "AIR.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:00+00:00",
+      "fetchedAt": "2026-11-03T23:27:46+00:00",
       "quoteTime": 1793723928,
       "currency": "EUR",
       "quote": {
@@ -3678,7 +3682,7 @@
       "name": "ING그룹",
       "symbol": "INGA.AS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:00+00:00",
+      "fetchedAt": "2026-11-03T23:27:46+00:00",
       "quoteTime": 1793723791,
       "currency": "EUR",
       "quote": {
@@ -3701,7 +3705,7 @@
       "name": "노바티스",
       "symbol": "NOVN.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:01+00:00",
+      "fetchedAt": "2026-11-03T23:27:47+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -3724,7 +3728,7 @@
       "name": "인테사산파올로",
       "symbol": "ISP.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:01+00:00",
+      "fetchedAt": "2026-11-03T23:27:48+00:00",
       "quoteTime": 1793723928,
       "currency": "EUR",
       "quote": {
@@ -3747,7 +3751,7 @@
       "name": "이베르드롤라",
       "symbol": "IBE.MC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:02+00:00",
+      "fetchedAt": "2026-11-03T23:27:48+00:00",
       "quoteTime": 1793724057,
       "currency": "EUR",
       "quote": {
@@ -3770,7 +3774,7 @@
       "name": "에릭슨",
       "symbol": "ERIC-B.ST",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:02+00:00",
+      "fetchedAt": "2026-11-03T23:27:49+00:00",
       "quoteTime": 1793723383,
       "currency": "SEK",
       "quote": {
@@ -3793,7 +3797,7 @@
       "name": "머스크",
       "symbol": "MAERSK-B.CO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:03+00:00",
+      "fetchedAt": "2026-11-03T23:27:50+00:00",
       "quoteTime": 1793721571,
       "currency": "DKK",
       "quote": {
@@ -3816,7 +3820,7 @@
       "name": "노르스크하이드로",
       "symbol": "NHY.OL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:04+00:00",
+      "fetchedAt": "2026-11-03T23:27:50+00:00",
       "quoteTime": 1793719688,
       "currency": "NOK",
       "quote": {
@@ -3839,7 +3843,7 @@
       "name": "삼포",
       "symbol": "SAMPO.HE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:04+00:00",
+      "fetchedAt": "2026-11-03T23:27:51+00:00",
       "quoteTime": 1793723398,
       "currency": "EUR",
       "quote": {
@@ -3862,7 +3866,7 @@
       "name": "UCB",
       "symbol": "UCB.BR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:05+00:00",
+      "fetchedAt": "2026-11-03T23:27:52+00:00",
       "quoteTime": 1793723719,
       "currency": "EUR",
       "quote": {
@@ -3885,7 +3889,7 @@
       "name": "제로니모마르틴스",
       "symbol": "JMT.LS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:06+00:00",
+      "fetchedAt": "2026-11-03T23:27:52+00:00",
       "quoteTime": 1793723716,
       "currency": "EUR",
       "quote": {
@@ -3908,7 +3912,7 @@
       "name": "에르스테그룹",
       "symbol": "EBS.VI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:06+00:00",
+      "fetchedAt": "2026-11-03T23:27:53+00:00",
       "quoteTime": 1793723729,
       "currency": "EUR",
       "quote": {
@@ -3931,7 +3935,7 @@
       "name": "디노폴스카",
       "symbol": "DNP.WA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:07+00:00",
+      "fetchedAt": "2026-11-03T23:27:54+00:00",
       "quoteTime": 1793721653,
       "currency": "PLN",
       "quote": {
@@ -3954,7 +3958,7 @@
       "name": "그리스국립은행",
       "symbol": "ETE.AT",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:07+00:00",
+      "fetchedAt": "2026-11-03T23:27:54+00:00",
       "quoteTime": 1793718658,
       "currency": "EUR",
       "quote": {
@@ -3977,7 +3981,7 @@
       "name": "중국농업은행",
       "symbol": "601288.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:08+00:00",
+      "fetchedAt": "2026-11-03T23:27:55+00:00",
       "quoteTime": 1793689202,
       "currency": "CNY",
       "quote": {
@@ -4000,7 +4004,7 @@
       "name": "미디어텍",
       "symbol": "2454.TW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:08+00:00",
+      "fetchedAt": "2026-11-03T23:27:56+00:00",
       "quoteTime": 1793683804,
       "currency": "TWD",
       "quote": {
@@ -4023,7 +4027,7 @@
       "name": "HDFC은행",
       "symbol": "HDFCBANK.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:09+00:00",
+      "fetchedAt": "2026-11-03T23:27:56+00:00",
       "quoteTime": 1793699978,
       "currency": "INR",
       "quote": {
@@ -4046,7 +4050,7 @@
       "name": "UOB은행",
       "symbol": "U11.SI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:09+00:00",
+      "fetchedAt": "2026-11-03T23:27:57+00:00",
       "quoteTime": 1793697359,
       "currency": "SGD",
       "quote": {
@@ -4069,7 +4073,7 @@
       "name": "테나가나시오날",
       "symbol": "5347.KL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:10+00:00",
+      "fetchedAt": "2026-11-03T23:27:58+00:00",
       "quoteTime": 1793696296,
       "currency": "MYR",
       "quote": {
@@ -4092,7 +4096,7 @@
       "name": "텔콤인도네시아",
       "symbol": "TLKM.JK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:11+00:00",
+      "fetchedAt": "2026-11-03T23:27:58+00:00",
       "quoteTime": 1793697295,
       "currency": "IDR",
       "quote": {
@@ -4115,7 +4119,7 @@
       "name": "CP올",
       "symbol": "CPALL.BK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:11+00:00",
+      "fetchedAt": "2026-11-03T23:27:59+00:00",
       "quoteTime": 1793698779,
       "currency": "THB",
       "quote": {
@@ -4138,16 +4142,16 @@
       "name": "CSL",
       "symbol": "CSL.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:12+00:00",
-      "quoteTime": 1793683095,
+      "fetchedAt": "2026-11-03T23:28:00+00:00",
+      "quoteTime": 1793747278,
       "currency": "AUD",
       "quote": {
-        "price": 198.72,
-        "change": -2.440003662109376,
-        "percent": -1.2129666025498174,
+        "price": 196.5,
+        "change": -2.220001220703125,
+        "percent": -1.1171503658746151,
         "currency": "AUD",
-        "timestamp": 1793683095,
-        "date": "2026-11-03 05:18 UTC",
+        "timestamp": 1793747278,
+        "date": "2026-11-03 23:07 UTC",
         "open": null
       }
     },
@@ -4161,16 +4165,16 @@
       "name": "스파크뉴질랜드",
       "symbol": "SPK.NZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:12+00:00",
-      "quoteTime": 1793678424,
+      "fetchedAt": "2026-11-03T23:28:00+00:00",
+      "quoteTime": 1793747004,
       "currency": "NZD",
       "quote": {
-        "price": 1.99,
-        "change": 0.0199999713897705,
-        "percent": 1.0152269593559258,
+        "price": 1.98,
+        "change": -0.010000009536743182,
+        "percent": -0.5025130396391861,
         "currency": "NZD",
-        "timestamp": 1793678424,
-        "date": "2026-11-03 04:00 UTC",
+        "timestamp": 1793747004,
+        "date": "2026-11-03 23:03 UTC",
         "open": null
       }
     },
@@ -4184,16 +4188,16 @@
       "name": "토론토도미니언은행",
       "symbol": "TD.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:13+00:00",
-      "quoteTime": 1793728447,
+      "fetchedAt": "2026-11-03T23:28:01+00:00",
+      "quoteTime": 1793739600,
       "currency": "CAD",
       "quote": {
-        "price": 174.48,
-        "change": -0.5200000000000102,
-        "percent": -0.297142857142863,
+        "price": 174.75,
+        "change": -0.25,
+        "percent": -0.14285714285714285,
         "currency": "CAD",
-        "timestamp": 1793728447,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -4207,16 +4211,16 @@
       "name": "바노르테",
       "symbol": "GFNORTEO.MX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:13+00:00",
-      "quoteTime": 1793727249,
+      "fetchedAt": "2026-11-03T23:28:02+00:00",
+      "quoteTime": 1793739598,
       "currency": "MXN",
       "quote": {
-        "price": 210.99,
-        "change": 1.079996337890634,
-        "percent": 0.5145044633647362,
+        "price": 211.1,
+        "change": 1.1899963378906193,
+        "percent": 0.566907873436155,
         "currency": "MXN",
-        "timestamp": 1793727249,
-        "date": "2026-11-03 17:34 UTC",
+        "timestamp": 1793739598,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -4230,16 +4234,16 @@
       "name": "이타우우니방쿠",
       "symbol": "ITUB4.SA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:14+00:00",
-      "quoteTime": 1793727552,
+      "fetchedAt": "2026-11-03T23:28:02+00:00",
+      "quoteTime": 1793739946,
       "currency": "BRL",
       "quote": {
-        "price": 38.43,
-        "change": -0.25999862670898466,
-        "percent": -0.6720047452508799,
+        "price": 38.49,
+        "change": -0.19999862670898239,
+        "percent": -0.5169259080069254,
         "currency": "BRL",
-        "timestamp": 1793727552,
-        "date": "2026-11-03 17:39 UTC",
+        "timestamp": 1793739946,
+        "date": "2026-11-03 21:05 UTC",
         "open": null
       }
     },
@@ -4253,16 +4257,16 @@
       "name": "팜파에네르히아",
       "symbol": "PAMP.BA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:14+00:00",
-      "quoteTime": 1793727250,
+      "fetchedAt": "2026-11-03T23:28:03+00:00",
+      "quoteTime": 1793739583,
       "currency": "ARS",
       "quote": {
-        "price": 4580.0,
-        "change": -52.5,
-        "percent": -1.1332973556395036,
+        "price": 4600.0,
+        "change": -32.5,
+        "percent": -0.7015650296815974,
         "currency": "ARS",
-        "timestamp": 1793727250,
-        "date": "2026-11-03 17:34 UTC",
+        "timestamp": 1793739583,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -4276,16 +4280,16 @@
       "name": "팔라벨라",
       "symbol": "FALABELLA.SN",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:15+00:00",
-      "quoteTime": 1793725849,
+      "fetchedAt": "2026-11-03T23:28:04+00:00",
+      "quoteTime": 1793732345,
       "currency": "CLP",
       "quote": {
-        "price": 6351.8,
-        "change": -298.1999999999998,
-        "percent": -4.484210526315787,
+        "price": 6369.0,
+        "change": -281.0,
+        "percent": -4.2255639097744355,
         "currency": "CLP",
-        "timestamp": 1793725849,
-        "date": "2026-11-03 17:10 UTC",
+        "timestamp": 1793732345,
+        "date": "2026-11-03 18:59 UTC",
         "open": null
       }
     },
@@ -4299,7 +4303,7 @@
       "name": "SABIC",
       "symbol": "2010.SR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:15+00:00",
+      "fetchedAt": "2026-11-03T23:28:04+00:00",
       "quoteTime": 1793708383,
       "currency": "SAR",
       "quote": {
@@ -4322,7 +4326,7 @@
       "name": "두바이이슬람은행",
       "symbol": "DIB.AE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:16+00:00",
+      "fetchedAt": "2026-11-03T23:28:05+00:00",
       "quoteTime": 1793703365,
       "currency": "AED",
       "quote": {
@@ -4345,7 +4349,7 @@
       "name": "카타르이슬람은행",
       "symbol": "QIBK.QA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:16+00:00",
+      "fetchedAt": "2026-11-03T23:28:06+00:00",
       "quoteTime": 1793700798,
       "currency": "QAR",
       "quote": {
@@ -4368,7 +4372,7 @@
       "name": "나이스",
       "symbol": "NICE.TA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:17+00:00",
+      "fetchedAt": "2026-11-03T23:28:06+00:00",
       "quoteTime": 1793719622,
       "currency": "ILA",
       "quote": {
@@ -4391,7 +4395,7 @@
       "name": "아셀산",
       "symbol": "ASELS.IS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:18+00:00",
+      "fetchedAt": "2026-11-03T23:28:07+00:00",
       "quoteTime": 1793718598,
       "currency": "TRY",
       "quote": {
@@ -4414,7 +4418,7 @@
       "name": "스탠다드은행",
       "symbol": "SBK.JO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:18+00:00",
+      "fetchedAt": "2026-11-03T23:28:08+00:00",
       "quoteTime": 1793718055,
       "currency": "ZAc",
       "quote": {
@@ -4437,7 +4441,7 @@
       "name": "텔레콤이집트",
       "symbol": "ETEL.CA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:19+00:00",
+      "fetchedAt": "2026-11-03T23:28:08+00:00",
       "quoteTime": 1721764800,
       "currency": "EGP",
       "quote": {
@@ -4460,16 +4464,16 @@
       "name": "알파벳",
       "symbol": "GOOGL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:19+00:00",
-      "quoteTime": 1793728459,
+      "fetchedAt": "2026-11-03T23:28:09+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 280.43,
-        "change": 1.4400097656250068,
-        "percent": 0.5161510505861797,
+        "price": 280.03,
+        "change": 1.0400097656249727,
+        "percent": 0.37277673107600645,
         "currency": "USD",
-        "timestamp": 1793728459,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -4483,7 +4487,7 @@
       "name": "NAVER",
       "symbol": "035420.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:20+00:00",
+      "fetchedAt": "2026-11-03T23:28:10+00:00",
       "quoteTime": 1793687417,
       "currency": "KRW",
       "quote": {
@@ -4506,7 +4510,7 @@
       "name": "도쿄일렉트론",
       "symbol": "8035.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:20+00:00",
+      "fetchedAt": "2026-11-03T23:28:10+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -4529,7 +4533,7 @@
       "name": "유니레버",
       "symbol": "ULVR.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:21+00:00",
+      "fetchedAt": "2026-11-03T23:28:11+00:00",
       "quoteTime": 1793723928,
       "currency": "GBp",
       "quote": {
@@ -4552,7 +4556,7 @@
       "name": "도이체텔레콤",
       "symbol": "DTE.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:21+00:00",
+      "fetchedAt": "2026-11-03T23:28:12+00:00",
       "quoteTime": 1793723722,
       "currency": "EUR",
       "quote": {
@@ -4575,7 +4579,7 @@
       "name": "슈나이더일렉트릭",
       "symbol": "SU.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:22+00:00",
+      "fetchedAt": "2026-11-03T23:28:12+00:00",
       "quoteTime": 1793723928,
       "currency": "EUR",
       "quote": {
@@ -4598,7 +4602,7 @@
       "name": "프로서스",
       "symbol": "PRX.AS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:22+00:00",
+      "fetchedAt": "2026-11-03T23:28:13+00:00",
       "quoteTime": 1793723927,
       "currency": "EUR",
       "quote": {
@@ -4621,7 +4625,7 @@
       "name": "UBS",
       "symbol": "UBSG.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:23+00:00",
+      "fetchedAt": "2026-11-03T23:28:14+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -4644,7 +4648,7 @@
       "name": "유니크레디트",
       "symbol": "UCG.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:23+00:00",
+      "fetchedAt": "2026-11-03T23:28:14+00:00",
       "quoteTime": 1793723783,
       "currency": "EUR",
       "quote": {
@@ -4667,7 +4671,7 @@
       "name": "인디텍스",
       "symbol": "ITX.MC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:24+00:00",
+      "fetchedAt": "2026-11-03T23:28:15+00:00",
       "quoteTime": 1793724102,
       "currency": "EUR",
       "quote": {
@@ -4690,7 +4694,7 @@
       "name": "인베스토르",
       "symbol": "INVE-B.ST",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:25+00:00",
+      "fetchedAt": "2026-11-03T23:28:16+00:00",
       "quoteTime": 1793723376,
       "currency": "SEK",
       "quote": {
@@ -4713,7 +4717,7 @@
       "name": "오르클라",
       "symbol": "ORK.OL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:25+00:00",
+      "fetchedAt": "2026-11-03T23:28:16+00:00",
       "quoteTime": 1793719688,
       "currency": "NOK",
       "quote": {
@@ -4736,7 +4740,7 @@
       "name": "AIA그룹",
       "symbol": "1299.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:26+00:00",
+      "fetchedAt": "2026-11-03T23:28:17+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -4759,7 +4763,7 @@
       "name": "페트로차이나",
       "symbol": "601857.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:26+00:00",
+      "fetchedAt": "2026-11-03T23:28:18+00:00",
       "quoteTime": 1793689202,
       "currency": "CNY",
       "quote": {
@@ -4782,7 +4786,7 @@
       "name": "델타전자",
       "symbol": "2308.TW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:27+00:00",
+      "fetchedAt": "2026-11-03T23:28:18+00:00",
       "quoteTime": 1793683805,
       "currency": "TWD",
       "quote": {
@@ -4805,7 +4809,7 @@
       "name": "ICICI은행",
       "symbol": "ICICIBANK.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:27+00:00",
+      "fetchedAt": "2026-11-03T23:28:19+00:00",
       "quoteTime": 1793699978,
       "currency": "INR",
       "quote": {
@@ -4828,7 +4832,7 @@
       "name": "싱텔",
       "symbol": "Z74.SI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:28+00:00",
+      "fetchedAt": "2026-11-03T23:28:20+00:00",
       "quoteTime": 1793696664,
       "currency": "SGD",
       "quote": {
@@ -4851,7 +4855,7 @@
       "name": "아스트라인터내셔널",
       "symbol": "ASII.JK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:28+00:00",
+      "fetchedAt": "2026-11-03T23:28:20+00:00",
       "quoteTime": 1793697290,
       "currency": "IDR",
       "quote": {
@@ -4874,7 +4878,7 @@
       "name": "어드밴스드인포서비스",
       "symbol": "ADVANC.BK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:29+00:00",
+      "fetchedAt": "2026-11-03T23:28:21+00:00",
       "quoteTime": 1793698779,
       "currency": "THB",
       "quote": {
@@ -4897,16 +4901,16 @@
       "name": "내셔널오스트레일리아은행",
       "symbol": "NAB.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:29+00:00",
-      "quoteTime": 1793682613,
+      "fetchedAt": "2026-11-03T23:28:22+00:00",
+      "quoteTime": 1793747298,
       "currency": "AUD",
       "quote": {
-        "price": 40.97,
-        "change": 0.06000015258788949,
-        "percent": 0.1466637810111969,
+        "price": 40.56,
+        "change": -0.4100012207031227,
+        "percent": -1.0007351927925725,
         "currency": "AUD",
-        "timestamp": 1793682613,
-        "date": "2026-11-03 05:10 UTC",
+        "timestamp": 1793747298,
+        "date": "2026-11-03 23:08 UTC",
         "open": null
       }
     },
@@ -4920,16 +4924,16 @@
       "name": "엔브리지",
       "symbol": "ENB.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:30+00:00",
-      "quoteTime": 1793728447,
+      "fetchedAt": "2026-11-03T23:28:22+00:00",
+      "quoteTime": 1793739600,
       "currency": "CAD",
       "quote": {
-        "price": 68.81,
-        "change": -0.009999694824216476,
-        "percent": -0.014530216315837225,
+        "price": 68.58,
+        "change": -0.23999969482422046,
+        "percent": -0.3487353907126946,
         "currency": "CAD",
-        "timestamp": 1793728447,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -4943,16 +4947,16 @@
       "name": "WEG",
       "symbol": "WEGE3.SA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:31+00:00",
-      "quoteTime": 1793727568,
+      "fetchedAt": "2026-11-03T23:28:23+00:00",
+      "quoteTime": 1793739932,
       "currency": "BRL",
       "quote": {
-        "price": 48.12,
-        "change": -0.24000061035156506,
-        "percent": -0.49627917146922534,
+        "price": 49.17,
+        "change": 0.8099993896484392,
+        "percent": 1.6749366820211682,
         "currency": "BRL",
-        "timestamp": 1793727568,
-        "date": "2026-11-03 17:39 UTC",
+        "timestamp": 1793739932,
+        "date": "2026-11-03 21:05 UTC",
         "open": null
       }
     },
@@ -4966,7 +4970,7 @@
       "name": "사우디내셔널은행",
       "symbol": "1180.SR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:31+00:00",
+      "fetchedAt": "2026-11-03T23:28:24+00:00",
       "quoteTime": 1793708389,
       "currency": "SAR",
       "quote": {
@@ -4989,7 +4993,7 @@
       "name": "가란티BBVA",
       "symbol": "GARAN.IS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:32+00:00",
+      "fetchedAt": "2026-11-03T23:28:24+00:00",
       "quoteTime": 1793718596,
       "currency": "TRY",
       "quote": {
@@ -5012,7 +5016,7 @@
       "name": "MTN그룹",
       "symbol": "MTN.JO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:32+00:00",
+      "fetchedAt": "2026-11-03T23:28:25+00:00",
       "quoteTime": 1793718033,
       "currency": "ZAc",
       "quote": {
@@ -5035,16 +5039,16 @@
       "name": "아마존",
       "symbol": "AMZN",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:33+00:00",
-      "quoteTime": 1793728472,
+      "fetchedAt": "2026-11-03T23:28:25+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 249.01,
-        "change": 3.379995117187491,
-        "percent": 1.3760513984437899,
+        "price": 250.69,
+        "change": 5.059995117187498,
+        "percent": 2.060006927737337,
         "currency": "USD",
-        "timestamp": 1793728472,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -5058,7 +5062,7 @@
       "name": "카카오",
       "symbol": "035720.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:33+00:00",
+      "fetchedAt": "2026-11-03T23:28:26+00:00",
       "quoteTime": 1793687419,
       "currency": "KRW",
       "quote": {
@@ -5081,7 +5085,7 @@
       "name": "BP",
       "symbol": "BP.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:34+00:00",
+      "fetchedAt": "2026-11-03T23:28:27+00:00",
       "quoteTime": 1793726100,
       "currency": "GBp",
       "quote": {
@@ -5104,7 +5108,7 @@
       "name": "메르세데스벤츠",
       "symbol": "MBG.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:34+00:00",
+      "fetchedAt": "2026-11-03T23:28:28+00:00",
       "quoteTime": 1793723937,
       "currency": "EUR",
       "quote": {
@@ -5127,7 +5131,7 @@
       "name": "토탈에너지",
       "symbol": "TTE.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:35+00:00",
+      "fetchedAt": "2026-11-03T23:28:28+00:00",
       "quoteTime": 1793723987,
       "currency": "EUR",
       "quote": {
@@ -5150,7 +5154,7 @@
       "name": "하이네켄",
       "symbol": "HEIA.AS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:36+00:00",
+      "fetchedAt": "2026-11-03T23:28:29+00:00",
       "quoteTime": 1793723883,
       "currency": "EUR",
       "quote": {
@@ -5173,7 +5177,7 @@
       "name": "ABB",
       "symbol": "ABBN.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:36+00:00",
+      "fetchedAt": "2026-11-03T23:28:30+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -5196,7 +5200,7 @@
       "name": "페라리",
       "symbol": "RACE.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:37+00:00",
+      "fetchedAt": "2026-11-03T23:28:30+00:00",
       "quoteTime": 1793723747,
       "currency": "EUR",
       "quote": {
@@ -5219,7 +5223,7 @@
       "name": "렙솔",
       "symbol": "REP.MC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:37+00:00",
+      "fetchedAt": "2026-11-03T23:28:31+00:00",
       "quoteTime": 1793723820,
       "currency": "EUR",
       "quote": {
@@ -5242,7 +5246,7 @@
       "name": "SEB",
       "symbol": "SEB-A.ST",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:38+00:00",
+      "fetchedAt": "2026-11-03T23:28:32+00:00",
       "quoteTime": 1793723385,
       "currency": "SEK",
       "quote": {
@@ -5265,7 +5269,7 @@
       "name": "미쓰비시UFJ금융",
       "symbol": "8306.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:38+00:00",
+      "fetchedAt": "2026-11-03T23:28:32+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -5288,7 +5292,7 @@
       "name": "HSBC 홍콩",
       "symbol": "0005.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:39+00:00",
+      "fetchedAt": "2026-11-03T23:28:33+00:00",
       "quoteTime": 1793693286,
       "currency": "HKD",
       "quote": {
@@ -5311,7 +5315,7 @@
       "name": "초상은행",
       "symbol": "600036.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:39+00:00",
+      "fetchedAt": "2026-11-03T23:28:34+00:00",
       "quoteTime": 1793689202,
       "currency": "CNY",
       "quote": {
@@ -5334,7 +5338,7 @@
       "name": "푸본금융",
       "symbol": "2881.TW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:40+00:00",
+      "fetchedAt": "2026-11-03T23:28:34+00:00",
       "quoteTime": 1793683822,
       "currency": "TWD",
       "quote": {
@@ -5357,7 +5361,7 @@
       "name": "인포시스",
       "symbol": "INFY.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:40+00:00",
+      "fetchedAt": "2026-11-03T23:28:35+00:00",
       "quoteTime": 1793699979,
       "currency": "INR",
       "quote": {
@@ -5380,16 +5384,16 @@
       "name": "웨스트팩",
       "symbol": "WBC.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:41+00:00",
-      "quoteTime": 1793683159,
+      "fetchedAt": "2026-11-03T23:28:36+00:00",
+      "quoteTime": 1793747309,
       "currency": "AUD",
       "quote": {
-        "price": 36.82,
-        "change": -0.3699986267089841,
-        "percent": -0.9948874438604033,
+        "price": 36.69,
+        "change": -0.12999969482422102,
+        "percent": -0.3530681583424756,
         "currency": "AUD",
-        "timestamp": 1793683159,
-        "date": "2026-11-03 05:19 UTC",
+        "timestamp": 1793747309,
+        "date": "2026-11-03 23:08 UTC",
         "open": null
       }
     },
@@ -5403,16 +5407,16 @@
       "name": "캐나다내셔널철도",
       "symbol": "CNR.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:42+00:00",
-      "quoteTime": 1793728476,
+      "fetchedAt": "2026-11-03T23:28:36+00:00",
+      "quoteTime": 1793739600,
       "currency": "CAD",
       "quote": {
-        "price": 176.77,
-        "change": -0.5800061035156148,
-        "percent": -0.32704036287265587,
+        "price": 176.95,
+        "change": -0.40000610351563637,
+        "percent": -0.22554614589759917,
         "currency": "CAD",
-        "timestamp": 1793728476,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -5426,16 +5430,16 @@
       "name": "암베브",
       "symbol": "ABEV3.SA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:42+00:00",
-      "quoteTime": 1793727581,
+      "fetchedAt": "2026-11-03T23:28:37+00:00",
+      "quoteTime": 1793739948,
       "currency": "BRL",
       "quote": {
-        "price": 14.65,
-        "change": 0.04999961853027379,
-        "percent": 0.3424631316704152,
+        "price": 14.7,
+        "change": 0.09999961853027273,
+        "percent": 0.6849288761470987,
         "currency": "BRL",
-        "timestamp": 1793727581,
-        "date": "2026-11-03 17:39 UTC",
+        "timestamp": 1793739948,
+        "date": "2026-11-03 21:05 UTC",
         "open": null
       }
     },
@@ -5449,7 +5453,7 @@
       "name": "사우디텔레콤",
       "symbol": "7010.SR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:43+00:00",
+      "fetchedAt": "2026-11-03T23:28:38+00:00",
       "quoteTime": 1793708391,
       "currency": "SAR",
       "quote": {
@@ -5472,7 +5476,7 @@
       "name": "앵글로아메리칸",
       "symbol": "AGL.JO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:43+00:00",
+      "fetchedAt": "2026-11-03T23:28:38+00:00",
       "quoteTime": 1793718132,
       "currency": "ZAc",
       "quote": {
@@ -5495,16 +5499,16 @@
       "name": "메타 플랫폼스",
       "symbol": "META",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:44+00:00",
-      "quoteTime": 1793728483,
+      "fetchedAt": "2026-11-03T23:28:39+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 623.005,
-        "change": 16.275019531249995,
-        "percent": 2.6824155810919668,
+        "price": 621.03,
+        "change": 14.300019531249973,
+        "percent": 2.3569001024478804,
         "currency": "USD",
-        "timestamp": 1793728483,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -5518,7 +5522,7 @@
       "name": "LG에너지솔루션",
       "symbol": "373220.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:44+00:00",
+      "fetchedAt": "2026-11-03T23:28:40+00:00",
       "quoteTime": 1793687404,
       "currency": "KRW",
       "quote": {
@@ -5541,7 +5545,7 @@
       "name": "GSK",
       "symbol": "GSK.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:45+00:00",
+      "fetchedAt": "2026-11-03T23:28:40+00:00",
       "quoteTime": 1793724975,
       "currency": "GBp",
       "quote": {
@@ -5564,7 +5568,7 @@
       "name": "BMW",
       "symbol": "BMW.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:45+00:00",
+      "fetchedAt": "2026-11-03T23:28:41+00:00",
       "quoteTime": 1793723957,
       "currency": "EUR",
       "quote": {
@@ -5587,7 +5591,7 @@
       "name": "사노피",
       "symbol": "SAN.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:46+00:00",
+      "fetchedAt": "2026-11-03T23:28:42+00:00",
       "quoteTime": 1793723999,
       "currency": "EUR",
       "quote": {
@@ -5610,7 +5614,7 @@
       "name": "ASM인터내셔널",
       "symbol": "ASM.AS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:46+00:00",
+      "fetchedAt": "2026-11-03T23:28:42+00:00",
       "quoteTime": 1793723998,
       "currency": "EUR",
       "quote": {
@@ -5633,7 +5637,7 @@
       "name": "취리히보험",
       "symbol": "ZURN.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:47+00:00",
+      "fetchedAt": "2026-11-03T23:28:43+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -5656,7 +5660,7 @@
       "name": "레오나르도",
       "symbol": "LDO.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:47+00:00",
+      "fetchedAt": "2026-11-03T23:28:43+00:00",
       "quoteTime": 1793723705,
       "currency": "EUR",
       "quote": {
@@ -5679,7 +5683,7 @@
       "name": "아마데우스IT",
       "symbol": "AMS.MC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:48+00:00",
+      "fetchedAt": "2026-11-03T23:28:44+00:00",
       "quoteTime": 1793723715,
       "currency": "EUR",
       "quote": {
@@ -5702,7 +5706,7 @@
       "name": "NTT",
       "symbol": "9432.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:48+00:00",
+      "fetchedAt": "2026-11-03T23:28:45+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -5725,7 +5729,7 @@
       "name": "홍콩거래소",
       "symbol": "0388.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:49+00:00",
+      "fetchedAt": "2026-11-03T23:28:45+00:00",
       "quoteTime": 1793693286,
       "currency": "HKD",
       "quote": {
@@ -5748,7 +5752,7 @@
       "name": "중국핑안",
       "symbol": "601318.SS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:50+00:00",
+      "fetchedAt": "2026-11-03T23:28:46+00:00",
       "quoteTime": 1793689202,
       "currency": "CNY",
       "quote": {
@@ -5771,7 +5775,7 @@
       "name": "바르티에어텔",
       "symbol": "BHARTIARTL.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:50+00:00",
+      "fetchedAt": "2026-11-03T23:28:47+00:00",
       "quoteTime": 1793699978,
       "currency": "INR",
       "quote": {
@@ -5794,16 +5798,16 @@
       "name": "웨스파머스",
       "symbol": "WES.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:51+00:00",
-      "quoteTime": 1793682615,
+      "fetchedAt": "2026-11-03T23:28:47+00:00",
+      "quoteTime": 1793747325,
       "currency": "AUD",
       "quote": {
-        "price": 78.46,
-        "change": 1.3399972534179625,
-        "percent": 1.737548243898826,
+        "price": 77.555,
+        "change": -0.9049990844726494,
+        "percent": -1.1534528358817557,
         "currency": "AUD",
-        "timestamp": 1793682615,
-        "date": "2026-11-03 05:10 UTC",
+        "timestamp": 1793747325,
+        "date": "2026-11-03 23:08 UTC",
         "open": null
       }
     },
@@ -5817,16 +5821,16 @@
       "name": "브룩필드자산운용",
       "symbol": "BAM.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:51+00:00",
-      "quoteTime": 1793728488,
+      "fetchedAt": "2026-11-03T23:28:48+00:00",
+      "quoteTime": 1793739600,
       "currency": "CAD",
       "quote": {
-        "price": 71.74,
-        "change": -0.21999908447266137,
-        "percent": -0.3057241346187457,
+        "price": 71.32,
+        "change": -0.6399990844726631,
+        "percent": -0.8893817295931018,
         "currency": "CAD",
-        "timestamp": 1793728488,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -5840,16 +5844,16 @@
       "name": "테슬라",
       "symbol": "TSLA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:52+00:00",
-      "quoteTime": 1793728491,
+      "fetchedAt": "2026-11-03T23:28:49+00:00",
+      "quoteTime": 1793739600,
       "currency": "USD",
       "quote": {
-        "price": 397.565,
-        "change": -6.255007324218752,
-        "percent": -1.5489592419319471,
+        "price": 398.5,
+        "change": -5.32000732421875,
+        "percent": -1.3174204417136337,
         "currency": "USD",
-        "timestamp": 1793728491,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -5863,7 +5867,7 @@
       "name": "KB금융",
       "symbol": "105560.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:52+00:00",
+      "fetchedAt": "2026-11-03T23:28:49+00:00",
       "quoteTime": 1793687427,
       "currency": "KRW",
       "quote": {
@@ -5886,7 +5890,7 @@
       "name": "렐엑스",
       "symbol": "REL.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:53+00:00",
+      "fetchedAt": "2026-11-03T23:28:50+00:00",
       "quoteTime": 1793724975,
       "currency": "GBp",
       "quote": {
@@ -5909,7 +5913,7 @@
       "name": "BASF",
       "symbol": "BAS.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:53+00:00",
+      "fetchedAt": "2026-11-03T23:28:51+00:00",
       "quoteTime": 1793723722,
       "currency": "EUR",
       "quote": {
@@ -5932,7 +5936,7 @@
       "name": "BNP파리바",
       "symbol": "BNP.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:54+00:00",
+      "fetchedAt": "2026-11-03T23:28:51+00:00",
       "quoteTime": 1793723860,
       "currency": "EUR",
       "quote": {
@@ -5955,7 +5959,7 @@
       "name": "리치몬트",
       "symbol": "CFR.SW",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:54+00:00",
+      "fetchedAt": "2026-11-03T23:28:52+00:00",
       "quoteTime": 1793723438,
       "currency": "CHF",
       "quote": {
@@ -5978,7 +5982,7 @@
       "name": "제네랄리",
       "symbol": "G.MI",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:55+00:00",
+      "fetchedAt": "2026-11-03T23:28:53+00:00",
       "quoteTime": 1793723755,
       "currency": "EUR",
       "quote": {
@@ -6001,7 +6005,7 @@
       "name": "히타치",
       "symbol": "6501.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:55+00:00",
+      "fetchedAt": "2026-11-03T23:28:53+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6024,7 +6028,7 @@
       "name": "차이나모바일",
       "symbol": "0941.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:56+00:00",
+      "fetchedAt": "2026-11-03T23:28:54+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -6047,7 +6051,7 @@
       "name": "우량예",
       "symbol": "000858.SZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:56+00:00",
+      "fetchedAt": "2026-11-03T23:28:55+00:00",
       "quoteTime": 1793689488,
       "currency": "CNY",
       "quote": {
@@ -6070,7 +6074,7 @@
       "name": "ITC",
       "symbol": "ITC.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:57+00:00",
+      "fetchedAt": "2026-11-03T23:28:55+00:00",
       "quoteTime": 1793699978,
       "currency": "INR",
       "quote": {
@@ -6093,16 +6097,16 @@
       "name": "포테스큐",
       "symbol": "FMG.AX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:57+00:00",
-      "quoteTime": 1793682673,
+      "fetchedAt": "2026-11-03T23:28:56+00:00",
+      "quoteTime": 1793747332,
       "currency": "AUD",
       "quote": {
-        "price": 14.4,
-        "change": 0.12999954223632848,
-        "percent": 0.9109988652144824,
+        "price": 14.26,
+        "change": -0.13999961853027365,
+        "percent": -0.9722195988819243,
         "currency": "AUD",
-        "timestamp": 1793682673,
-        "date": "2026-11-03 05:11 UTC",
+        "timestamp": 1793747332,
+        "date": "2026-11-03 23:08 UTC",
         "open": null
       }
     },
@@ -6116,16 +6120,16 @@
       "name": "캐나다내추럴리소시스",
       "symbol": "CNQ.TO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:58+00:00",
-      "quoteTime": 1793728496,
+      "fetchedAt": "2026-11-03T23:28:57+00:00",
+      "quoteTime": 1793739599,
       "currency": "CAD",
       "quote": {
-        "price": 75.22,
-        "change": 0.09999725341796761,
-        "percent": 0.13311667966161983,
+        "price": 74.97,
+        "change": -0.1500027465820324,
+        "percent": -0.19968416014049936,
         "currency": "CAD",
-        "timestamp": 1793728496,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739599,
+        "date": "2026-11-03 20:59 UTC",
         "open": null
       }
     },
@@ -6139,16 +6143,16 @@
       "name": "브로드컴",
       "symbol": "AVGO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:59+00:00",
-      "quoteTime": 1793728497,
+      "fetchedAt": "2026-11-03T23:28:57+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 332.44,
-        "change": 10.209989013671873,
-        "percent": 3.168540690055425,
+        "price": 332.13,
+        "change": 9.89998901367187,
+        "percent": 3.0723361189631455,
         "currency": "USD",
-        "timestamp": 1793728497,
-        "date": "2026-11-03 17:54 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -6162,7 +6166,7 @@
       "name": "셀트리온",
       "symbol": "068270.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:54:59+00:00",
+      "fetchedAt": "2026-11-03T23:28:58+00:00",
       "quoteTime": 1793687426,
       "currency": "KRW",
       "quote": {
@@ -6185,7 +6189,7 @@
       "name": "런던증권거래소그룹",
       "symbol": "LSEG.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:00+00:00",
+      "fetchedAt": "2026-11-03T23:28:59+00:00",
       "quoteTime": 1793724975,
       "currency": "GBp",
       "quote": {
@@ -6208,7 +6212,7 @@
       "name": "라인메탈",
       "symbol": "RHM.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:00+00:00",
+      "fetchedAt": "2026-11-03T23:28:59+00:00",
       "quoteTime": 1793723984,
       "currency": "EUR",
       "quote": {
@@ -6231,7 +6235,7 @@
       "name": "사프란",
       "symbol": "SAF.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:01+00:00",
+      "fetchedAt": "2026-11-03T23:29:00+00:00",
       "quoteTime": 1793723779,
       "currency": "EUR",
       "quote": {
@@ -6254,7 +6258,7 @@
       "name": "닌텐도",
       "symbol": "7974.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:02+00:00",
+      "fetchedAt": "2026-11-03T23:29:01+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6277,7 +6281,7 @@
       "name": "메이퇀",
       "symbol": "3690.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:02+00:00",
+      "fetchedAt": "2026-11-03T23:29:01+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -6300,7 +6304,7 @@
       "name": "CATL",
       "symbol": "300750.SZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:03+00:00",
+      "fetchedAt": "2026-11-03T23:29:02+00:00",
       "quoteTime": 1793689444,
       "currency": "CNY",
       "quote": {
@@ -6323,7 +6327,7 @@
       "name": "라르센앤드투브로",
       "symbol": "LT.NS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:03+00:00",
+      "fetchedAt": "2026-11-03T23:29:03+00:00",
       "quoteTime": 1793699978,
       "currency": "INR",
       "quote": {
@@ -6346,16 +6350,16 @@
       "name": "TSMC ADR",
       "symbol": "TSM",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:04+00:00",
-      "quoteTime": 1793728503,
+      "fetchedAt": "2026-11-03T23:29:03+00:00",
+      "quoteTime": 1793739603,
       "currency": "USD",
       "quote": {
-        "price": 405.98,
-        "change": 7.349995117187518,
-        "percent": 1.8438138191198723,
+        "price": 404.8,
+        "change": 6.169995117187511,
+        "percent": 1.5477999753183003,
         "currency": "USD",
-        "timestamp": 1793728503,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739603,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -6369,7 +6373,7 @@
       "name": "기아",
       "symbol": "000270.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:05+00:00",
+      "fetchedAt": "2026-11-03T23:29:04+00:00",
       "quoteTime": 1793687427,
       "currency": "KRW",
       "quote": {
@@ -6392,7 +6396,7 @@
       "name": "리오틴토",
       "symbol": "RIO.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:05+00:00",
+      "fetchedAt": "2026-11-03T23:29:05+00:00",
       "quoteTime": 1793724975,
       "currency": "GBp",
       "quote": {
@@ -6415,7 +6419,7 @@
       "name": "인피니언",
       "symbol": "IFX.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:06+00:00",
+      "fetchedAt": "2026-11-03T23:29:05+00:00",
       "quoteTime": 1793723709,
       "currency": "EUR",
       "quote": {
@@ -6438,7 +6442,7 @@
       "name": "에어리퀴드",
       "symbol": "AI.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:06+00:00",
+      "fetchedAt": "2026-11-03T23:29:06+00:00",
       "quoteTime": 1793723704,
       "currency": "EUR",
       "quote": {
@@ -6461,7 +6465,7 @@
       "name": "키엔스",
       "symbol": "6861.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:07+00:00",
+      "fetchedAt": "2026-11-03T23:29:07+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6484,7 +6488,7 @@
       "name": "샤오미",
       "symbol": "1810.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:08+00:00",
+      "fetchedAt": "2026-11-03T23:29:07+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -6507,7 +6511,7 @@
       "name": "BYD A주",
       "symbol": "002594.SZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:08+00:00",
+      "fetchedAt": "2026-11-03T23:29:08+00:00",
       "quoteTime": 1793689443,
       "currency": "CNY",
       "quote": {
@@ -6530,16 +6534,16 @@
       "name": "버크셔 해서웨이 B",
       "symbol": "BRK-B",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:09+00:00",
-      "quoteTime": 1793728502,
+      "fetchedAt": "2026-11-03T23:29:08+00:00",
+      "quoteTime": 1793739791,
       "currency": "USD",
       "quote": {
-        "price": 558.93,
-        "change": 2.82001464843745,
-        "percent": 0.5070965677148719,
+        "price": 557.07,
+        "change": 0.96001464843755,
+        "percent": 0.17263035617507325,
         "currency": "USD",
-        "timestamp": 1793728502,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739791,
+        "date": "2026-11-03 21:03 UTC",
         "open": null
       }
     },
@@ -6553,7 +6557,7 @@
       "name": "삼성바이오로직스",
       "symbol": "207940.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:09+00:00",
+      "fetchedAt": "2026-11-03T23:29:09+00:00",
       "quoteTime": 1793687419,
       "currency": "KRW",
       "quote": {
@@ -6576,7 +6580,7 @@
       "name": "내셔널그리드",
       "symbol": "NG.L",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:10+00:00",
+      "fetchedAt": "2026-11-03T23:29:10+00:00",
       "quoteTime": 1793724976,
       "currency": "GBp",
       "quote": {
@@ -6599,7 +6603,7 @@
       "name": "도이체뵈르제",
       "symbol": "DB1.DE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:10+00:00",
+      "fetchedAt": "2026-11-03T23:29:11+00:00",
       "quoteTime": 1793723722,
       "currency": "EUR",
       "quote": {
@@ -6622,7 +6626,7 @@
       "name": "에르메스",
       "symbol": "RMS.PA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:11+00:00",
+      "fetchedAt": "2026-11-03T23:29:11+00:00",
       "quoteTime": 1793723718,
       "currency": "EUR",
       "quote": {
@@ -6645,7 +6649,7 @@
       "name": "패스트리테일링",
       "symbol": "9983.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:12+00:00",
+      "fetchedAt": "2026-11-03T23:29:12+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6668,7 +6672,7 @@
       "name": "핑안보험",
       "symbol": "2318.HK",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:12+00:00",
+      "fetchedAt": "2026-11-03T23:29:13+00:00",
       "quoteTime": 1793693287,
       "currency": "HKD",
       "quote": {
@@ -6691,7 +6695,7 @@
       "name": "메이디그룹",
       "symbol": "000333.SZ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:13+00:00",
+      "fetchedAt": "2026-11-03T23:29:13+00:00",
       "quoteTime": 1793689470,
       "currency": "CNY",
       "quote": {
@@ -6714,16 +6718,16 @@
       "name": "JP모건 체이스",
       "symbol": "JPM",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:13+00:00",
-      "quoteTime": 1793728508,
+      "fetchedAt": "2026-11-03T23:29:14+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 336.885,
-        "change": -3.694986572265634,
-        "percent": -1.0849100704517225,
+        "price": 337.98,
+        "change": -2.599986572265607,
+        "percent": -0.7633996931037905,
         "currency": "USD",
-        "timestamp": 1793728508,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -6737,7 +6741,7 @@
       "name": "포스코홀딩스",
       "symbol": "005490.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:14+00:00",
+      "fetchedAt": "2026-11-03T23:29:15+00:00",
       "quoteTime": 1793687417,
       "currency": "KRW",
       "quote": {
@@ -6760,7 +6764,7 @@
       "name": "리크루트홀딩스",
       "symbol": "6098.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:15+00:00",
+      "fetchedAt": "2026-11-03T23:29:15+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6783,16 +6787,16 @@
       "name": "비자",
       "symbol": "V",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:15+00:00",
-      "quoteTime": 1793728501,
+      "fetchedAt": "2026-11-03T23:29:16+00:00",
+      "quoteTime": 1793739603,
       "currency": "USD",
       "quote": {
-        "price": 422.085,
-        "change": -3.4250097656250205,
-        "percent": -0.8049187297642066,
+        "price": 420.42,
+        "change": -5.090009765624984,
+        "percent": -1.1962138724841305,
         "currency": "USD",
-        "timestamp": 1793728501,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739603,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -6806,7 +6810,7 @@
       "name": "삼성물산",
       "symbol": "028260.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:16+00:00",
+      "fetchedAt": "2026-11-03T23:29:17+00:00",
       "quoteTime": 1793687402,
       "currency": "KRW",
       "quote": {
@@ -6829,7 +6833,7 @@
       "name": "주가이제약",
       "symbol": "4519.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:16+00:00",
+      "fetchedAt": "2026-11-03T23:29:17+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6852,16 +6856,16 @@
       "name": "월마트",
       "symbol": "WMT",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:17+00:00",
-      "quoteTime": 1793728517,
+      "fetchedAt": "2026-11-03T23:29:18+00:00",
+      "quoteTime": 1793739600,
       "currency": "USD",
       "quote": {
-        "price": 124.895,
-        "change": -2.795002441406254,
-        "percent": -2.1888968501577173,
+        "price": 124.86,
+        "change": -2.8300024414062506,
+        "percent": -2.2163069835517213,
         "currency": "USD",
-        "timestamp": 1793728517,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -6875,7 +6879,7 @@
       "name": "LG화학",
       "symbol": "051910.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:18+00:00",
+      "fetchedAt": "2026-11-03T23:29:19+00:00",
       "quoteTime": 1793687407,
       "currency": "KRW",
       "quote": {
@@ -6898,7 +6902,7 @@
       "name": "도쿄해상홀딩스",
       "symbol": "8766.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:18+00:00",
+      "fetchedAt": "2026-11-03T23:29:19+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6921,16 +6925,16 @@
       "name": "일라이 릴리",
       "symbol": "LLY",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:19+00:00",
-      "quoteTime": 1793728514,
+      "fetchedAt": "2026-11-03T23:29:20+00:00",
+      "quoteTime": 1793739764,
       "currency": "USD",
       "quote": {
-        "price": 1420.98,
-        "change": 9.990009765625018,
-        "percent": 0.7080142194322449,
+        "price": 1409.38,
+        "change": -1.6099902343748909,
+        "percent": -0.11410359006922939,
         "currency": "USD",
-        "timestamp": 1793728514,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739764,
+        "date": "2026-11-03 21:02 UTC",
         "open": null
       }
     },
@@ -6944,7 +6948,7 @@
       "name": "현대모비스",
       "symbol": "012330.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:19+00:00",
+      "fetchedAt": "2026-11-03T23:29:21+00:00",
       "quoteTime": 1793687412,
       "currency": "KRW",
       "quote": {
@@ -6967,7 +6971,7 @@
       "name": "미쓰비시상사",
       "symbol": "8058.T",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:20+00:00",
+      "fetchedAt": "2026-11-03T23:29:21+00:00",
       "quoteTime": 1793601000,
       "currency": "JPY",
       "quote": {
@@ -6990,16 +6994,16 @@
       "name": "엑슨모빌",
       "symbol": "XOM",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:21+00:00",
-      "quoteTime": 1793728518,
+      "fetchedAt": "2026-11-03T23:29:22+00:00",
+      "quoteTime": 1793739866,
       "currency": "USD",
       "quote": {
-        "price": 178.025,
-        "change": -1.6449981689453068,
-        "percent": -0.9155664193854447,
+        "price": 177.46,
+        "change": -2.2099981689453045,
+        "percent": -1.230031831395258,
         "currency": "USD",
-        "timestamp": 1793728518,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739866,
+        "date": "2026-11-03 21:04 UTC",
         "open": null
       }
     },
@@ -7013,7 +7017,7 @@
       "name": "신한지주",
       "symbol": "055550.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:21+00:00",
+      "fetchedAt": "2026-11-03T23:29:23+00:00",
       "quoteTime": 1793687424,
       "currency": "KRW",
       "quote": {
@@ -7036,16 +7040,16 @@
       "name": "넷플릭스",
       "symbol": "NFLX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:22+00:00",
-      "quoteTime": 1793728520,
+      "fetchedAt": "2026-11-03T23:29:23+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 62.765,
-        "change": 0.42499984741210994,
-        "percent": 0.681745021449871,
+        "price": 63.42,
+        "change": 1.079999847412111,
+        "percent": 1.7324347846785777,
         "currency": "USD",
-        "timestamp": 1793728520,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7059,7 +7063,7 @@
       "name": "HD한국조선해양",
       "symbol": "009540.KS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:22+00:00",
+      "fetchedAt": "2026-11-03T23:29:24+00:00",
       "quoteTime": 1793687407,
       "currency": "KRW",
       "quote": {
@@ -7082,16 +7086,16 @@
       "name": "AMD",
       "symbol": "AMD",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:23+00:00",
-      "quoteTime": 1793728522,
+      "fetchedAt": "2026-11-03T23:29:24+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 490.395,
-        "change": 23.555003662109357,
-        "percent": 5.045626734402735,
+        "price": 483.9,
+        "change": 17.060003662109352,
+        "percent": 3.654357766244523,
         "currency": "USD",
-        "timestamp": 1793728522,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7105,16 +7109,16 @@
       "name": "코스트코",
       "symbol": "COST",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:24+00:00",
-      "quoteTime": 1793728504,
+      "fetchedAt": "2026-11-03T23:29:25+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 1021.47,
-        "change": -19.080048828124973,
-        "percent": -1.8336502746420569,
+        "price": 1019.26,
+        "change": -21.29004882812501,
+        "percent": -2.0460379442682277,
         "currency": "USD",
-        "timestamp": 1793728504,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7128,16 +7132,16 @@
       "name": "팔란티어",
       "symbol": "PLTR",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:24+00:00",
-      "quoteTime": 1793728522,
+      "fetchedAt": "2026-11-03T23:29:26+00:00",
+      "quoteTime": 1793739600,
       "currency": "USD",
       "quote": {
-        "price": 174.375,
-        "change": -3.964996337890625,
-        "percent": -2.2232793648702183,
+        "price": 175.4,
+        "change": -2.9399963378906193,
+        "percent": -1.6485344837174807,
         "currency": "USD",
-        "timestamp": 1793728522,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7151,16 +7155,16 @@
       "name": "코카콜라",
       "symbol": "KO",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:25+00:00",
-      "quoteTime": 1793728522,
+      "fetchedAt": "2026-11-03T23:29:26+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 95.135,
-        "change": -0.6950018310546824,
-        "percent": -0.7252445140092442,
+        "price": 94.8,
+        "change": -1.0300018310546903,
+        "percent": -1.0748218839341688,
         "currency": "USD",
-        "timestamp": 1793728522,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7174,16 +7178,16 @@
       "name": "인베스코 QQQ ETF",
       "symbol": "QQQ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:25+00:00",
-      "quoteTime": 1793728521,
+      "fetchedAt": "2026-11-03T23:29:27+00:00",
+      "quoteTime": 1793739601,
       "currency": "USD",
       "quote": {
-        "price": 686.693,
-        "change": 5.602973144531234,
-        "percent": 0.8226479501395221,
+        "price": 685.28,
+        "change": 4.189973144531223,
+        "percent": 0.6151863893641125,
         "currency": "USD",
-        "timestamp": 1793728521,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739601,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7197,16 +7201,16 @@
       "name": "SPDR S&P 500 ETF",
       "symbol": "SPY",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:26+00:00",
-      "quoteTime": 1793728525,
+      "fetchedAt": "2026-11-03T23:29:28+00:00",
+      "quoteTime": 1793739600,
       "currency": "USD",
       "quote": {
-        "price": 755.41,
-        "change": 3.310024414062468,
-        "percent": 0.4401043107977409,
+        "price": 754.35,
+        "change": 2.2500244140625227,
+        "percent": 0.2991656012632628,
         "currency": "USD",
-        "timestamp": 1793728525,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739600,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7220,16 +7224,16 @@
       "name": "오라클",
       "symbol": "ORCL",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:27+00:00",
-      "quoteTime": 1793728525,
+      "fetchedAt": "2026-11-03T23:29:28+00:00",
+      "quoteTime": 1793739864,
       "currency": "USD",
       "quote": {
-        "price": 127.34,
-        "change": 8.119998779296878,
-        "percent": 6.810936668474721,
+        "price": 126.19,
+        "change": 6.969998779296873,
+        "percent": 5.846333423863864,
         "currency": "USD",
-        "timestamp": 1793728525,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739864,
+        "date": "2026-11-03 21:04 UTC",
         "open": null
       }
     },
@@ -7243,16 +7247,16 @@
       "name": "세일즈포스",
       "symbol": "CRM",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:27+00:00",
-      "quoteTime": 1793728513,
+      "fetchedAt": "2026-11-03T23:29:29+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 222.775,
-        "change": -3.4049926757812443,
-        "percent": -1.5054349571326349,
+        "price": 222.2,
+        "change": -3.9799926757812614,
+        "percent": -1.7596572661872885,
         "currency": "USD",
-        "timestamp": 1793728513,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7266,16 +7270,16 @@
       "name": "IBM",
       "symbol": "IBM",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:28+00:00",
-      "quoteTime": 1793728523,
+      "fetchedAt": "2026-11-03T23:29:30+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 249.69,
-        "change": -2.8199945068359398,
-        "percent": -1.1167853028326755,
+        "price": 250.04,
+        "change": -2.4699945068359455,
+        "percent": -0.9781769278716919,
         "currency": "USD",
-        "timestamp": 1793728523,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7289,16 +7293,16 @@
       "name": "GE 에어로스페이스",
       "symbol": "GE",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:29+00:00",
-      "quoteTime": 1793728516,
+      "fetchedAt": "2026-11-03T23:29:31+00:00",
+      "quoteTime": 1793739603,
       "currency": "USD",
       "quote": {
-        "price": 319.635,
-        "change": 3.855001220703116,
-        "percent": 1.2207870148854585,
+        "price": 320.67,
+        "change": 4.890001220703141,
+        "percent": 1.5485468489474636,
         "currency": "USD",
-        "timestamp": 1793728516,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739603,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7312,16 +7316,16 @@
       "name": "캐터필러",
       "symbol": "CAT",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:29+00:00",
-      "quoteTime": 1793728514,
+      "fetchedAt": "2026-11-03T23:29:31+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 623.99,
-        "change": 10.370004882812509,
-        "percent": 1.6899718010056166,
+        "price": 623.94,
+        "change": 10.320004882812555,
+        "percent": 1.6818234355028912,
         "currency": "USD",
-        "timestamp": 1793728514,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7335,16 +7339,16 @@
       "name": "유나이티드헬스",
       "symbol": "UNH",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:30+00:00",
-      "quoteTime": 1793728527,
+      "fetchedAt": "2026-11-03T23:29:32+00:00",
+      "quoteTime": 1793739602,
       "currency": "USD",
       "quote": {
-        "price": 403.715,
-        "change": 3.274997558593725,
-        "percent": 0.8178497499317476,
+        "price": 404.44,
+        "change": 3.9999975585937477,
+        "percent": 0.9989005928994422,
         "currency": "USD",
-        "timestamp": 1793728527,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739602,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7358,16 +7362,16 @@
       "name": "존슨앤드존슨",
       "symbol": "JNJ",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:31+00:00",
-      "quoteTime": 1793728529,
+      "fetchedAt": "2026-11-03T23:29:33+00:00",
+      "quoteTime": 1793739603,
       "currency": "USD",
       "quote": {
-        "price": 267.745,
-        "change": -2.8149975585937455,
-        "percent": -1.0404337610862509,
+        "price": 266.17,
+        "change": -4.389997558593734,
+        "percent": -1.622559727308918,
         "currency": "USD",
-        "timestamp": 1793728529,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739603,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7381,16 +7385,16 @@
       "name": "P&G",
       "symbol": "PG",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:31+00:00",
-      "quoteTime": 1793728524,
+      "fetchedAt": "2026-11-03T23:29:33+00:00",
+      "quoteTime": 1793739738,
       "currency": "USD",
       "quote": {
-        "price": 162.23,
-        "change": -1.3299975585937602,
-        "percent": -0.8131557706323037,
+        "price": 162.06,
+        "change": -1.4999975585937477,
+        "percent": -0.9170931651893601,
         "currency": "USD",
-        "timestamp": 1793728524,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739738,
+        "date": "2026-11-03 21:02 UTC",
         "open": null
       }
     },
@@ -7404,16 +7408,16 @@
       "name": "디즈니",
       "symbol": "DIS",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:32+00:00",
-      "quoteTime": 1793728525,
+      "fetchedAt": "2026-11-03T23:29:34+00:00",
+      "quoteTime": 1793739857,
       "currency": "USD",
       "quote": {
-        "price": 113.8,
-        "change": 0.6899993896484347,
-        "percent": 0.6100250958581354,
+        "price": 114.18,
+        "change": 1.0699993896484443,
+        "percent": 0.9459812429269145,
         "currency": "USD",
-        "timestamp": 1793728525,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739857,
+        "date": "2026-11-03 21:04 UTC",
         "open": null
       }
     },
@@ -7427,16 +7431,16 @@
       "name": "보잉",
       "symbol": "BA",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:32+00:00",
-      "quoteTime": 1793728526,
+      "fetchedAt": "2026-11-03T23:29:35+00:00",
+      "quoteTime": 1793739603,
       "currency": "USD",
       "quote": {
-        "price": 174.514,
-        "change": -0.885993896484365,
-        "percent": -0.5051276666561637,
+        "price": 173.31,
+        "change": -2.0899938964843727,
+        "percent": -1.191558705365647,
         "currency": "USD",
-        "timestamp": 1793728526,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739603,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     },
@@ -7450,16 +7454,16 @@
       "name": "셰브론",
       "symbol": "CVX",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:33+00:00",
-      "quoteTime": 1793728521,
+      "fetchedAt": "2026-11-03T23:29:35+00:00",
+      "quoteTime": 1793739830,
       "currency": "USD",
       "quote": {
-        "price": 226.25,
-        "change": -1.5200042724609375,
-        "percent": -0.6673417236462322,
+        "price": 225.27,
+        "change": -2.5000042724609273,
+        "percent": -1.0976003097714286,
         "currency": "USD",
-        "timestamp": 1793728521,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739830,
+        "date": "2026-11-03 21:03 UTC",
         "open": null
       }
     },
@@ -7473,19 +7477,19 @@
       "name": "뱅크오브아메리카",
       "symbol": "BAC",
       "status": "ok",
-      "fetchedAt": "2026-11-03T17:55:34+00:00",
-      "quoteTime": 1793728530,
+      "fetchedAt": "2026-11-03T23:29:36+00:00",
+      "quoteTime": 1793739603,
       "currency": "USD",
       "quote": {
-        "price": 49.69,
-        "change": 0.12000030517577898,
-        "percent": 0.24208252151413398,
+        "price": 49.66,
+        "change": 0.09000030517577784,
+        "percent": 0.18156204504712775,
         "currency": "USD",
-        "timestamp": 1793728530,
-        "date": "2026-11-03 17:55 UTC",
+        "timestamp": 1793739603,
+        "date": "2026-11-03 21:00 UTC",
         "open": null
       }
     }
   },
-  "successful": 319
+  "successful": 317
 }
